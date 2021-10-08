@@ -1,0 +1,141 @@
+.content {
+    background-image: url("../images/heart-n-brain-fond-ecran.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+    color: white;
+    font-weight: lighter;
+    font-size: 15px;
+}
+.container {
+    width: 980px;
+    margin: auto;
+}
+.title {
+    height: 110px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    font-size: 25px;
+    letter-spacing: 4.5px;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+.mission {
+    background-color: #000;
+}
+.h2 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+.strongTitle {
+    color: #f7b800;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-weight: bold;
+    display: block;
+}
+.italique {
+    font-style: italic;
+}
+.padding {
+    padding: 40px 21px;
+}
+.text {
+    margin-bottom: 20px;
+}
+.us {
+    background-color: #fff;
+    color: #000;
+}
+.strong {
+    text-transform: uppercase;
+    color: #f7b800;
+    font-weight: bold;
+}
+.team {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+.teamText {
+    margin-left: 40px;
+}
+.teamP {
+    margin-bottom: 25px;
+}
+.value {
+    color: #fefdfd;
+}
+.values {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.valueBox {
+    margin-bottom: 40px;
+    height: 170px;
+    width: 281px;
+}
+.boxBlue {
+    height: 100%;
+    width: 100%;
+    background-color: #324258;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxGrey {
+    height: 100%;
+    width: 100%;
+    background-color: #a19c9c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxYellow {
+    height: 100%;
+    width: 100%;
+    background-color: #f7b900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentBox {
+    background-color: #fff;
+    height: 134px;
+    width: 250px;
+    padding: 15px;
+    color: #000;
+    box-sizing: border-box;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: lighter;
+}
+.h3Blue {
+    color: #324258;
+    font-weight: bold;
+}
+.h3Grey {
+    color: #a19c9c;
+    font-weight: bold;
+}
+.h3Yellow {
+    color: #f7b900;
+    font-weight: bold;
+}
+.separatorWhite {
+    width: 40px;
+    height: 40px;
+    border-top: white solid 2px;
+}
+.separatorBlack {
+    width: 40px;
+    height: 40px;
+    border-top: black solid 2px;
+}

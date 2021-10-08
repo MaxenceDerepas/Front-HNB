@@ -1,0 +1,147 @@
+.content {
+    background-image: url("../images/heart-n-brain-fond-ecran.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-weight: lighter;
+    font-size: 15px;
+}
+.container {
+    margin: 0 auto;
+    background-color: #000;
+    width: 980px;
+    padding-top: 15px;
+    color: #fefdfd;
+}
+.padding {
+    padding: 40px 21px;
+}
+.rectangleWhiteLeft {
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    width: 810px;
+    height: 144px;
+    padding: 10px 10px 10px 233px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-left: -233px;
+    box-sizing: border-box;
+}
+.rectangleWhiteRight {
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    width: 810px;
+    height: 144px;
+    padding: 10px 233px 10px 25px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-left: 361px;
+    box-sizing: border-box;
+}
+.column2Left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 318px;
+}
+.column2Right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 318px;
+    text-align: end;
+}
+
+.columnImage1 {
+    background-image: url("../images/accompagnement-heart-n-brain.webp");
+    height: 100%;
+    width: 224px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.columnImage2 {
+    background-image: url("../images/outils-pratique.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 224px;
+    margin-left: 10px;
+}
+.columnImage3 {
+    background-image: url("../images//coaching-bienveillance.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 224px;
+    margin-right: 10px;
+}
+.separatorWhite {
+    width: 40px;
+    height: 40px;
+    border-top: white solid 2px;
+    margin-top: 40px;
+}
+.h2Yellow {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f7b800;
+}
+.h2 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.strong {
+    color: #de5021;
+}
+.text {
+    margin-bottom: 20px;
+}
+.italic {
+    font-style: italic;
+}
+.concept {
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+}
+.details {
+    margin-right: 10px;
+}
+.h3Blue {
+    color: #a5c8de;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.h3DarkBlue {
+    color: #3078be;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.h3Yellow {
+    color: #f7b800;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.ol {
+    margin-left: 25px;
+    list-style: inherit;
+}
+.p {
+    margin-bottom: 20px;
+    line-height: 16.5px;
+}
+.a {
+    color: #3078be;
+    text-decoration: underline;
+    cursor: pointer;
+}

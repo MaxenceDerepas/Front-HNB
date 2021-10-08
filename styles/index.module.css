@@ -1,0 +1,159 @@
+.content {
+    background-image: url("../images/heart-n-brain-fond-ecran.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+    color: white;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.container {
+    width: 980px;
+    margin: auto;
+}
+.title {
+    height: 110px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    font-size: 25px;
+    letter-spacing: 4.5px;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+.h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    font-weight: bold;
+}
+.separatorWhite {
+    width: 40px;
+    height: 40px;
+    border-top: white solid 2px;
+}
+.separatorBlack {
+    width: 40px;
+    height: 40px;
+    border-top: black solid 2px;
+}
+.p {
+    margin-bottom: 20px;
+}
+.strong {
+    color: #f7b800;
+}
+.italique {
+    font-style: italic;
+}
+.promise {
+    background-color: #000;
+    padding: 50px 0;
+}
+.padding {
+    padding: 0 21px;
+}
+.columns {
+    display: flex;
+    justify-content: space-between;
+}
+.column {
+    width: 280px;
+}
+.image {
+    margin-bottom: 10px;
+}
+.reveal {
+    background-color: #fff;
+    color: #000;
+    padding: 50px 25px;
+}
+.columnsVideo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.video {
+    margin-right: 6px;
+}
+.movie {
+    border: none;
+    height: 280px;
+    width: 480px;
+}
+.ul {
+    list-style: initial;
+    margin: 15px 0;
+    margin-left: 20px;
+}
+.a {
+    text-decoration: underline;
+    color: #3078be;
+}
+.contact {
+    color: #fefdfd;
+    padding: 50px 0;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 533px;
+    color: #fefdfd;
+}
+.input {
+    margin-bottom: 5px;
+    border: solid #fefdfd 2px;
+    background-color: #000;
+    height: 32px;
+    padding: 0 5px;
+    color: #fefdfd;
+    font-size: 15px;
+}
+.area {
+    margin-bottom: 8px;
+    border: solid #fefdfd 2px;
+    background-color: #000;
+    height: 130px;
+    padding: 5px;
+    font-size: 15px;
+    color: #fefdfd;
+}
+.area::placeholder {
+    color: #fefdfd;
+}
+.input::placeholder {
+    color: #fefdfd;
+}
+.button {
+    color: #fefdfd;
+    background-color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+.button:hover {
+    color: skyblue;
+}
+.succes {
+    color: #dec328;
+    display: flex;
+    justify-content: space-between;
+}
+.text {
+    width: 533px;
+    margin-bottom: 40px;
+    line-height: 23px;
+}
+.span {
+    color: #f7b800;
+    text-decoration: underline;
+}
+@media (max-width: 600px) {
+    .grid {
+        width: 100%;
+        flex-direction: column;
+    }
+}

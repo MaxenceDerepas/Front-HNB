@@ -1,0 +1,43 @@
+.content {
+    background-image: url("../images/heart-n-brain-fond-ecran.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fefdfd;
+    font-weight: lighter;
+    font-size: 15px;
+}
+.container {
+    width: 980px;
+    margin: auto;
+    padding: 10px 21px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.title {
+    color: #f7b800;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.text {
+    line-height: 16px;
+    margin-bottom: 20px;
+}
+.list {
+    list-style: initial;
+    margin-left: 30px;
+}
+.textList {
+    line-height: 16px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+.a {
+    color: #3078be;
+    text-decoration: underline;
+}
+.textMin {
+    font-style: italic;
+    font-size: 12px;
+}

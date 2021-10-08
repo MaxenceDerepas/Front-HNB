@@ -1,0 +1,42 @@
+.container {
+    color: #fefdfd;
+    width: 980px;
+    margin: auto;
+    font-size: 29px;
+    font-weight: bold;
+    display: flex;
+    padding-top: 85px;
+    justify-content: space-between;
+}
+.column1 {
+    cursor: pointer;
+    border-radius: 10px;
+    height: 270px;
+    width: 480px;
+    background-image: url("../images/Groupe.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.column1:hover {
+    color: skyblue;
+}
+.column2 {
+    cursor: pointer;
+    border-radius: 10px;
+    height: 270px;
+    width: 470px;
+    background-image: url("../images/Coaching\ 2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.column2:hover {
+    color: skyblue;
+}
+.text {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-top: 190px;
+}
