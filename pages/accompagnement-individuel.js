@@ -18,6 +18,10 @@ export default function Individual() {
                     Brain
                 </title>
                 <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1.0"
+                />
+                <meta
                     name="description"
                     content="Notre concept de coaching en anglais professionnel se fonde sur une approche pédagogique à la fois bienveillante et opérationnelle."
                 />

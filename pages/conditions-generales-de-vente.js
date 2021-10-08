@@ -10,6 +10,10 @@ export default function TermOfSales() {
             <Head>
                 <title>Conditions Générales de Vente | Heart n Brain</title>
                 <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1.0"
+                />
+                <meta
                     name="description"
                     content="Vos coachs Heart n Brain partagent leurs tips, bonnes pratiques et exemples d'expériences pour vous aider à améliorer votre pratique de l'anglais professionnel !"
                 />

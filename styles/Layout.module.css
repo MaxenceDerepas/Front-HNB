@@ -143,14 +143,14 @@
 }
 
 /* mobile version */
-@media (max-width: 650px) {
+@media (min-width: 320px) and (max-width: 650px) {
     .container {
         padding: 20px;
         display: flex;
         align-items: center;
         box-sizing: border-box;
         width: 100%;
-        font-size: 18px;
+        font-size: 80sp;
     }
     .navigation {
         display: none;

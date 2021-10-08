@@ -14,12 +14,15 @@ export default function Layout({ children }) {
     const [hoverOffer, setHoverOffer] = useState(false);
     const [openNavMobile, setOpenNavMobile] = useState(false);
     const [width, setWidth] = useState(null);
+    const [PixelRatio, setPixelRatio] = useState(null);
     console.log(width);
+    console.log(PixelRatio);
 
     useEffect(() => {
         if (typeof window !== "undefined") {
             setWidth(window.innerWidth);
-            console.log(window);
+            setPixelRatio(window.devicePixelRatio);
+            console.log(window.screen.width * window.devicePixelRatio);
         }
     }, []);
 

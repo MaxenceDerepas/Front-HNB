@@ -9,6 +9,10 @@ export default function OurOffers() {
         <Layout>
             <Head>
                 <title>Notre philosophie | Paris | Heart n Brain</title>
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1.0"
+                />
                 <meta property="og:site_name" content="Heart n Brain" />
                 <meta property="og:type" content="website" />
                 <meta
