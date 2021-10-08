@@ -19,6 +19,7 @@ export default function Layout({ children }) {
     useEffect(() => {
         if (typeof window !== "undefined") {
             setWidth(window.innerWidth);
+            console.log(window);
         }
     }, []);
 
@@ -67,14 +68,17 @@ export default function Layout({ children }) {
             >
                 <section className={styles.container}>
                     <div className={styles.title}>
-                        <Image
-                            src={Logo}
-                            width={90}
-                            height={58}
-                            objectFit={"contain"}
-                            alt="Logo heart-n-brain"
-                            title="heart-n-brain"
-                        />
+                        <div style={{ display: width < 410 && "none" }}>
+                            <Image
+                                src={Logo}
+                                width={90}
+                                height={58}
+                                objectFit={"contain"}
+                                alt="Logo heart-n-brain"
+                                title="heart-n-brain"
+                            />
+                        </div>
+
                         <h1>
                             <span>Révélateur d'anglofans</span>
                             <br />

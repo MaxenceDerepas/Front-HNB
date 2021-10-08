@@ -1,6 +1,6 @@
 import Layout from "../components/layout";
 import Head from "next/head";
-import styles from "../styles/OurOffers.module.css";
+import styles from "../styles/ourOffers.module.css";
 import Link from "next/link";
 
 export default function OurOffers() {
