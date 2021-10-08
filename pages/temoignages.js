@@ -5,7 +5,7 @@ import Image from "next/dist/client/image";
 import { useState } from "react";
 
 import HEC from "../images/HEC-heart-n-brain.jpg";
-import LOREAL from "../images/LOREAL-heart-n-brain.png";
+import LOREAL from "../images/LOREAL-Heart-n-brain.png";
 import KEOLIS from "../images/keolis-heart-n-brain.png";
 import ACCENTURE from "../images/Accenture-heart-n-brain.png";
 import PEGA from "../images/Pega-heart-n-brain.png";
