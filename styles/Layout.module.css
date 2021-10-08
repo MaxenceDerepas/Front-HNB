@@ -150,7 +150,7 @@
         align-items: center;
         box-sizing: border-box;
         width: 100%;
-        font-size: 80sp;
+        font-size: 18px;
     }
     .navigation {
         display: none;
