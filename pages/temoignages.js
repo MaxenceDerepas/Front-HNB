@@ -1,11 +1,11 @@
 import Layout from "../components/layout";
 import Head from "next/head";
 import styles from "../styles/Testimony.module.css";
-import Image from "next/dist/client/image";
+import Image from "next/image";
 import { useState } from "react";
 
 import HEC from "../images/HEC-heart-n-brain.jpg";
-import LOREAL from "../images/LOREAL-Heart-n-brain.png";
+import LOREAL from "../images/LOreal-heart-n-brain.png.png";
 import KEOLIS from "../images/keolis-heart-n-brain.png";
 import ACCENTURE from "../images/Accenture-heart-n-brain.png";
 import PEGA from "../images/Pega-heart-n-brain.png";
