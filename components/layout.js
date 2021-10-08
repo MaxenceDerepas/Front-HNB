@@ -14,15 +14,12 @@ export default function Layout({ children }) {
     const [hoverOffer, setHoverOffer] = useState(false);
     const [openNavMobile, setOpenNavMobile] = useState(false);
     const [width, setWidth] = useState(null);
-    const [PixelRatio, setPixelRatio] = useState(null);
-    console.log(width);
-    console.log(PixelRatio);
+    const [widthMobile, setWidthMobile] = useState(null);
 
     useEffect(() => {
         if (typeof window !== "undefined") {
             setWidth(window.innerWidth);
-            setPixelRatio(window.devicePixelRatio);
-            console.log(window.screen.width * window.devicePixelRatio);
+            setWidthMobile(window.screen.width / window.devicePixelRatio);
         }
     }, []);
 
@@ -52,12 +49,18 @@ export default function Layout({ children }) {
                               width: "100%",
                               borderBottomLeftRadius: "20px",
                               borderBottomRightRadius: "20px",
-                              overflow: width <= 650 ? "hidden" : "visible",
+                              overflow:
+                                  width <= 650 || widthMobile <= 650
+                                      ? "hidden"
+                                      : "visible",
                           }
                         : {
                               zIndex: "1",
                               backgroundColor: "#FFF",
-                              overflow: width <= 650 ? "hidden" : "visible",
+                              overflow:
+                                  width <= 650 || widthMobile <= 650
+                                      ? "hidden"
+                                      : "visible",
                               height: "92px",
                               display: "flex",
                               flexDirection: "column",
