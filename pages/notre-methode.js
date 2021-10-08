@@ -3,7 +3,7 @@ import Head from "next/head";
 import styles from "../styles/OurMethode.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import Visuel from "../images/heart-n-brain-parcours-de-Chloe.png";
+import Visuel from "../images/Heart-n-brain-parcours-de-Chloe.png";
 
 export default function OurOffers() {
     return (
