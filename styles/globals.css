@@ -148,3 +148,14 @@ nav {
 html {
     scroll-behavior: smooth;
 }
+@media only screen and (min-width: 320px) and (max-width: 650px) {
+    .content {
+        width: 100%;
+    }
+    .container,
+    header,
+    main,
+    footer {
+        width: 100vw;
+    }
+}
