@@ -234,7 +234,14 @@ export default function Layout({ children }) {
                         </ul>
                     </nav>
                     <div className={styles.menu} onClick={navMobile}>
-                        <Image id="menu" src={Menu} height={40} width={40} />
+                        <div>
+                            <Image
+                                id="menu"
+                                src={Menu}
+                                height={40}
+                                width={40}
+                            />
+                        </div>
                     </div>
                 </section>
                 <div className={styles.listMobile}>
@@ -315,7 +322,7 @@ export default function Layout({ children }) {
             </header>
             <main className={styles.main}>{children}</main>
             <footer className={styles.footer}>
-                <section className={styles.container}>
+                <section className={styles.containerFooter}>
                     <div className={styles.link}>
                         <Link href="/#contact">Contact</Link>
                         <Link href="/mentions-legales-confidentialite">
