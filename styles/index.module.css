@@ -55,6 +55,9 @@
 .padding {
     padding: 0 21px;
 }
+.paddingContact {
+    padding: 0 21px;
+}
 .columns {
     display: flex;
     justify-content: space-between;
@@ -155,9 +158,7 @@
     .content {
         width: 100vw;
     }
-    .promise {
-        border: red solid 1px;
-    }
+
     .container {
         margin: 0 auto;
         width: 100vw;
@@ -182,13 +183,13 @@
     .columnsVideo {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 100vw;
     }
     .video {
-        width: 50%;
-        margin: auto;
         overflow: hidden;
+        width: 100%;
+    }
+    .movie {
+        width: 100%;
     }
     .separatorBlack {
         display: none;
@@ -197,8 +198,6 @@
         display: none;
     }
     .reveal {
-        border: red solid 1px;
-
         box-sizing: border-box;
         background-color: #fff;
         display: flex;
@@ -207,17 +206,14 @@
     .padding {
         margin: 0 auto;
     }
-    .contact {
-        flex-wrap: wrap;
-        border: red solid 1px;
 
-        width: 100vw;
-    }
     .form {
         display: flex;
         flex-direction: column;
-        width: 100vw;
         color: #fefdfd;
+        width: 98%;
+        margin: 0 auto;
+        margin-top: 10px;
     }
     .input {
         margin-bottom: 5px;
@@ -227,6 +223,9 @@
         padding: 0 5px;
         color: #fefdfd;
         font-size: 15px;
-        width: 90%;
+    }
+    .text {
+        width: 98%;
+        margin: 0 auto;
     }
 }
