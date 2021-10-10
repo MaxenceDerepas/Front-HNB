@@ -2,6 +2,3 @@ User-agent: *
 Disallow: /blog
 Disallow: /mentions-legales-confidentialite
 Disallow: /conditions-generales-de-vente
-Disallow: /nos-offres
-Disallow: /faq
-Disallow: /notre-concept
