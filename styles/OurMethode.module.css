@@ -22,7 +22,6 @@
     width: 810px;
     height: 144px;
     padding: 10px 10px 10px 233px;
-    box-sizing: border-box;
     margin-bottom: 20px;
     margin-left: -233px;
     box-sizing: border-box;
@@ -33,7 +32,6 @@
     width: 810px;
     height: 144px;
     padding: 10px 233px 10px 25px;
-    box-sizing: border-box;
     margin-bottom: 20px;
     margin-left: 361px;
     box-sizing: border-box;
@@ -144,4 +142,71 @@
     color: #3078be;
     text-decoration: underline;
     cursor: pointer;
+}
+@media only screen and (min-width: 320px) and (max-width: 650px) {
+    .content {
+        width: 100vw;
+    }
+    .container {
+        padding: 0;
+        margin: 0 auto;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .concept {
+        display: flex;
+        flex-direction: column;
+    }
+    .rectangleWhiteLeft {
+        width: 100%;
+        display: flex;
+        height: fit-content;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+    .rectangleWhiteRight {
+        width: 100%;
+        display: flex;
+        height: fit-content;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+    .columnImage1 {
+        display: none;
+    }
+    .columnImage2 {
+        display: none;
+    }
+    .columnImage3 {
+        display: none;
+    }
+    .separatorWhite {
+        display: none;
+    }
+    .separatorBlack {
+        display: none;
+    }
+    .column2Left {
+        width: 100%;
+        padding: 5px;
+        margin: 0 auto;
+        height: min-content;
+        text-align: initial;
+    }
+    .column2Right {
+        width: 100%;
+        padding: 5px;
+        margin: 0 auto;
+        height: min-content;
+        text-align: initial;
+    }
+    .h2Yellow {
+        margin-bottom: 7px;
+    }
+    .exemple {
+        margin-top: 20px;
+    }
 }
