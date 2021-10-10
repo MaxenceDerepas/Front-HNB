@@ -37,6 +37,7 @@ export default function Layout({ children }) {
                 style={
                     openNavMobile
                         ? {
+                              boxSizing: "border-box",
                               zIndex: "1",
                               backgroundColor: "#F5E89F",
                               display: "flex",
@@ -46,7 +47,7 @@ export default function Layout({ children }) {
                               height: "430px",
                               top: "0",
                               transitionDuration: "0.35s",
-                              width: "100%",
+                              width: "100vw",
                               borderBottomLeftRadius: "20px",
                               borderBottomRightRadius: "20px",
                               overflow:
@@ -55,6 +56,8 @@ export default function Layout({ children }) {
                                       : "visible",
                           }
                         : {
+                              boxSizing: "border-box",
+
                               zIndex: "1",
                               backgroundColor: "#FFF",
                               overflow:
@@ -68,7 +71,7 @@ export default function Layout({ children }) {
                               position: "fixed",
                               top: "0",
                               transitionDuration: "0.35s",
-                              width: "100%",
+                              width: "100vw",
                           }
                 }
             >

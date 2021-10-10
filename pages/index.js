@@ -50,8 +50,7 @@ export default function Home() {
                 </title>
                 <meta
                     name="viewport"
-                    content="width=320, user-scalable=yes"
-                    id="wixMobileViewport"
+                    content="width=device-width, initial-scale=1.0"
                 />
                 <meta
                     name="viewport"
