@@ -80,7 +80,13 @@ export default function Individual() {
                         </h1>
                         <div className={styles.infos}>
                             <div className={styles.info}>
-                                <Image src={Pin} height={30} width={30} />
+                                <Image
+                                    alt="logo heart n brain"
+                                    title="logo"
+                                    src={Pin}
+                                    height={30}
+                                    width={30}
+                                />
                                 <p className={styles.textInfo}>
                                     <strong className={styles.strong}>
                                         Votre objectif et votre ambition
@@ -91,7 +97,13 @@ export default function Individual() {
                                 </p>
                             </div>
                             <div className={styles.info}>
-                                <Image src={Palette} height={30} width={30} />
+                                <Image
+                                    alt="logo heart n brain"
+                                    title="logo"
+                                    src={Palette}
+                                    height={30}
+                                    width={30}
+                                />
                                 <p className={styles.textInfo}>
                                     <strong className={styles.strong}>
                                         Vos univers lexicaux
@@ -102,7 +114,13 @@ export default function Individual() {
                                 </p>
                             </div>
                             <div className={styles.info}>
-                                <Image src={Point} height={30} width={30} />
+                                <Image
+                                    alt="logo heart n brain"
+                                    title="logo"
+                                    src={Point}
+                                    height={30}
+                                    width={30}
+                                />
                                 <p className={styles.textInfo}>
                                     <strong className={styles.strong}>
                                         Vos freins

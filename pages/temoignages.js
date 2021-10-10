@@ -86,6 +86,8 @@ export default function Testimony({ data }) {
                 >
                     <div className={styles.chevron}>
                         <Image
+                            alt="fleche defilement image"
+                            title="vers la gauche"
                             src={Left}
                             height={80}
                             width={180}
@@ -99,11 +101,19 @@ export default function Testimony({ data }) {
                             <p className={styles.textTitle}>
                                 ILS PARLENT DE NOUS
                             </p>
-                            <Image src={LINKEDIN} height={30} width={30} />
+                            <Image
+                                alt="logo linkedin"
+                                title="linkedin"
+                                src={LINKEDIN}
+                                height={30}
+                                width={30}
+                            />
                         </h1>
                     </div>
                     <div className={styles.chevron}>
                         <Image
+                            alt="fleche defilement image"
+                            title="vers la droite"
                             src={Right}
                             height={80}
                             width={180}

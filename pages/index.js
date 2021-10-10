@@ -253,6 +253,8 @@ export default function Home() {
                                     src="https://res.cloudinary.com/dprljzowa/video/upload/v1633456973/Re_d%C3%A9couvrez_Heart_n_Brain_opkk8z.mp4"
                                     height="230px"
                                     width="460px"
+                                    alt="video presentation heart n brain"
+                                    title="presentation heart n brain"
                                 />
                             </div>
                             <div>
