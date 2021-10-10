@@ -60,7 +60,7 @@
         padding-top: 40px;
     }
     .column1 {
-        width: 91%;
+        width: 93%;
         margin: 0 auto;
         margin-bottom: 20px;
         height: 250px;
@@ -73,8 +73,11 @@
         text-align: center;
     }
     .text {
-        margin-top: 45%;
+        margin-top: 40%;
         padding: 8px;
-        font-size: 18px;
+        font-size: 16px;
+    }
+    .textYellow {
+        margin-top: 10px;
     }
 }
