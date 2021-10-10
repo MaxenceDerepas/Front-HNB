@@ -40,3 +40,25 @@
     padding: 5px;
     margin-top: 190px;
 }
+@media only screen and (min-width: 320px) and (max-width: 650px) {
+    .container {
+        width: 100vw;
+        flex-direction: column;
+        padding-top: 40px;
+    }
+    .column1 {
+        width: 91%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        height: 250px;
+    }
+    .column2 {
+        margin: 0 auto;
+        width: 91%;
+        height: 250px;
+    }
+    .text {
+        padding: 8px;
+        font-size: 24px;
+    }
+}
