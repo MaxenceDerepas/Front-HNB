@@ -157,3 +157,55 @@
     background-color: #fff;
     color: black;
 }
+@media only screen and (min-width: 320px) and (max-width: 650px) {
+    .content {
+        width: 100vw;
+    }
+    .container {
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .separatorWhite {
+        display: none;
+    }
+    .separatorBlack {
+        display: none;
+    }
+    .rectangleWhite {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        margin-left: -21px;
+        padding: 10px;
+        padding-top: 0;
+    }
+    .h2Yellow {
+        margin-top: 8px;
+        margin-bottom: 7px;
+    }
+    .p {
+        margin-bottom: 6px;
+    }
+    .infos {
+        display: flex;
+        flex-direction: column;
+    }
+    .info {
+        margin: 0 auto;
+        margin-bottom: 22px;
+        border-bottom: white solid 1px;
+        padding-bottom: 22px;
+    }
+    .img {
+        display: none;
+    }
+    .essai {
+        width: 100%;
+    }
+}
