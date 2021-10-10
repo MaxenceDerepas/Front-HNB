@@ -7,12 +7,15 @@ import styles from "../styles/Layout.module.css";
 import Logo from "../images/Heart-n-Brain.png";
 import chevron from "../images/chevron-up.svg";
 import Menu from "../images/menu.svg";
+import Plus from "../images/plus.svg";
 
 export default function Layout({ children }) {
     const router = useRouter();
     const [hoverConcept, setHoverConcept] = useState(false);
     const [hoverOffer, setHoverOffer] = useState(false);
     const [openNavMobile, setOpenNavMobile] = useState(false);
+    const [openOfferMobile, setOpenOfferMobile] = useState(false);
+    const [openConceptMobile, setOpenConceptMobile] = useState(false);
     const [width, setWidth] = useState(null);
     const [widthMobile, setWidthMobile] = useState(null);
 
@@ -24,7 +27,21 @@ export default function Layout({ children }) {
     }, []);
 
     const navMobile = () => {
+        if (openNavMobile && openOfferMobile) {
+            plusOffer();
+        }
+        if (openNavMobile && openConceptMobile) {
+            plusConcept();
+        }
         setOpenNavMobile(!openNavMobile);
+    };
+
+    const plusOffer = () => {
+        setOpenOfferMobile(!openOfferMobile);
+    };
+
+    const plusConcept = () => {
+        setOpenConceptMobile(!openConceptMobile);
     };
 
     const scrollToTop = () => {
@@ -44,7 +61,13 @@ export default function Layout({ children }) {
                               alignItems: "center",
                               flexDirection: "column",
                               position: "fixed",
-                              height: "430px",
+                              height:
+                                  !openConceptMobile && !openOfferMobile
+                                      ? "420px"
+                                      : openOfferMobile && openConceptMobile
+                                      ? "560px"
+                                      : "490px",
+                              paddingBottom: "10px",
                               top: "0",
                               transitionDuration: "0.35s",
                               width: "100vw",
@@ -259,7 +282,7 @@ export default function Layout({ children }) {
                             >
                                 <Link href="/">Home</Link>
                             </li>
-                            <li
+                            <div
                                 className={
                                     router.pathname === "/notre-concept" ||
                                     router.pathname === "/notre-philosophie" ||
@@ -268,9 +291,75 @@ export default function Layout({ children }) {
                                         : styles.liMobile
                                 }
                             >
-                                <Link href="/notre-concept">Notre concept</Link>
-                            </li>
-                            <li
+                                <div
+                                    style={{
+                                        display: "flex",
+                                        alignItems: "center",
+                                    }}
+                                >
+                                    <div
+                                        onClick={plusConcept}
+                                        className={styles.plus}
+                                    >
+                                        <Image src={Plus} />
+                                    </div>
+                                    <Link href="/notre-concept">
+                                        Notre concept
+                                    </Link>
+                                </div>
+                                <div
+                                    style={
+                                        openConceptMobile
+                                            ? {
+                                                  display: "flex",
+                                                  flexDirection: "column",
+                                                  justifyContent:
+                                                      "space-between",
+                                                  alignItems: "center",
+                                                  marginTop: "20px",
+                                                  transitionDuration: "0.35s",
+                                                  height: "50px",
+                                                  fontWeight: "lighter",
+                                              }
+                                            : {
+                                                  display: "flex",
+                                                  flexDirection: "column",
+                                                  justifyContent:
+                                                      "space-between",
+                                                  alignItems: "center",
+                                                  transitionDuration: "0.35s",
+                                                  overflow: "hidden",
+                                                  height: "0px",
+                                              }
+                                    }
+                                >
+                                    <Link href="/notre-philosophie">
+                                        <a
+                                            className={
+                                                router.pathname ===
+                                                "/notre-philosophie"
+                                                    ? styles.liMobileActive2
+                                                    : styles.liMobile2
+                                            }
+                                        >
+                                            Notre philosophie
+                                        </a>
+                                    </Link>
+                                    <Link href="/notre-methode">
+                                        <a
+                                            className={
+                                                router.pathname ===
+                                                "/notre-methode"
+                                                    ? styles.liMobileActive2
+                                                    : styles.liMobile2
+                                            }
+                                        >
+                                            Notre methode
+                                        </a>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div
                                 className={
                                     router.pathname === "/nos-offres" ||
                                     router.pathname ===
@@ -281,11 +370,78 @@ export default function Layout({ children }) {
                                         : styles.liMobile
                                 }
                             >
-                                <Link href="/nos-offres">Nos offres</Link>
-                            </li>
+                                <div
+                                    style={{
+                                        display: "flex",
+                                        alignItems: "center",
+                                    }}
+                                >
+                                    <div
+                                        onClick={plusOffer}
+                                        className={styles.plus}
+                                    >
+                                        <Image src={Plus} />
+                                    </div>
+                                    <Link href="/nos-offres">Nos offres</Link>
+                                </div>
+                                <div
+                                    style={
+                                        openOfferMobile
+                                            ? {
+                                                  display: "flex",
+                                                  flexDirection: "column",
+                                                  justifyContent:
+                                                      "space-between",
+                                                  alignItems: "center",
+                                                  marginTop: "20px",
+                                                  transitionDuration: "0.35s",
+                                                  height: "50px",
+                                                  width: "240px",
+                                                  fontWeight: "lighter",
+                                              }
+                                            : {
+                                                  display: "flex",
+                                                  flexDirection: "column",
+                                                  justifyContent:
+                                                      "space-between",
+                                                  alignItems: "center",
+                                                  width: "240px",
+
+                                                  transitionDuration: "0.35s",
+                                                  overflow: "hidden",
+                                                  height: "0px",
+                                              }
+                                    }
+                                >
+                                    <Link href="/accompagnement-individuel">
+                                        <a
+                                            className={
+                                                router.pathname ===
+                                                "/accompagnement-individuel"
+                                                    ? styles.liMobileActive2
+                                                    : styles.liMobile2
+                                            }
+                                        >
+                                            Accompagnement individuel
+                                        </a>
+                                    </Link>
+                                    <Link href="/accompagnement-collectif">
+                                        <a
+                                            className={
+                                                router.pathname ===
+                                                "/accompagnement-collectif"
+                                                    ? styles.liMobileActive2
+                                                    : styles.liMobile2
+                                            }
+                                        >
+                                            Accompagnement collectif
+                                        </a>
+                                    </Link>
+                                </div>
+                            </div>
                             <li
                                 className={
-                                    router.pathname === ""
+                                    router.pathname === "temoignages"
                                         ? styles.liMobileActive
                                         : styles.liMobile
                                 }

@@ -34,9 +34,9 @@ export default function TermOfSales() {
                 <link rel="icon" href="/favicon-heart-n-brain.png" />
             </Head>
             <section className={styles.container}>
-                <h2 className={styles.h2}>
+                <h1 className={styles.h2}>
                     CONDITIONS GÉNÉRALES DE VENTE PARTICULIERS
-                </h2>
+                </h1>
                 <p className={styles.p}>En vigueur à compter du 04/12/2019</p>
                 <p className={styles.p}>
                     Les présentes conditions générales de vente et d’utilisation

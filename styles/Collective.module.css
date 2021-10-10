@@ -152,4 +152,69 @@
     color: black;
 }
 @media only screen and (min-width: 320px) and (max-width: 650px) {
+    .content {
+        width: 100vw;
+        background-image: none;
+        background-color: black;
+    }
+    .container {
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .separatorWhite {
+        display: none;
+    }
+    .separatorBlack {
+        display: none;
+    }
+    .rectangleWhite {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        margin-left: -21px;
+        padding: 10px 21px;
+        padding-top: 0;
+    }
+    .h2Yellow {
+        margin-top: 8px;
+        margin-bottom: 7px;
+        font-size: 12px;
+    }
+    .p {
+        margin-bottom: 6px;
+    }
+    .img {
+        display: none;
+    }
+    .infos {
+        display: flex;
+        flex-direction: column;
+    }
+    .info p {
+        margin-bottom: 7px;
+    }
+    .info {
+        width: 100%;
+    }
+    .infos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .infoThematique {
+        width: 100%;
+    }
+    .thematique {
+        width: 100vw;
+    }
+    .essai {
+        width: 100vw;
+        margin-left: -21px;
+    }
 }
