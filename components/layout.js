@@ -262,6 +262,8 @@ export default function Layout({ children }) {
                     <div className={styles.menu} onClick={navMobile}>
                         <div>
                             <Image
+                                alt="menu"
+                                title="menu"
                                 id="menu"
                                 src={Menu}
                                 height={40}
@@ -301,7 +303,11 @@ export default function Layout({ children }) {
                                         onClick={plusConcept}
                                         className={styles.plus}
                                     >
-                                        <Image src={Plus} />
+                                        <Image
+                                            src={Plus}
+                                            alt="navigation concept"
+                                            title="plus"
+                                        />
                                     </div>
                                     <Link href="/notre-concept">
                                         Notre concept
@@ -380,7 +386,11 @@ export default function Layout({ children }) {
                                         onClick={plusOffer}
                                         className={styles.plus}
                                     >
-                                        <Image src={Plus} />
+                                        <Image
+                                            src={Plus}
+                                            alt="navigation offres"
+                                            title="plus offres"
+                                        />
                                     </div>
                                     <Link href="/nos-offres">Nos offres</Link>
                                 </div>
@@ -493,6 +503,8 @@ export default function Layout({ children }) {
                     </div>
                     <div className={styles.chevron}>
                         <Image
+                            alt="retour en haut de la page"
+                            title="top page"
                             src={chevron}
                             width={30}
                             height={30}
