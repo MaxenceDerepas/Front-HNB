@@ -10,6 +10,7 @@ export default function Blog() {
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"
                 />
+                <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
                 <link
                     rel="canonical"
                     href="https://front-hnb.vercel.app/blog"

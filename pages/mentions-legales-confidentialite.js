@@ -14,6 +14,7 @@ export default function LegalNotice() {
                     rel="canonical"
                     href="https://www.heart-n-brain.com/mentions-legales-confidentialite"
                 ></link>
+                <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"

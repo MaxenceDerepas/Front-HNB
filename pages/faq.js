@@ -15,6 +15,7 @@ export default function Faq() {
                     rel="canonical"
                     href="https://front-hnb.vercel.app/faq"
                 ></link>
+                <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"

@@ -13,6 +13,7 @@ export default function TermOfSales() {
                     rel="canonical"
                     href="https://front-hnb.vercel.app/conditions-generales-de-vente"
                 ></link>
+                <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"

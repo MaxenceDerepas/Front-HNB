@@ -17,6 +17,7 @@ export default function Individual() {
                     Coaching anglais individuel particuliers | Paris | Heart n
                     Brain
                 </title>
+                <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
                 <link
                     rel="canonical"
                     href="https://front-hnb.vercel.app/accompagnement-individuel"

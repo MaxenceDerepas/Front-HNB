@@ -55,6 +55,7 @@ export default function Testimony({ data }) {
                     rel="canonical"
                     href="https://front-hnb.vercel.app/temoignages"
                 ></link>
+                <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"
