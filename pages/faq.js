@@ -42,31 +42,33 @@ export default function Faq() {
                         Comment savoir si la méthode Heart n Brain est faite
                         pour moi ?
                     </h1>
-                    <p className={styles.text}>
-                        <ul className={styles.list}>
-                            <li>
-                                Vous arrivez à vous exprimer simplement mais
-                                prendre la parole en anglais en public vous rend
-                                nerveux ?
-                            </li>
-                            <li>
-                                Vous avez répété 12 fois votre question dans
-                                votre tête mais au moment d'intervenir en
-                                réunion, vous n'osez plus vous lancer ?
-                            </li>
-                            <li>
-                                Des interlocuteurs anglophones vous posent une
-                                question que vous ne comprenez pas bien mais
-                                vous n’osez pas les faire répéter ?
-                            </li>
-                            <li>
-                                Un recruteur vous propose le job de vos rêves
-                                mais le fait que cela soit en anglais vous
-                                angoisse ?
-                            </li>
-                        </ul>
-                    </p>
-                    <p className={styles.text}>
+                    <ul className={styles.list}>
+                        <li>
+                            Vous arrivez à vous exprimer simplement mais prendre
+                            la parole en anglais en public vous rend nerveux ?
+                        </li>
+                        <li>
+                            Vous avez répété 12 fois votre question dans votre
+                            tête mais au moment d'intervenir en réunion, vous
+                            n'osez plus vous lancer ?
+                        </li>
+                        <li>
+                            Des interlocuteurs anglophones vous posent une
+                            question que vous ne comprenez pas bien mais vous
+                            n’osez pas les faire répéter ?
+                        </li>
+                        <li>
+                            Un recruteur vous propose le job de vos rêves mais
+                            le fait que cela soit en anglais vous angoisse ?
+                        </li>
+                    </ul>
+                    <p
+                        style={{
+                            lineHeight: " 16px",
+                            marginBottom: "20px",
+                            marginTop: "20px",
+                        }}
+                    >
                         Bref, vous sentez que vous manquez d'aisance en anglais
                         et que cela vous empêche d'atteindre votre plein
                         potentiel professionnel.
@@ -134,30 +136,29 @@ export default function Faq() {
                         A l'issue de la séance d'essai, votre future coach vous
                         soumet une proposition de parcours.
                     </p>
-                    <p className={styles.text}>
-                        Ce parcours combine :
-                        <ul className={styles.list}>
-                            <li>
-                                Un nombre de séances, d'une durée d'1h30,
-                                réalisées en présentiel et/ou à distance
-                            </li>
-                            <li>
-                                Un objectif fil rouge, comme par exemple, «
-                                Gagner en leadership en anglais »
-                            </li>
-                            <li>
-                                Des sous-objectifs travaillés au fil des
-                                séances, comme par exemple, « savoir introduire
-                                et animer une réunion », « prendre la parole en
-                                anglais sur un sujet technique », « répondre à
-                                des questions piège », etc.
-                            </li>
-                            <li>
-                                Des univers lexicaux qui vous seront utiles ou
-                                qui vous font vous sentir à l’aise
-                            </li>
-                        </ul>
-                    </p>
+                    <p className={styles.text}>Ce parcours combine : </p>
+                    <ul className={styles.list}>
+                        <li>
+                            Un nombre de séances, d'une durée d'1h30, réalisées
+                            en présentiel et/ou à distance
+                        </li>
+                        <li>
+                            Un objectif fil rouge, comme par exemple, « Gagner
+                            en leadership en anglais »
+                        </li>
+                        <li>
+                            Des sous-objectifs travaillés au fil des séances,
+                            comme par exemple, « savoir introduire et animer une
+                            réunion », « prendre la parole en anglais sur un
+                            sujet technique », « répondre à des questions piège
+                            », etc.
+                        </li>
+                        <li>
+                            Des univers lexicaux qui vous seront utiles ou qui
+                            vous font vous sentir à l’aise
+                        </li>
+                    </ul>
+
                     <p className={styles.text}>
                         Chaque séance de coaching d'1h30 se déroule en 4 temps.
                         Pour en savoir plus sur le déroulé,{" "}
@@ -170,19 +171,19 @@ export default function Faq() {
                     <p className={styles.text}>
                         Après chaque séance, votre coach vous transmet par mail
                         :
-                        <ul className={styles.list}>
-                            <li>
-                                Une synthèse personnalisée de votre séance
-                                (recommandations personnelles, phrases et
-                                lexique utiles)
-                            </li>
-                            <li>
-                                La fiche des bonnes pratiques travaillées en
-                                séance
-                            </li>
-                            <li>Vos éventuels enregistrements</li>
-                        </ul>
                     </p>
+                    <ul className={styles.list}>
+                        <li>
+                            Une synthèse personnalisée de votre séance
+                            (recommandations personnelles, phrases et lexique
+                            utiles)
+                        </li>
+                        <li>
+                            La fiche des bonnes pratiques travaillées en séance
+                        </li>
+                        <li>Vos éventuels enregistrements</li>
+                    </ul>
+
                     <p className={styles.text}>
                         Des séances d'accompagnement ad hoc d'une durée plus
                         courte d’1h peuvent également vous être proposées, en
@@ -193,24 +194,24 @@ export default function Faq() {
                     <p className={styles.text}>
                         Chaque parcours de coaching donne lieu à une séance
                         finale :
-                        <ul className={styles.list}>
-                            <li>
-                                Une mise en situation (entretien d’embauche,
-                                présentation des résultats annuels…) filmée ou
-                                enregistrée
-                            </li>
-                            <li>
-                                Une évaluation et une certification de votre
-                                niveau d'aisance et de votre capacité à
-                                communiquer efficacement en anglais
-                                professionnel.
-                            </li>
-                            <li>
-                                Une synthèse globale des outils et bonnes
-                                pratiques partagés tout au long du parcours
-                            </li>
-                        </ul>
                     </p>
+                    <ul className={styles.list}>
+                        <li>
+                            Une mise en situation (entretien d’embauche,
+                            présentation des résultats annuels…) filmée ou
+                            enregistrée
+                        </li>
+                        <li>
+                            Une évaluation et une certification de votre niveau
+                            d'aisance et de votre capacité à communiquer
+                            efficacement en anglais professionnel.
+                        </li>
+                        <li>
+                            Une synthèse globale des outils et bonnes pratiques
+                            partagés tout au long du parcours
+                        </li>
+                    </ul>
+
                     <h2 className={styles.title}>
                         Combien de séances me faut-il pour atteindre mon
                         objectif ?
@@ -227,38 +228,39 @@ export default function Faq() {
                         <br />
                         Pour vous faire une idée plus précise, voici quelques
                         chiffres intéressants :
-                        <ul className={styles.list}>
-                            <li>
-                                En moyenne, nos coachés passent 2 niveaux dans
-                                l'échelle de confiance après environ 6 à 7
-                                séances d’1h30 de coaching{" "}
-                                <span className={styles.textMin}>
-                                    (mesure réalisée lors de la synthèse finale,
-                                    à travers notre échelle de confiance)
-                                </span>
-                            </li>
-                            <li>
-                                A l'issue de leur parcours, nos coachés ont
-                                acquis en moyenne 88% des compétences de niveau
-                                1 (anglais opérationnel) et 83% des critères de
-                                niveau 2 (anglais managérial){" "}
-                                <span className={styles.textMin}>
-                                    (mesure réalisée lors de la synthèse finale,
-                                    lors du passage de la certification)
-                                </span>
-                            </li>
-                            <li>
-                                Sur une échelle de 1 à 10, nos coachés répondent
-                                en moyenne 9 à la question "Avez-vous atteint
-                                votre objectif ?"{" "}
-                                <span className={styles.textMin}>
-                                    (mesure réalisée lors de la synthèse finale,
-                                    lors de l'échange de cloture réalisé avec le
-                                    coaché)
-                                </span>
-                            </li>
-                        </ul>
                     </p>
+                    <ul className={styles.list}>
+                        <li>
+                            En moyenne, nos coachés passent 2 niveaux dans
+                            l'échelle de confiance après environ 6 à 7 séances
+                            d’1h30 de coaching{" "}
+                            <span className={styles.textMin}>
+                                (mesure réalisée lors de la synthèse finale, à
+                                travers notre échelle de confiance)
+                            </span>
+                        </li>
+                        <li>
+                            A l'issue de leur parcours, nos coachés ont acquis
+                            en moyenne 88% des compétences de niveau 1 (anglais
+                            opérationnel) et 83% des critères de niveau 2
+                            (anglais managérial){" "}
+                            <span className={styles.textMin}>
+                                (mesure réalisée lors de la synthèse finale,
+                                lors du passage de la certification)
+                            </span>
+                        </li>
+                        <li>
+                            Sur une échelle de 1 à 10, nos coachés répondent en
+                            moyenne 9 à la question "Avez-vous atteint votre
+                            objectif ?"{" "}
+                            <span className={styles.textMin}>
+                                (mesure réalisée lors de la synthèse finale,
+                                lors de l'échange de cloture réalisé avec le
+                                coaché)
+                            </span>
+                        </li>
+                    </ul>
+
                     <h2 className={styles.title}>
                         Comment suivre ma progression ?
                     </h2>
@@ -267,18 +269,21 @@ export default function Faq() {
                         permet de partager vos retours sur la séance (comment
                         vous êtes-vous senti ? Que retenez-vous de la séance ?)
                         et de noter votre appréciation sur 3 questions :
-                        <ul className={styles.list}>
-                            <li>
-                                L'adéquation des moyens pédagogiques vis-à-vis
-                                de votre objectif
-                            </li>
-                            <li>Votre niveau de motivation</li>
-                            <li>Votre atteinte de l’objectif</li>
-                        </ul>
+                    </p>
+                    <ul className={styles.list}>
+                        <li>
+                            L'adéquation des moyens pédagogiques vis-à-vis de
+                            votre objectif
+                        </li>
+                        <li>Votre niveau de motivation</li>
+                        <li>Votre atteinte de l’objectif</li>
+                    </ul>
+                    <p className={styles.text}>
                         Ce retour à la fois qualitatif et quantitatif permet au
                         fil de séances de nous assurer que le coaching vous fait
                         progresser avec les moyens les plus adaptés !
                     </p>
+
                     <h2 className={styles.title}>
                         Comment sont créés les contenus ?
                     </h2>
@@ -334,16 +339,19 @@ export default function Faq() {
                     <p className={styles.text}>
                         Les séances de coaching présentiel peuvent se dérouler à
                         votre convenance (à Paris en Ile-de-France) :
-                        <ul className={styles.list}>
-                            <li>Dans vos locaux professionnels</li>
-                            <li>À votre domicile</li>
-                            <li>Dans un lieu extérieur qui vous convient</li>
-                        </ul>
+                    </p>
+                    <ul className={styles.list}>
+                        <li>Dans vos locaux professionnels</li>
+                        <li>À votre domicile</li>
+                        <li>Dans un lieu extérieur qui vous convient</li>
+                    </ul>
+                    <p className={styles.text}>
                         Les séances de coaching à distance sont réalisées via un
                         outil de conférence en ligne (Google Meets, Teams, etc.)
                         selon les contraintes techniques que vous pourriez
                         avoir.
                     </p>
+
                     <h2 className={styles.title}>
                         Combien coûte une séance de coaching ?
                     </h2>
