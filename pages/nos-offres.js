@@ -10,6 +10,10 @@ export default function OurOffers() {
                 <title>
                     Nos offres d'accompagnement | Paris | Heart n Brain
                 </title>
+                <link
+                    rel="canonical"
+                    href="https://www.heart-n-brain.com/nos-offres"
+                ></link>
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"

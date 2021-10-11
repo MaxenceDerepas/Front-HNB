@@ -51,6 +51,10 @@ export default function Testimony({ data }) {
                     Coaching anglais professionnel | Ils parlent de nous | Heart
                     n Brain
                 </title>
+                <link
+                    rel="canonical"
+                    href="https://www.heart-n-brain.com/temoignages"
+                ></link>
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"

@@ -9,6 +9,10 @@ export default function TermOfSales() {
         <Layout>
             <Head>
                 <title>Conditions Générales de Vente | Heart n Brain</title>
+                <link
+                    rel="canonical"
+                    href="https://www.heart-n-brain.com/conditions-generales-de-vente"
+                ></link>
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"

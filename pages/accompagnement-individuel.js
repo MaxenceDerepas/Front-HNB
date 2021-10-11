@@ -17,6 +17,10 @@ export default function Individual() {
                     Coaching anglais individuel particuliers | Paris | Heart n
                     Brain
                 </title>
+                <link
+                    rel="canonical"
+                    href="https://www.heart-n-brain.com/accompagnement-individuel"
+                ></link>
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"

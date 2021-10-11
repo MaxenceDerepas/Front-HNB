@@ -11,6 +11,10 @@ export default function Faq() {
                     Foire aux questions | Coaching Anglais Professionnel | Paris
                     | Heart n Brain
                 </title>
+                <link
+                    rel="canonical"
+                    href="https://www.heart-n-brain.com/faq"
+                ></link>
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"

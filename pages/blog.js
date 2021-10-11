@@ -10,6 +10,10 @@ export default function Blog() {
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"
                 />
+                <link
+                    rel="canonical"
+                    href="https://www.heart-n-brain.com/blog"
+                ></link>
                 <meta
                     name="description"
                     content="Vos coachs Heart n Brain partagent leurs tips, bonnes pratiques et exemples d'expériences pour vous aider à améliorer votre pratique de l'anglais professionnel !"

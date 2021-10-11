@@ -9,6 +9,10 @@ export default function OurOffers() {
         <Layout>
             <Head>
                 <title>Notre philosophie | Paris | Heart n Brain</title>
+                <link
+                    rel="canonical"
+                    href="https://www.heart-n-brain.com/notre-philosophie"
+                ></link>
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"

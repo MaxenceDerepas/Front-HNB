@@ -48,6 +48,10 @@ export default function Home() {
                 <title>
                     Coaching Anglais Professionnel | Paris | Heart n Brain
                 </title>
+                <link
+                    rel="canonical"
+                    href="https://www.heart-n-brain.com"
+                ></link>
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"
