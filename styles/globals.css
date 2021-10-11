@@ -133,14 +133,16 @@ a {
     color: inherit;
 }
 body {
-    line-height: 16px;
-    font-family: "Open Sans", sans-serif;
+    line-height: 17px;
+    font-weight: 16px;
+    font-family: "Tw Cen MT", sans-serif;
 }
 h1,
 h2,
 h3,
 h4 {
     letter-spacing: 2px;
+    font-family: sans-serif;
 }
 nav {
     font-weight: normal;
