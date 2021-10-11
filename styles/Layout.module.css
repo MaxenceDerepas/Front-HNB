@@ -23,7 +23,7 @@
 }
 .title h1 span {
     font-size: 13px;
-    color: #f7b800;
+    color: #f7b700;
     letter-spacing: 2px;
     line-height: 10.8px;
 }
@@ -39,7 +39,7 @@
     justify-content: space-between;
     align-items: center;
     height: 40px;
-    font-size: 15px;
+    font-size: 16px;
 }
 .li {
     display: flex;
@@ -49,10 +49,10 @@
     position: relative;
 }
 .li:hover {
-    color: #f7b800;
+    color: #f7b700;
 }
 .liActive {
-    color: #f7b800;
+    color: #f7b700;
     display: flex;
     align-items: center;
     height: 100%;

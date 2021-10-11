@@ -9,6 +9,8 @@ export default function TermOfSales() {
         <Layout>
             <Head>
                 <title>Conditions Générales de Vente | Heart n Brain</title>
+                <link rel="preload" href={styles} as="style" />
+
                 <link
                     rel="canonical"
                     href="https://front-hnb.vercel.app/conditions-generales-de-vente"

@@ -10,6 +10,8 @@ export default function LegalNotice() {
                 <title>
                     Mentions Légales et confidentialité | Heart n Brain
                 </title>
+                <link rel="preload" href={styles} as="style" />
+
                 <link
                     rel="canonical"
                     href="https://www.heart-n-brain.com/mentions-legales-confidentialite"

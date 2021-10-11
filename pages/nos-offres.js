@@ -10,6 +10,8 @@ export default function OurOffers() {
                 <title>
                     Nos offres d'accompagnement | Paris | Heart n Brain
                 </title>
+                <link rel="preload" href={styles} as="style" />
+
                 <link
                     rel="canonical"
                     href="https://front-hnb.vercel.app/nos-offres"

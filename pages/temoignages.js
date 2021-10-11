@@ -51,6 +51,8 @@ export default function Testimony({ data }) {
                     Coaching anglais professionnel | Ils parlent de nous | Heart
                     n Brain
                 </title>
+                <link rel="preload" href={styles} as="style" />
+
                 <link
                     rel="canonical"
                     href="https://front-hnb.vercel.app/temoignages"

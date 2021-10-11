@@ -9,6 +9,8 @@ export default function OurOffers() {
         <Layout>
             <Head>
                 <title>Notre philosophie | Paris | Heart n Brain</title>
+                <link rel="preload" href={styles} as="style" />
+
                 <link
                     rel="canonical"
                     href="https://front-hnb.vercel.app/notre-philosophie"

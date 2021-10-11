@@ -13,6 +13,8 @@ export default function OurOffers() {
                     Notre méthode de coaching en anglais professionnel | Paris |
                     Heart n Brain
                 </title>
+                <link rel="preload" href={styles} as="style" />
+
                 <link
                     rel="canonical"
                     href="https://front-hnb.vercel.app/notre-methode"

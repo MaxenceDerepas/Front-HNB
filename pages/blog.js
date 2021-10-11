@@ -6,6 +6,8 @@ export default function Blog() {
         <Layout>
             <Head>
                 <title>Blog | Heart n Brain</title>
+                <link rel="preload" href={styles} as="style" />
+
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"

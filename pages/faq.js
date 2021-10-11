@@ -11,6 +11,8 @@ export default function Faq() {
                     Foire aux questions | Coaching Anglais Professionnel | Paris
                     | Heart n Brain
                 </title>
+                <link rel="preload" href={styles} as="style" />
+
                 <link
                     rel="canonical"
                     href="https://front-hnb.vercel.app/faq"

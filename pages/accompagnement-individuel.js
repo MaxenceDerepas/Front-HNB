@@ -17,6 +17,8 @@ export default function Individual() {
                     Coaching anglais individuel particuliers | Paris | Heart n
                     Brain
                 </title>
+                <link rel="preload" href={styles} as="style" />
+
                 <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
                 <link
                     rel="canonical"
