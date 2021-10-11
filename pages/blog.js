@@ -6,7 +6,6 @@ export default function Blog() {
         <Layout>
             <Head>
                 <title>Blog | Heart n Brain</title>
-                <link rel="preload" href={styles} as="style" />
 
                 <meta
                     name="viewport"

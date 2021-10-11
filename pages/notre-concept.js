@@ -12,7 +12,6 @@ export default function OurConcept() {
                     property="og:title"
                     content="Notre concept | Paris | Heart n Brain"
                 />
-                <link rel="preload" href={styles} as="style" />
 
                 <link
                     rel="canonical"
