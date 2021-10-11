@@ -50,7 +50,7 @@ export default function Home() {
                 </title>
                 <link
                     rel="canonical"
-                    href="https://www.heart-n-brain.com"
+                    href="https://front-hnb.vercel.app/"
                 ></link>
                 <meta
                     name="viewport"

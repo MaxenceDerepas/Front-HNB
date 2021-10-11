@@ -19,7 +19,7 @@ export default function Individual() {
                 </title>
                 <link
                     rel="canonical"
-                    href="https://www.heart-n-brain.com/accompagnement-individuel"
+                    href="https://front-hnb.vercel.app/accompagnement-individuel"
                 ></link>
                 <meta
                     name="viewport"

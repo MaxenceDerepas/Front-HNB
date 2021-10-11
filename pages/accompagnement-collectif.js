@@ -16,7 +16,7 @@ export default function Collective() {
                 </title>
                 <link
                     rel="canonical"
-                    href="https://www.heart-n-brain.com/accompagnement-collectif"
+                    href="https://front-hnb.vercel.app/accompagnement-collectif"
                 ></link>
                 <meta
                     name="viewport"

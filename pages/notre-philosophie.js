@@ -11,7 +11,7 @@ export default function OurOffers() {
                 <title>Notre philosophie | Paris | Heart n Brain</title>
                 <link
                     rel="canonical"
-                    href="https://www.heart-n-brain.com/notre-philosophie"
+                    href="https://front-hnb.vercel.app/notre-philosophie"
                 ></link>
                 <meta
                     name="viewport"

@@ -53,7 +53,7 @@ export default function Testimony({ data }) {
                 </title>
                 <link
                     rel="canonical"
-                    href="https://www.heart-n-brain.com/temoignages"
+                    href="https://front-hnb.vercel.app/temoignages"
                 ></link>
                 <meta
                     name="viewport"

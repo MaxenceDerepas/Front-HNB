@@ -11,7 +11,7 @@ export default function TermOfSales() {
                 <title>Conditions Générales de Vente | Heart n Brain</title>
                 <link
                     rel="canonical"
-                    href="https://www.heart-n-brain.com/conditions-generales-de-vente"
+                    href="https://front-hnb.vercel.app/conditions-generales-de-vente"
                 ></link>
                 <meta
                     name="viewport"

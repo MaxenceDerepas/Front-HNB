@@ -12,7 +12,7 @@ export default function OurOffers() {
                 </title>
                 <link
                     rel="canonical"
-                    href="https://www.heart-n-brain.com/nos-offres"
+                    href="https://front-hnb.vercel.app/nos-offres"
                 ></link>
                 <meta
                     name="viewport"

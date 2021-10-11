@@ -14,7 +14,7 @@ export default function OurConcept() {
                 />
                 <link
                     rel="canonical"
-                    href="https://www.heart-n-brain.com/notre-concet"
+                    href="https://front-hnb.vercel.app/notre-concet"
                 ></link>
                 <meta
                     name="viewport"

@@ -489,7 +489,16 @@ export default function Layout({ children }) {
                     </nav>
                 </div>
             </header>
-            <main className={styles.main}>{children}</main>
+            <main
+                onScroll={() => {
+                    window.addEventListener("resize", () => {
+                        console.log("coucou");
+                    });
+                }}
+                className={styles.main}
+            >
+                {children}
+            </main>
             <footer className={styles.footer}>
                 <section className={styles.containerFooter}>
                     <div className={styles.link}>

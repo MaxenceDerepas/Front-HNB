@@ -12,7 +12,7 @@ export default function Blog() {
                 />
                 <link
                     rel="canonical"
-                    href="https://www.heart-n-brain.com/blog"
+                    href="https://front-hnb.vercel.app/blog"
                 ></link>
                 <meta
                     name="description"

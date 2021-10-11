@@ -27,7 +27,7 @@ export default function LegalNotice() {
                 <link rel="icon" href="/favicon-heart-n-brain.png" />
                 <meta
                     property="og:url"
-                    content="https://www.heart-n-brain.com/mentions-legales-confidentialite"
+                    content="https://front-hnb.vercel.app/mentions-legales-confidentialite"
                 ></meta>
             </Head>
             <section className={styles.container}>
