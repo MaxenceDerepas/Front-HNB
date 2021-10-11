@@ -9,6 +9,7 @@
 
 .title {
     display: flex;
+    align-items: center;
 }
 .title h1 {
     display: flex;

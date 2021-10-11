@@ -56,7 +56,7 @@ export default function Layout({ children }) {
                         ? {
                               boxSizing: "border-box",
                               zIndex: "1",
-                              backgroundColor: "#F5E89F",
+                              backgroundColor: "#fff",
                               display: "flex",
                               alignItems: "center",
                               flexDirection: "column",

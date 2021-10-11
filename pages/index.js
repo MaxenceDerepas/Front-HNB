@@ -252,7 +252,8 @@ export default function Home() {
                         </p>
                         <div className={styles.columnsVideo}>
                             <div className={styles.video}>
-                                <iframe
+                                <video
+                                    controls
                                     className={styles.movie}
                                     src="https://res.cloudinary.com/dprljzowa/video/upload/v1633456973/Re_d%C3%A9couvrez_Heart_n_Brain_opkk8z.mp4"
                                     height="230px"
