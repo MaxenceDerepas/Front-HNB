@@ -84,9 +84,9 @@ export default function Testimony({ data }) {
             </Head>
             <section className={styles.content}>
                 <div
-                    onClick={nextImage}
                     className={styles.testimony}
                     style={{
+                        backgroundSize: "cover",
                         backgroundImage: `url(${data[index].url})`,
                     }}
                 >
@@ -100,7 +100,15 @@ export default function Testimony({ data }) {
                             onClick={previousImage}
                         />
                     </div>
-                    <div className={styles.containerTestimony}>
+                    <div
+                        style={{
+                            paddingLeft:
+                                data[index].public_id ===
+                                    "mcsmok8a860gfxsncgql" && "296px",
+                        }}
+                        className={styles.containerTestimony}
+                    >
+                        <div style={{ height: "92px" }}></div>
                         <div className={styles.separatorWhite}></div>
 
                         <h1 className={styles.title}>
@@ -115,6 +123,34 @@ export default function Testimony({ data }) {
                                 width={30}
                             />
                         </h1>
+                        {data[index].text.map((item, i) => {
+                            return (
+                                <div
+                                    key={i}
+                                    className={styles.testimonyContent}
+                                >
+                                    {item.logo.url !== "" && (
+                                        <div className={styles.logo}>
+                                            <Image
+                                                src={item.logo.url}
+                                                alt="logo"
+                                                title="logo"
+                                            />
+                                        </div>
+                                    )}
+                                    <div className={styles.textTestimony}>
+                                        {item.testimony
+                                            .split("<br/>")
+                                            .map((elem, j) => {
+                                                return <p key={j}>{elem}</p>;
+                                            })}
+                                    </div>
+                                    <p className={styles.textName}>
+                                        {item.name}
+                                    </p>
+                                </div>
+                            );
+                        })}
                     </div>
                     <div className={styles.chevron}>
                         <Image
