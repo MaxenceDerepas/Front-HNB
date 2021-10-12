@@ -103,8 +103,8 @@ export default function Testimony({ data }) {
                     <div
                         style={{
                             paddingLeft:
-                                data[index].public_id ===
-                                    "mcsmok8a860gfxsncgql" && "296px",
+                                data[index]._id ===
+                                    "615c755f2540e2713e6d008e" && "296px",
                         }}
                         className={styles.containerTestimony}
                     >
