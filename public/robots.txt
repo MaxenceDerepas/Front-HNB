@@ -1,4 +1,3 @@
 User-agent: *
-Disallow: /blog
 Disallow: /mentions-legales-confidentialite
 Disallow: /conditions-generales-de-vente

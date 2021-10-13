@@ -167,6 +167,86 @@ export default function Testimony({ data }) {
                         />
                     </div>
                 </div>
+                <div className={styles.testimonyMobile}>
+                    <div className={styles.container}>
+                        <div className={styles.textMobile}>
+                            <h1 className={styles.title}>
+                                <p className={styles.textTitle}>
+                                    ILS PARLENT DE NOUS
+                                </p>
+                                <Image
+                                    alt="logo linkedin"
+                                    title="linkedin"
+                                    src={LINKEDIN}
+                                    height={30}
+                                    width={30}
+                                />
+                            </h1>
+                            {data.map((elem, j) => {
+                                return (
+                                    <div>
+                                        {elem.text.map((item, i) => {
+                                            return (
+                                                <div
+                                                    style={{
+                                                        width: "100%",
+                                                    }}
+                                                    key={i}
+                                                    className={
+                                                        styles.testimonyContent
+                                                    }
+                                                >
+                                                    {item.logo.url !== "" && (
+                                                        <div
+                                                            className={
+                                                                styles.logo
+                                                            }
+                                                        >
+                                                            <img
+                                                                style={{
+                                                                    widt: "100%",
+                                                                    height: "100%",
+                                                                }}
+                                                                src={
+                                                                    item.logo
+                                                                        .url
+                                                                }
+                                                                alt="logo"
+                                                                title="logo"
+                                                            />
+                                                        </div>
+                                                    )}
+                                                    <div
+                                                        className={
+                                                            styles.textTestimony
+                                                        }
+                                                    >
+                                                        {item.testimony
+                                                            .split("<br/>")
+                                                            .map((elem, j) => {
+                                                                return (
+                                                                    <p key={j}>
+                                                                        {elem}
+                                                                    </p>
+                                                                );
+                                                            })}
+                                                    </div>
+                                                    <p
+                                                        className={
+                                                            styles.textName
+                                                        }
+                                                    >
+                                                        {item.name}
+                                                    </p>
+                                                </div>
+                                            );
+                                        })}
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+                </div>
                 <div className={styles.trustUs}>
                     <div className={styles.container}>
                         <div className={styles.separatorWhite}></div>
