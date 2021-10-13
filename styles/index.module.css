@@ -113,7 +113,12 @@
     height: 32px;
     padding: 0 5px;
     color: #fefdfd;
+    font-family: "Tw Cen MT";
+
     font-size: 15px;
+}
+.input:focus {
+    outline: none;
 }
 .area {
     margin-bottom: 8px;
@@ -122,10 +127,15 @@
     height: 130px;
     padding: 5px;
     font-size: 15px;
+    font-family: "Tw Cen MT";
+
     color: #fefdfd;
 }
 .area::placeholder {
     color: #fefdfd;
+}
+.are:focus {
+    outline: none;
 }
 .input::placeholder {
     color: #fefdfd;

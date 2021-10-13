@@ -7,10 +7,6 @@ import Ampoule from "../images/ampoule-heart-n-brain.png";
 import Coeur from "../images/coeur-heart-n-brain.png";
 import Pin from "../images/pin-heart-n-brain.png";
 import { useState } from "react";
-// import sgMail from "@sendgrid/mail";
-// sgMail.setApiKey(
-//     "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"
-// );
 
 export default function Home() {
     const [name, setName] = useState("");
@@ -21,24 +17,7 @@ export default function Home() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        // const msg = {
-        //     to: "maxence.derepas@gmail.com",
-        //     from: email,
-        //     subject: sujet,
-        //     text: message,
-        //     html: "<strong>and easy to do anywhere, even with Node.js</strong>",
-        // };
-        // (async () => {
-        //     try {
-        //         await sgMail.send(msg);
-        //     } catch (error) {
-        //         console.error(error);
 
-        //         if (error.response) {
-        //             console.error(error.response.body);
-        //         }
-        //     }
-        // })();
         setSucces("Message envoyé !");
     };
 

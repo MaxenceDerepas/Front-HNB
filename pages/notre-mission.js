@@ -45,10 +45,8 @@ export default function OurOffers() {
                 <div className={styles.container}>
                     <div className={styles.title}>
                         <h1>
-                            Se libérer de sa peur de parler anglais au travail
-                            et adopter les bons outils de communication en
-                            anglais pour s’ouvrir de nouvelles opportunités
-                            professionnelles
+                            Dépasser vos blocages en anglais pour libérer votre
+                            potentiel et maximiser votre performance
                         </h1>
                     </div>
                 </div>
@@ -157,7 +155,7 @@ export default function OurOffers() {
                                 <div className={styles.boxBlue}>
                                     <div className={styles.contentBox}>
                                         <h3 className={styles.h3Blue}>
-                                            PERFORMENCE
+                                            PERFORMANCE
                                         </h3>
                                         <p>
                                             Nous employons notre énergie à

@@ -2,8 +2,17 @@ import Layout from "../components/layout";
 import Head from "next/head";
 import styles from "../styles/OurConcept.module.css";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function OurConcept() {
+    const [height, setHeight] = useState();
+    const [platform, setPlatform] = useState();
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            setHeight(window.innerHeight - 540);
+            setPlatform(window.platform.os.family);
+        }
+    }, []);
     return (
         <Layout>
             <Head>
@@ -40,11 +49,19 @@ export default function OurConcept() {
 
                 <link rel="icon" href="/favicon-heart-n-brain.png" />
             </Head>
-            <section className={styles.container}>
-                <Link href="/notre-philosophie">
+            <section
+                style={{
+                    marginBottom:
+                        platform !== ("iOs" || "Android") &&
+                        height > 0 &&
+                        `${height}px`,
+                }}
+                className={styles.container}
+            >
+                <Link href="/notre-mission">
                     <div className={styles.column1}>
                         <div className={styles.text}>
-                            <p>NOTRE PHILOSOPHIE</p>
+                            <p>NOTRE MISSION</p>
                         </div>
                     </div>
                 </Link>
@@ -52,7 +69,7 @@ export default function OurConcept() {
                 <Link href="/notre-methode">
                     <div className={styles.column2}>
                         <div className={styles.text}>
-                            <p>NOTRE METHODE</p>
+                            <p>NOTRE MÉTHODE</p>
                         </div>
                     </div>
                 </Link>
