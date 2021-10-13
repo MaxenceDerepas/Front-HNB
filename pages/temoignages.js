@@ -131,7 +131,11 @@ export default function Testimony({ data }) {
                                 >
                                     {item.logo.url !== "" && (
                                         <div className={styles.logo}>
-                                            <Image
+                                            <img
+                                                style={{
+                                                    widt: "100%",
+                                                    height: "100%",
+                                                }}
                                                 src={item.logo.url}
                                                 alt="logo"
                                                 title="logo"
