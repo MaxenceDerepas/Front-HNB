@@ -11,6 +11,7 @@ export default function OurOffers() {
         if (typeof window !== "undefined") {
             setHeight(window.innerHeight - 540);
             setPlatform(window.platform.os.family);
+            console.log(window.platform);
         }
     }, []);
     return (
