@@ -37,9 +37,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding: 13px 0px;
     margin-top: 170px;
-    font-size: 22px;
+    font-size: 29px;
     letter-spacing: 2px;
 }
 .textYellow {
