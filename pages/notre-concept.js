@@ -10,7 +10,7 @@ export default function OurConcept() {
     useEffect(() => {
         if (typeof window !== "undefined") {
             setHeight(window.innerHeight - 540);
-            setPlatform(window.platform.os.family);
+            setPlatform(window.platform);
         }
     }, []);
     return (
