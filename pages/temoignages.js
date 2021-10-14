@@ -88,8 +88,105 @@ export default function Testimony({ data }) {
                     style={{
                         backgroundSize: "cover",
                         backgroundImage: `url(${data[index].url})`,
+                        position: "relative",
                     }}
                 >
+                    {" "}
+                    <div
+                        style={{
+                            position: "absolute",
+                            bottom: "35px",
+                            display: "flex",
+                            width: "65px",
+                            justifyContent: "space-between",
+                            alignItems: "center",
+                        }}
+                    >
+                        <div
+                            onClick={() => setIndex(0)}
+                            style={
+                                index === 0
+                                    ? {
+                                          height: "9px",
+                                          width: "9px",
+                                          borderRadius: "50%",
+                                          border: "white 2px solid",
+                                          boxSizing: "border-box",
+                                          cursor: "pointer",
+                                      }
+                                    : {
+                                          height: "6px",
+                                          width: "6px",
+                                          borderRadius: "50%",
+                                          backgroundColor: "#fff",
+                                          cursor: "pointer",
+                                      }
+                            }
+                        ></div>
+                        <div
+                            onClick={() => setIndex(1)}
+                            style={
+                                index === 1
+                                    ? {
+                                          height: "9px",
+                                          width: "9px",
+                                          borderRadius: "50%",
+                                          border: "white 2px solid",
+                                          boxSizing: "border-box",
+                                          cursor: "pointer",
+                                      }
+                                    : {
+                                          height: "6px",
+                                          width: "6px",
+                                          borderRadius: "50%",
+                                          backgroundColor: "#fff",
+                                          cursor: "pointer",
+                                      }
+                            }
+                        ></div>
+                        <div
+                            onClick={() => setIndex(2)}
+                            style={
+                                index === 2
+                                    ? {
+                                          height: "9px",
+                                          width: "9px",
+                                          borderRadius: "50%",
+                                          border: "white 2px solid",
+                                          boxSizing: "border-box",
+                                          cursor: "pointer",
+                                      }
+                                    : {
+                                          height: "6px",
+                                          width: "6px",
+                                          borderRadius: "50%",
+                                          backgroundColor: "#fff",
+                                          cursor: "pointer",
+                                      }
+                            }
+                        ></div>
+                        <div
+                            onClick={() => setIndex(3)}
+                            style={
+                                index === 3
+                                    ? {
+                                          height: "9px",
+                                          width: "9px",
+                                          borderRadius: "50%",
+                                          border: "white 2px solid",
+                                          boxSizing: "border-box",
+                                          cursor: "pointer",
+                                      }
+                                    : {
+                                          height: "6px",
+                                          width: "6px",
+                                          borderRadius: "50%",
+                                          backgroundColor: "#fff",
+                                          cursor: "pointer",
+                                      }
+                            }
+                        ></div>
+                    </div>
                     <div className={styles.chevron}>
                         <Image
                             alt="fleche defilement image"
@@ -184,7 +281,7 @@ export default function Testimony({ data }) {
                             </h1>
                             {data.map((elem, j) => {
                                 return (
-                                    <div>
+                                    <div key={j}>
                                         {elem.text.map((item, i) => {
                                             return (
                                                 <div

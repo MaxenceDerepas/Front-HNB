@@ -2,8 +2,17 @@ import Layout from "../components/layout";
 import Head from "next/head";
 import styles from "../styles/ourOffers.module.css";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function OurOffers() {
+    const [height, setHeight] = useState();
+    const [platform, setPlatform] = useState();
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            setHeight(window.innerHeight - 540);
+            setPlatform(window.platform.os.family);
+        }
+    }, []);
     return (
         <Layout>
             <Head>
@@ -41,7 +50,15 @@ export default function OurOffers() {
                 />
                 <link rel="icon" href="/favicon-heart-n-brain.png" />
             </Head>
-            <section className={styles.container}>
+            <section
+                style={{
+                    marginBottom:
+                        platform !== ("iOs" || "Android") &&
+                        height > 0 &&
+                        `${height}px`,
+                }}
+                className={styles.container}
+            >
                 <Link href="/accompagnement-individuel">
                     <div className={styles.column1}>
                         <div className={styles.text}>

@@ -18,7 +18,6 @@ export default function Layout({ children }) {
     const [openConceptMobile, setOpenConceptMobile] = useState(false);
     const [width, setWidth] = useState(null);
     const [widthMobile, setWidthMobile] = useState(null);
-    const [scrollPos, setScrollPos] = useState();
 
     useEffect(() => {
         if (typeof window !== "undefined") {
@@ -26,28 +25,6 @@ export default function Layout({ children }) {
             setWidthMobile(window.screen.width / window.devicePixelRatio);
         }
     }, []);
-
-    const useScrollPosition = () => {
-        if (typeof window === "undefined") return 500;
-
-        // Store the state
-
-        // On Scroll
-        const onScroll = () => {
-            setScrollPos(window.pageYOffset);
-        };
-
-        // Add and remove the window listener
-        useEffect(() => {
-            window.addEventListener("scroll", onScroll);
-            return () => {
-                window.removeEventListener("scroll", onScroll);
-            };
-        });
-
-        return scrollPos;
-    };
-    const position = useScrollPosition();
 
     const navMobile = () => {
         if (openNavMobile && openOfferMobile) {
@@ -267,14 +244,7 @@ export default function Layout({ children }) {
                             >
                                 <Link href="/faq">FAQ</Link>
                             </li>
-                            <li
-                                className={
-                                    router.pathname === "/" &&
-                                    scrollPos === 1175
-                                        ? styles.liActive
-                                        : styles.li
-                                }
-                            >
+                            <li className={styles.li}>
                                 <Link href="/#contact">Contact</Link>
                             </li>
                             <li

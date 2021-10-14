@@ -63,8 +63,8 @@ export default function Home() {
                 <link rel="icon" href="/favicon-heart-n-brain.png" />
             </Head>
             <section className={styles.content}>
-                <div className={styles.container}>
-                    <div className={styles.title}>
+                <div className={styles.title}>
+                    <div className={styles.container}>
                         <h1>
                             (Ré)apprenez à aimer l'anglais
                             <br />

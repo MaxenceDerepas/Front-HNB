@@ -8,11 +8,11 @@ export default function OurOffers() {
     return (
         <Layout>
             <Head>
-                <title>Notre philosophie | Paris | Heart n Brain</title>
+                <title>Notre mission | Paris | Heart n Brain</title>
 
                 <link
                     rel="canonical"
-                    href="https://front-hnb.vercel.app/notre-philosophie"
+                    href="https://front-hnb.vercel.app/notre-mission"
                 ></link>
                 <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
                 <meta
@@ -28,22 +28,22 @@ export default function OurOffers() {
 
                 <meta
                     property="og:description"
-                    content="Notre philosophie chez Heart n Brain : Se libérer de sa peur de parler anglais au travail et adopter les bons outils de communication en anglais pour s’ouvrir de nouvelles opportunités professionnelles. Venez découvrir l'histoire d'Heart n Brain, quelques mots sur ses coaches et leurs valeurs !"
+                    content="Notre mission chez Heart n Brain : Se libérer de sa peur de parler anglais au travail et adopter les bons outils de communication en anglais pour s’ouvrir de nouvelles opportunités professionnelles. Venez découvrir l'histoire d'Heart n Brain, quelques mots sur ses coaches et leurs valeurs !"
                 />
                 <meta
                     property="og:url"
-                    content="https://www.heart-n-brain.com/notre-philosophie"
+                    content="https://www.heart-n-brain.com/mission"
                 ></meta>
 
                 <meta
                     property="og:title"
-                    content="Notre Philosophie  | Paris | Heart n Brain"
+                    content="mission  | Paris | Heart n Brain"
                 />
                 <link rel="icon" href="/favicon-heart-n-brain.png" />
             </Head>
             <section className={styles.content}>
-                <div className={styles.container}>
-                    <div className={styles.title}>
+                <div className={styles.title}>
+                    <div className={styles.container}>
                         <h1>
                             Dépasser vos blocages en anglais pour libérer votre
                             potentiel et maximiser votre performance
