@@ -21,6 +21,8 @@ export default function OurConcept() {
                     property="og:title"
                     content="Notre concept | Paris | Heart n Brain"
                 />
+                <meta name="robots" content="index,follow" />
+                <meta name="googlebot" content="index,follow" />
 
                 <link
                     rel="canonical"

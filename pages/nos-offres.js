@@ -19,7 +19,8 @@ export default function OurOffers() {
                 <title>
                     Nos offres d'accompagnement | Paris | Heart n Brain
                 </title>
-
+                <meta name="robots" content="index,follow" />
+                <meta name="googlebot" content="index,follow" />
                 <link
                     rel="canonical"
                     href="https://front-hnb.vercel.app/nos-offres"

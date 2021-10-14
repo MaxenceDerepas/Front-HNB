@@ -27,7 +27,8 @@ export default function Home() {
                 <title>
                     Coaching Anglais Professionnel | Paris | Heart n Brain
                 </title>
-
+                <meta name="robots" content="index,follow" />
+                <meta name="googlebot" content="index,follow" />
                 <link
                     rel="canonical"
                     href="https://front-hnb.vercel.app/"

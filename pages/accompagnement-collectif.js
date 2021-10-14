@@ -14,7 +14,8 @@ export default function Collective() {
                     Coaching anglais collectif entreprises | Paris | Heart n
                     Brain
                 </title>
-
+                <meta name="robots" content="index,follow" />
+                <meta name="googlebot" content="index,follow" />
                 <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
                 <link
                     rel="canonical"
