@@ -435,29 +435,6 @@ export default function Testimony({ data }) {
                         </div>
                     </div>
                 </div>
-                <div className={styles.talkAboutUs}>
-                    <div className={styles.container}>
-                        <div className={styles.separatorWhite}></div>
-                        <h2 className={styles.h2}>ILS NOUS ACCOMPAGNENT</h2>
-                        <div className={styles.contrex}>
-                            <a href="https://www.contrex.fr/les-projets-des-elles-by-contrex?page=1">
-                                <Image
-                                    height={220}
-                                    width={280}
-                                    src={CONTREX}
-                                    alt="photo les elles by contrex"
-                                    title="photo lien contrex"
-                                />
-                            </a>
-                            <p className={styles.text}>
-                                Heart n Brain est soutenu par le programme "Les
-                                Elles by Contrex", qui vise à mettre en lumière
-                                et à accompagner des femmes dans leur projet
-                                entrepreneurial !
-                            </p>
-                        </div>
-                    </div>
-                </div>
             </section>
         </Layout>
     );

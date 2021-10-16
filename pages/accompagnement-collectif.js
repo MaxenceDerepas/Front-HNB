@@ -60,7 +60,7 @@ export default function Collective() {
                                 aussi performants en anglais qu’en français.
                             </p>
                             <p className={styles.p}>
-                                Vous souhaitez renforcer des compétences clés ou
+                                Vous voulez renforcer des compétences clés ou
                                 approfondir un savoir-faire tout en stimulant la
                                 collaboration en anglais.
                             </p>
@@ -70,7 +70,7 @@ export default function Collective() {
                             </p>
                         </div>
                         <div className={styles.separatorWhite}></div>
-                        <h1 className={styles.title}>
+                        <h1 className={styles.h1}>
                             UN ACCOMPAGNEMENT SUR MESURE
                         </h1>
                         <div className={styles.infos}>
@@ -103,9 +103,7 @@ export default function Collective() {
                         </div>
                         <div className={styles.thematique}>
                             <div className={styles.separatorBlack}></div>
-                            <h1 className={styles.title}>
-                                NOS THéMATIQUES CLEFS
-                            </h1>
+                            <h1 className={styles.h1}>NOS THÉMATIQUES CLEFS</h1>
                             <div className={styles.infos}>
                                 <div className={styles.infoThematique}>
                                     <h2 className={styles.titleYellow}>
@@ -198,7 +196,7 @@ export default function Collective() {
                             </p>
                             <p className={styles.essaiText}>
                                 Des formats courts pour les CLUBS à distance (4
-                                pax max)
+                                personnes maximum)
                             </p>
                             <p className={styles.essaiText}>
                                 Des ateliers en présentiel de 2h à la journée

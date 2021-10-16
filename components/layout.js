@@ -80,7 +80,6 @@ export default function Layout({ children }) {
                           }
                         : {
                               boxSizing: "border-box",
-
                               zIndex: "1",
                               backgroundColor: "#FFF",
                               overflow:
@@ -100,19 +99,36 @@ export default function Layout({ children }) {
             >
                 <section className={styles.container}>
                     <div className={styles.title}>
-                        <div style={{ display: width < 410 && "none" }}>
+                        <div
+                            style={{
+                                display: width < 410 && "none",
+                                height: "50px",
+                                width: "77px",
+                            }}
+                        >
                             <Image
                                 src={Logo}
-                                width={90}
-                                height={58}
-                                objectFit={"contain"}
                                 alt="Logo heart-n-brain"
                                 title="heart-n-brain"
                             />
                         </div>
 
-                        <h1>
-                            <span>Révélateur d'anglofans</span>
+                        <h1
+                            style={{
+                                fontSize: width > 650 ? "9px" : "13px",
+                                lineHeight: width < 650 && " 13px",
+                                letterSpacing: "1.4px",
+                            }}
+                        >
+                            <span
+                                style={{
+                                    fontSize: width > 650 ? "13px" : "14px",
+                                    lineHeight: width > 650 ? "10.8px" : "8px",
+                                    letterSpacing: "2px",
+                                }}
+                            >
+                                Révélateur d'anglofans
+                            </span>
                             <br />
                             Coaching en anglais professionnel
                         </h1>

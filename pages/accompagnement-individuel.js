@@ -64,8 +64,8 @@ export default function Individual() {
                                 international.
                             </p>
                             <p className={styles.p}>
-                                Vous souhaitez vous assurer d'être aussi
-                                performant en anglais qu'en français.
+                                Vous voulez vous assurer d'être aussi performant
+                                en anglais qu'en français.
                             </p>
                             <h2 className={styles.h2Yellow}>
                                 Vos appréhensions freinent votre évolution de
@@ -83,7 +83,7 @@ export default function Individual() {
                             </p>
                         </div>
                         <div className={styles.separatorWhite}></div>
-                        <h1 className={styles.title}>
+                        <h1 className={styles.h1}>
                             Votre parcours personnalisé
                         </h1>
                         <div className={styles.infos}>
@@ -154,7 +154,7 @@ export default function Individual() {
                     </div>
                     <div className={styles.exemple}>
                         <div className={styles.separatorBlack}></div>
-                        <h1 className={styles.title}>EXEMPLES D'ENJEUX</h1>
+                        <h1 className={styles.h1}>EXEMPLES D'ENJEUX</h1>
                         <div className={styles.infos}>
                             <div className={styles.info}>
                                 <h2 className={styles.titleYellow}>
@@ -224,7 +224,7 @@ export default function Individual() {
                                 Séance d'essai gratuite
                             </span>
                             <br />
-                            gratuite et sans engagement
+                            et sans engagement
                         </p>
                         <p className={styles.essaiText}>
                             <span className={styles.span}>Parcours adapté</span>
@@ -238,7 +238,7 @@ export default function Individual() {
                                 Séance de synthèse personnalisée d'1h
                             </span>
                             <br />
-                            offerte en fin de parcours au delà de 6 heures de
+                            offerte en fin de parcours au delà de 9 heures de
                             coaching
                         </p>
 

@@ -12,34 +12,29 @@
     align-items: center;
 }
 .title h1 {
+    font-family: "Avenir Light";
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    font-size: 10px;
-    letter-spacing: 1.4px;
-    margin-left: 25px;
-    line-height: 7.5px;
+    margin-left: 20px;
 }
 .title h1 span {
-    font-size: 13px;
     color: #f7b700;
-    letter-spacing: 2px;
-    line-height: 10.8px;
 }
 .navigation {
     font-weight: lighter;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 15px;
 }
 .navigation ul {
-    width: 590px;
+    width: 620px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 40px;
-    font-size: 16px;
     font-weight: normal;
 }
 .li {
@@ -162,9 +157,11 @@
         line-height: normal;
     }
     .title {
-        height: 92px;
         display: flex;
         align-items: center;
+    }
+    .title h1 {
+        margin-left: 8px;
     }
 
     .navigation {

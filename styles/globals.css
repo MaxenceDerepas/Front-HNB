@@ -102,12 +102,13 @@ section {
 }
 h2,
 h3 {
-    font-family: "Teko", sans-serif;
+    font-family: sans-serif;
 }
 body {
     line-height: 1;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Avenir Light";
     background-color: #000;
+    font-size: 15px;
 }
 ol,
 ul {
@@ -132,18 +133,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
-body {
-    line-height: 17px;
-    font-size: 17px;
-    font-family: "Tw Cen MT";
-}
-h1,
-h2,
-h3,
-h4 {
-    letter-spacing: 2px;
-    font-family: sans-serif;
-}
+
 nav {
     font-weight: normal;
 }

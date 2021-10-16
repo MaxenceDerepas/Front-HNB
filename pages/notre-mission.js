@@ -159,7 +159,7 @@ export default function OurOffers() {
                                         <h3 className={styles.h3Blue}>
                                             PERFORMANCE
                                         </h3>
-                                        <p>
+                                        <p className={styles.p}>
                                             Nous employons notre énergie à
                                             libérer le potentiel de nos coachés.
                                             Nous mettons notre performance au
@@ -174,7 +174,7 @@ export default function OurOffers() {
                                         <h3 className={styles.h3Grey}>
                                             COURAGE
                                         </h3>
-                                        <p>
+                                        <p className={styles.p}>
                                             Parce que le dépassement de soi est
                                             une aventure, nous veillons à
                                             transmettre notre courage à nos
@@ -189,7 +189,7 @@ export default function OurOffers() {
                                         <h3 className={styles.h3Grey}>
                                             ENGAGEMENT
                                         </h3>
-                                        <p>
+                                        <p className={styles.p}>
                                             Nous nous engageons personnellement
                                             à faire équipe avec nos coachés pour
                                             atteindre leurs objectifs.
@@ -203,7 +203,7 @@ export default function OurOffers() {
                                         <h3 className={styles.h3Grey}>
                                             AUTHENTICITÉ
                                         </h3>
-                                        <p>
+                                        <p className={styles.p}>
                                             Pour proposer une aventure humaine
                                             basée sur l’échange et la
                                             bienveillance, nous restons vraies
@@ -218,7 +218,7 @@ export default function OurOffers() {
                                         <h3 className={styles.h3Grey}>
                                             TRANSMISSION
                                         </h3>
-                                        <p>
+                                        <p className={styles.p}>
                                             Partager des connaissances et des
                                             expériences pour avoir un impact
                                             durable sur nos coachés et leur
@@ -233,7 +233,7 @@ export default function OurOffers() {
                                         <h3 className={styles.h3Yellow}>
                                             VIBRATION
                                         </h3>
-                                        <p>
+                                        <p className={styles.p}>
                                             Nous nous levons le matin pour
                                             donner envie, entraîner, tirer vers
                                             le haut nos coachés tout en nous

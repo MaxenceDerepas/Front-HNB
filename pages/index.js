@@ -222,12 +222,11 @@ export default function Home() {
                         <h2 className={styles.h2}>
                             révélons l'anglofan en vous
                         </h2>
-                        <p>
+                        <p className={styles.p}>
                             Être anglofan ce n'est pas avoir l'accent de Clint
                             Eastwood ​ni connaître par cœur ses verbes
                             irréguliers.
-                        </p>
-                        <p>
+                            <br />
                             Être anglofan c'est avoir envie de prendre du
                             plaisir à parler anglais pour se faire comprendre et
                             s'ouvrir des opportunités.
@@ -245,14 +244,17 @@ export default function Home() {
                                 />
                             </div>
                             <div>
-                                <p style={{ marginBottom: "35px" }}>
+                                <p
+                                    className={styles.p}
+                                    style={{ marginBottom: "35px" }}
+                                >
                                     Nous vous accompagnons avec une méthode
                                     ludique et professionnelle qui mêle
                                     challenge et bienveillance. Notre objectif
                                     c’est que vous n’ayez plus peur de parler
                                     anglais, de libérer votre potentiel.
                                 </p>
-                                <p>
+                                <p className={styles.p}>
                                     <strong className={styles.strong}>
                                         La méthode Heart n Brain est faite pour
                                         vous si :

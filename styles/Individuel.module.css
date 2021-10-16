@@ -10,6 +10,12 @@
     width: 980px;
     margin: auto;
 }
+.h1 {
+    font-family: "LuloCleanOne";
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 13.3px;
+}
 .parcours {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 40px 21px;
@@ -33,16 +39,16 @@
     margin-bottom: 40px;
 }
 .h2Yellow {
-    font-weight: bold;
+    font-family: "LuloCleanOne";
     text-transform: uppercase;
     color: #f7b800;
     margin-bottom: 25px;
-    letter-spacing: 1.5px;
-    font-size: 13px;
+    font-size: 11px;
 }
 .p {
     margin-left: 20px;
     margin-bottom: 20px;
+    line-height: 12.5px;
 }
 .pEnd {
     margin-left: 20px;
@@ -79,14 +85,15 @@
     margin-bottom: 40px;
 }
 .contact {
-    height: 21px;
     width: 370px;
     background-color: #f7b900;
     display: flex;
+    text-align: center;
+    padding: 5px;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: -25px;
 }
 .contact:hover {
     color: #f7b800;
@@ -107,17 +114,24 @@
     align-items: center;
     background-color: #fff;
     padding: 15px;
+    line-height: 14.3px;
+    font-family: "LuloCleanOne";
     width: 460px;
     margin: 0 auto;
-    letter-spacing: 2px;
+    letter-spacing: 0.3px;
     box-sizing: border-box;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 11px;
 }
 .essaiText {
     margin-bottom: 15px;
 }
+.essai-Bold {
+    font-weight: bold;
+}
 .a {
+    cursor: pointer;
+    font-family: "Caviar Dreams";
     margin-top: 12px;
     height: 40px;
     width: 150px;
@@ -126,10 +140,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Caviar Dreams";
     font-weight: lighter;
     font-size: 14px;
     text-transform: initial;
+    letter-spacing: normal;
 }
 .span {
     color: #f7b800;
@@ -155,11 +169,9 @@
 .infoText {
     margin-bottom: 20px;
     font-size: 14px;
+    line-height: 15.5px;
 }
-.a:hover {
-    background-color: #fff;
-    color: black;
-}
+
 @media only screen and (min-width: 320px) and (max-width: 650px) {
     .content {
         width: 100vw;
@@ -194,9 +206,15 @@
         margin-top: 8px;
         margin-bottom: 7px;
         font-size: 12px;
+        line-height: 14px;
+    }
+    .h1 {
+        font-size: 13px;
+        line-height: 13px;
     }
     .p {
-        margin-bottom: 6px;
+        margin-bottom: 9px;
+        line-height: 15px;
     }
     .infos {
         display: flex;

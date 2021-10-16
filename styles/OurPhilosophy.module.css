@@ -21,18 +21,25 @@
     letter-spacing: 4.5px;
     line-height: 30px;
     margin-bottom: 50px;
+    font-family: "Tw Cen MT";
 }
 .mission {
     background-color: #000;
 }
 .h2 {
-    font-weight: bold;
+    font-family: "luloCleanOne";
     font-size: 16px;
-    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: -1.6px;
+    line-height: 19.2px;
+    font-weight: bold;
 }
 .strongTitle {
     color: #f7b800;
+    font-family: "luloCleanOne";
     text-transform: uppercase;
+    font-size: 11px;
+    line-height: 19.2px;
     margin-bottom: 40px;
     font-weight: bold;
     display: block;
@@ -45,15 +52,22 @@
 }
 .text {
     margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 17px;
 }
 .us {
     background-color: #fff;
     color: #000;
 }
 .strong {
-    text-transform: uppercase;
     color: #f7b800;
+    font-family: "luloCleanOne";
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 13px;
+    margin-bottom: 40px;
     font-weight: bold;
+    display: block;
 }
 .team {
     margin-top: 30px;
@@ -61,8 +75,9 @@
     align-items: center;
 }
 .teamText {
+    font-size: 15px;
+    line-height: 17px;
     margin-left: 40px;
-
     height: 289px;
     display: flex;
     flex-direction: column;
@@ -112,7 +127,7 @@
     background-color: #fff;
     height: 134px;
     width: 250px;
-    padding: 15px;
+    padding: 13px;
     color: #000;
     box-sizing: border-box;
     font-size: 15px;
@@ -123,15 +138,18 @@
 }
 .h3Blue {
     color: #324258;
-    font-weight: bold;
+    font-family: "luloCleanOne";
+    font-size: 11px;
 }
 .h3Grey {
     color: #a19c9c;
-    font-weight: bold;
+    font-family: "luloCleanOne";
+    font-size: 11px;
 }
 .h3Yellow {
     color: #f7b900;
-    font-weight: bold;
+    font-family: "luloCleanOne";
+    font-size: 11px;
 }
 .separatorWhite {
     width: 40px;
@@ -142,6 +160,10 @@
     width: 40px;
     height: 40px;
     border-top: black solid 2px;
+}
+.p {
+    font-size: 15px;
+    line-height: 17px;
 }
 @media only screen and (min-width: 320px) and (max-width: 650px) {
     .content {
