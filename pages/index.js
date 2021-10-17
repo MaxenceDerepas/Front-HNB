@@ -251,8 +251,11 @@ export default function Home() {
                                     Nous vous accompagnons avec une méthode
                                     ludique et professionnelle qui mêle
                                     challenge et bienveillance. Notre objectif
-                                    c’est que vous n’ayez plus peur de parler
-                                    anglais, de libérer votre potentiel.
+                                    c’est que vous n’ayez plus{" "}
+                                    <strong className={styles.bold}>
+                                        peur de parler anglais, de libérer votre
+                                        potentiel.
+                                    </strong>
                                 </p>
                                 <p className={styles.p}>
                                     <strong className={styles.strong}>

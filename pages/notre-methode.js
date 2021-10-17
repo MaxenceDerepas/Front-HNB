@@ -27,7 +27,6 @@ export default function OurOffers() {
                 />
                 <meta property="og:site_name" content="Heart n Brain" />
                 <meta property="og:type" content="website" />
-
                 <meta
                     name="description"
                     content="Améliorer votre anglais professionnel grâce à la méthode de coaching Heart n Brain. Libérez-vous de vos blocages en anglais ! "
@@ -55,7 +54,7 @@ export default function OurOffers() {
                                 <h2 className={styles.h2Yellow}>
                                     accompagnement sur-mesure
                                 </h2>
-                                <p>
+                                <p className={styles.textRectangle}>
                                     En format individuel ou en petits groupes,
                                     en présentiel ou à distance, nous
                                     construisons nos accompagnements selon vos
@@ -69,7 +68,7 @@ export default function OurOffers() {
                                 <h2 className={styles.h2Yellow}>
                                     outils pratiques et efficaces
                                 </h2>
-                                <p>
+                                <p className={styles.textRectangle}>
                                     Nos outils ont été spécialement élaborés
                                     pour maîtriser les bonnes pratiques et la
                                     bonne posture dans des situations
@@ -86,7 +85,7 @@ export default function OurOffers() {
                                 <h2 className={styles.h2Yellow}>
                                     coaching bienveillant et ludique
                                 </h2>
-                                <p>
+                                <p className={styles.textRectangle}>
                                     Nous plaçons la bienveillance au cœur de
                                     notre démarche pédagogique pour vous
                                     permettre de reprendre confiance en vos
@@ -146,73 +145,100 @@ export default function OurOffers() {
                             </p>
                             <div className={styles.concept}>
                                 <div className={styles.details}>
-                                    <h3 className={styles.h3Blue}>
-                                        1. La séance d’essai (gratuite et sans
-                                        engagement)
-                                    </h3>
-                                    <p className={styles.p}>
-                                        Pendant une heure, Chloé et sa coach
-                                        vont faire connaissance et définir un
-                                        parcours de coaching individuel
-                                        professionnel adapté à l'objectif, à
-                                        l’univers et aux blocages spécifiques de
-                                        Chloé.
-                                    </p>
-                                    <h3 className={styles.h3DarkBlue}>
-                                        2. La progression
-                                    </h3>
-                                    <p className={styles.p}>
-                                        Toutes les semaines pendant deux mois,
-                                        Chloé et sa coach travaillent un
-                                        sous-objectif (animer une réunion
-                                        d'équipe, faire un feedback…) et/ou un
-                                        blocage spécifique (répondre sans
-                                        préparation, rester concentrée…). ​
-                                        Chaque séance d’1h30 (en présentiel ou à
-                                        distance) se déroule en 4 temps :
-                                    </p>
-                                    <ul className={styles.ol}>
-                                        <li>
-                                            Passer à l’anglais en douceur avec
-                                            un échauffement
-                                        </li>
-                                        <li>
-                                            Appréhender l’outil dans un univers
-                                            lexical qui met Chloé à l’aise
-                                        </li>
-                                        <li>
-                                            Mettre en pratique dans son univers
-                                        </li>
-                                        <li>
-                                            professionnel Synthétiser et
-                                            auto-évaluer sa motivation et
-                                            l’atteinte de son objectif
-                                        </li>
-                                    </ul>
+                                    <div
+                                        style={{ marginBottom: "30.5px" }}
+                                        className={styles.detail}
+                                    >
+                                        <h3 className={styles.h3Blue}>
+                                            1. La séance d’essai (gratuite et
+                                            sans engagement)
+                                        </h3>
+                                        <p
+                                            style={{
+                                                lineHeight: "17px",
+                                                fontSize: "15px",
+                                            }}
+                                        >
+                                            Pendant une heure, Chloé et sa coach
+                                            vont faire connaissance et définir
+                                            un parcours de coaching individuel
+                                            professionnel adapté à l'objectif, à
+                                            l’univers et aux blocages
+                                            spécifiques de Chloé.
+                                        </p>
+                                    </div>
+                                    <div
+                                        style={{ marginBottom: "30.5px" }}
+                                        className={styles.detail}
+                                    >
+                                        <h3 className={styles.h3DarkBlue}>
+                                            2. La progression
+                                        </h3>
+                                        <p
+                                            style={{
+                                                lineHeight: "17px",
+                                                fontSize: "15px",
+                                                marginBottom: "20px",
+                                            }}
+                                        >
+                                            Toutes les semaines pendant deux
+                                            mois, Chloé et sa coach travaillent
+                                            un sous-objectif (animer une réunion
+                                            d'équipe, faire un feedback…) et/ou
+                                            un blocage spécifique (répondre sans
+                                            préparation, rester concentrée…).
+                                        </p>
+                                        <p>
+                                            ​ Chaque séance d’1h30 (en
+                                            présentiel ou à distance) se déroule
+                                            en 4 temps :
+                                        </p>
+
+                                        <ul className={styles.ul}>
+                                            <li>
+                                                Passer à l’anglais en douceur
+                                                avec un échauffement
+                                            </li>
+                                            <li>
+                                                Appréhender l’outil dans un
+                                                univers lexical qui met Chloé à
+                                                l’aise
+                                            </li>
+                                            <li>
+                                                Mettre en pratique dans son
+                                                univers
+                                            </li>
+                                            <li>
+                                                professionnel Synthétiser et
+                                                auto-évaluer sa motivation et
+                                                l’atteinte de son objectif
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div className={styles.detail}>
+                                        <h3 className={styles.h3Yellow}>
+                                            3. Des résultats mesurables et
+                                            certifiéS
+                                        </h3>
+                                        <p style={{ lineHeight: "17px" }}>
+                                            Lors de la séance finale, quand nous
+                                            avons demandé à Chloé comment elle
+                                            se sentait à l'idée de prendre son
+                                            nouveau poste, elle nous a répondu :{" "}
+                                            <span className={styles.italic}>
+                                                “Super ! Je suis d’autant plus à
+                                                l’aise que j’ai enrichi ma boite
+                                                à outils. Et en ce qui concerne
+                                                l’anglais… J’ai déjà eu peur de
+                                                l’anglais moi ? Hahaha !”
+                                            </span>
+                                        </p>
+                                    </div>
                                     ​
-                                    <h3 className={styles.h3Yellow}>
-                                        3. Des résultats mesurables et certifiéS
-                                    </h3>
-                                    <p className={styles.p}>
-                                        Lors de la séance finale, quand nous
-                                        avons demandé à Chloé comment elle se
-                                        sentait à l'idée de prendre son nouveau
-                                        poste, elle nous a répondu :{" "}
-                                        <span className={styles.italic}>
-                                            “Super ! Je suis d’autant plus à
-                                            l’aise que j’ai enrichi ma boite à
-                                            outils. Et en ce qui concerne
-                                            l’anglais… J’ai déjà eu peur de
-                                            l’anglais moi ? Hahaha !”
-                                        </span>
-                                    </p>
                                 </div>
                                 <div className={styles.image}>
                                     <Image
                                         src={Visuel}
-                                        width={1350}
-                                        height={1700}
-                                        objectFit={"contain"}
                                         alt="Logo heart-n-brain"
                                         title="heart-n-brain"
                                     />

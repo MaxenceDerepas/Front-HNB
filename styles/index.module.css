@@ -47,6 +47,9 @@
     font-size: 15px;
     line-height: 17px;
 }
+.bold {
+    font-weight: 900;
+}
 .strong {
     color: #f7b800;
     font-size: 15px;
