@@ -1,3 +1,11 @@
 User-agent: *
-Disallow: /mentions-legales-confidentialite
-Disallow: /conditions-generales-de-vente
+Allow: /
+Allow: /accompagnement-collectif
+Allow: /accompagnement-individuel
+Allow: /blog
+Allow: /faq
+Allow: /nos-offres
+Allow: /notre-concept
+Allow: /notre-methode
+Allow: /notre-mission
+Allow: temoignages
