@@ -8,4 +8,4 @@ Allow: /nos-offres
 Allow: /notre-concept
 Allow: /notre-methode
 Allow: /notre-mission
-Allow: temoignages
+Allow: /temoignages
