@@ -85,7 +85,10 @@ export default function OurOffers() {
                                 <h2 className={styles.h2Yellow}>
                                     coaching bienveillant et ludique
                                 </h2>
-                                <p className={styles.textRectangle}>
+                                <p
+                                    id="exemple"
+                                    className={styles.textRectangle}
+                                >
                                     Nous plaçons la bienveillance au cœur de
                                     notre démarche pédagogique pour vous
                                     permettre de reprendre confiance en vos

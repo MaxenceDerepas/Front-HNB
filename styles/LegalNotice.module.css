@@ -6,24 +6,21 @@
     padding-top: 8px;
 }
 .h1 {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 15px;
+    font-family: "luloCleanOne";
     margin-bottom: 20px;
-    letter-spacing: 1px;
     text-transform: uppercase;
 }
 .h2 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 4px;
+    font-size: 15px;
+    font-family: "luloCleanOne";
     margin-bottom: 20px;
     text-transform: uppercase;
 }
 .h3 {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 4px;
-    margin-bottom: 15px;
+    font-size: 12px;
+    margin-bottom: 20px;
+    font-family: "luloCleanOne";
     text-transform: uppercase;
 }
 

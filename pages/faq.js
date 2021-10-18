@@ -132,7 +132,7 @@ export default function Faq() {
                         fondatrices d'Heart n Brain.
                         <br />
                         Pour plus d'informations nous concernant,{" "}
-                        <Link href="/notre-philosophie">
+                        <Link href="/notre-mission">
                             <a className={styles.a}>c'est par ici.</a>
                         </Link>
                     </p>
@@ -169,7 +169,7 @@ export default function Faq() {
                     <p className={styles.text}>
                         Chaque séance de coaching d'1h30 se déroule en 4 temps.
                         Pour en savoir plus sur le déroulé,{" "}
-                        <Link href="/notre-methode">
+                        <Link href="/notre-methode#exemple">
                             <a className={styles.a}>
                                 découvrez l’exemple du parcours de Chloé.
                             </a>

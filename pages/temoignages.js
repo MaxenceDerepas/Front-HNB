@@ -12,7 +12,6 @@ import PEGA from "../images/Pega-heart-n-brain.png";
 import DELSEY from "../images/Delsey-heart-n-brain.png";
 import UBISOFT from "../images/Ubisoft-heart-n-brain.jpg";
 import MA from "../images/MA.png";
-import CONTREX from "../images/Elles-Contrex.jpg";
 import Right from "../images/chevron-right.svg";
 import Left from "../images/chevron-left.svg";
 import LINKEDIN from "../images/LinkedIn.png";

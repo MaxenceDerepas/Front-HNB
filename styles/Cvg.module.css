@@ -7,16 +7,19 @@
 }
 .h2 {
     font-size: 14px;
+    font-family: "Avenir Light";
     font-weight: bold;
     margin-bottom: 1px;
     letter-spacing: 1px;
 }
 .h3 {
-    line-height: 18px;
+    line-height: 13px;
+    font-family: "Avenir Light";
 }
 .p {
     margin-bottom: 20px;
-    line-height: 14px;
+    line-height: 17px;
+    font-size: 12px;
 }
 .final {
     line-height: 14px;

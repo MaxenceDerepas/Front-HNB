@@ -47,7 +47,9 @@ export default function LegalNotice() {
                 <p style={{ marginBottom: "20px" }}>
                     Directeur de la publication : Sarah EKIZIAN
                 </p>
-                <h3 className={styles.h3}>Hébergeur</h3>
+                <h3 style={{ marginBottom: "5px" }} className={styles.h3}>
+                    Hébergeur
+                </h3>
                 <p>wix</p>
                 <a className={styles.a} href="https://www.wix.com/">
                     https://www.wix.com/

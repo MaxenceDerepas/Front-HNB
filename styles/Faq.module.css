@@ -1,7 +1,7 @@
 .content {
     background-image: url("../images/heart-n-brain-fond-ecran.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* background-position: fill; */
     color: #fefdfd;
     font-weight: lighter;
     font-size: 15px;
@@ -15,21 +15,22 @@
 .title {
     color: #f7b800;
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: 16px;
+    font-family: "luloCleanOne";
+    font-size: 11px;
     margin-bottom: 20px;
     margin-top: 20px;
 }
 .text {
     line-height: 16px;
     margin-bottom: 20px;
+    line-height: 17px;
 }
 .list {
     list-style: initial;
     margin-left: 30px;
+    line-height: 17px;
 }
 .textList {
-    line-height: 16px;
     margin-bottom: 20px;
     margin-left: 30px;
 }
