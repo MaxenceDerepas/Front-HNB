@@ -19,7 +19,7 @@
     background-size: cover;
 }
 .column1:hover {
-    color: skyblue;
+    color: #f7b800;
 }
 .column2 {
     cursor: pointer;
@@ -31,7 +31,7 @@
     background-size: cover;
 }
 .column2:hover {
-    color: skyblue;
+    color: #f7b800;
 }
 .text {
     background-color: rgba(0, 0, 0, 0.5);

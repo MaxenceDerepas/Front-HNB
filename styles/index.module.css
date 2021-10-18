@@ -160,12 +160,13 @@
     border: none;
     cursor: pointer;
     font-size: 15px;
+    font-family: "Avenir Light";
 }
 .button:hover {
-    color: skyblue;
+    color: #f7b800;
 }
 .succes {
-    color: #dec328;
+    color: #f7b800;
     display: flex;
     justify-content: space-between;
 }

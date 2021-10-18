@@ -10,6 +10,16 @@
     padding: 0 21px;
 }
 .containerTestimony {
+    box-sizing: border-box;
+    width: 980px;
+    height: 100%;
+    padding: 0 21px;
+}
+.containerTestimony3 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     width: 980px;
     height: 100%;
     padding: 0 21px;
@@ -32,6 +42,12 @@
     width: 640px;
     line-height: 17px;
     margin-bottom: 40px;
+}
+.testimonyContent3 {
+    width: 640px;
+    line-height: 17px;
+    margin-bottom: 40px;
+    margin-right: -21px;
 }
 .textTestimony {
     font-size: 15px;

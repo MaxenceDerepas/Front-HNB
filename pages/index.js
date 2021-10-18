@@ -341,10 +341,9 @@ export default function Home({ data }) {
                                 }}
                             />
                             <input
-                                required
                                 className={styles.input}
                                 type="text"
-                                placeholder="Sujet*"
+                                placeholder="Sujet"
                                 name="sujet"
                                 value={sujet}
                                 onChange={(e) => {
@@ -355,7 +354,7 @@ export default function Home({ data }) {
                                 required
                                 className={styles.area}
                                 type="textarea"
-                                placeholder="Message"
+                                placeholder="Message*"
                                 name="message"
                                 value={message}
                                 onChange={(e) => {

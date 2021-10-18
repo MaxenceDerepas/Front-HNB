@@ -141,7 +141,7 @@ export default function Faq({ data }) {
                         fondatrices d'Heart n Brain.
                         <br />
                         Pour plus d'informations nous concernant,{" "}
-                        <Link href="/notre-mission">
+                        <Link href="/notre-mission#us">
                             <a className={styles.a}>c'est par ici.</a>
                         </Link>
                     </p>

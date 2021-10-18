@@ -124,10 +124,10 @@ export default function OurOffers({ data }) {
                             <p className={styles.text}>
                                 -{" "}
                                 <span className={styles.italic}>
-                                    “J'ai une superbe opportunité
+                                    «J'ai une superbe opportunité
                                     professionnelle pour vous Chloé ! En
                                     revanche c'est en anglais, mais ça ne vous
-                                    fait pas peur n'est-ce pas ?”
+                                    fait pas peur n'est-ce pas ?»
                                 </span>{" "}
                                 Lui explique son supérieur hiérarchique.
                             </p>

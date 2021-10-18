@@ -56,7 +56,7 @@ export default function OurOffers({ data }) {
                 <div className={styles.title}>
                     <div className={styles.container}>
                         <h1>
-                            Dépasser vos blocages en anglais pour libérer votre
+                            Dépassez vos blocages en anglais pour libérer votre
                             potentiel et maximiser votre performance
                         </h1>
                     </div>
@@ -87,7 +87,7 @@ export default function OurOffers({ data }) {
                                 s'outiller pour être aussi performantes en
                                 anglais qu'en français.
                             </p>
-                            <p className={styles.text}>
+                            <p id="us" className={styles.text}>
                                 Notre ambition, c'est de combattre le{" "}
                                 <span className={styles.italique}>
                                     "Sorry I don't speak English very well"
