@@ -8,7 +8,16 @@ import Coeur from "../images/coeur-heart-n-brain.png";
 import Pin from "../images/pin-heart-n-brain.png";
 import { useState } from "react";
 
-export default function Home() {
+export async function getStaticProps() {
+    // Fetch data from external API
+    const res = await fetch(`https://hnb-app.herokuapp.com/Home`);
+    const data = await res.json();
+
+    // Pass data to the page via props
+    return { props: { data } };
+}
+
+export default function Home({ data }) {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [sujet, setSujet] = useState("");
@@ -51,7 +60,7 @@ export default function Home() {
                 />
                 <meta
                     property="og:description"
-                    content="Améliorez votre anglais professionnel grâce à la méthode de coaching Heart n Brain. Libérez-vous de vos blocages en anglais et faites de vos futurs défis professionnels un succès. En bref, révélez l’anglofan qui est en vous !"
+                    content={`${data.description}`}
                 />
                 <meta
                     name="description"

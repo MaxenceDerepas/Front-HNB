@@ -5,7 +5,16 @@ import Image from "next/image";
 import Link from "next/link";
 import Visuel from "../images/Heart-n-brain-parcours-de-Chloe.png";
 
-export default function OurOffers() {
+export async function getStaticProps() {
+    // Fetch data from external API
+    const res = await fetch(`https://hnb-app.herokuapp.com/NotreMethode`);
+    const data = await res.json();
+
+    // Pass data to the page via props
+    return { props: { data } };
+}
+
+export default function OurOffers({ data }) {
     return (
         <Layout>
             <Head>
@@ -33,7 +42,7 @@ export default function OurOffers() {
                 />
                 <meta
                     property="og:description"
-                    content="Grâce à un accompagnement sur-mesure ainsi que des outils pratiques et efficaces, Heart n Brain vous propose d’en finir avec vos blocages en anglais et de faire évoluer votre carrière. Découvrez la méthode Heart n Brain. "
+                    content={`${data.description}`}
                 />
                 <meta
                     property="og:url"

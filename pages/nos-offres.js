@@ -4,7 +4,16 @@ import styles from "../styles/ourOffers.module.css";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-export default function OurOffers() {
+export async function getStaticProps() {
+    // Fetch data from external API
+    const res = await fetch(`https://hnb-app.herokuapp.com/NosOffres`);
+    const data = await res.json();
+
+    // Pass data to the page via props
+    return { props: { data } };
+}
+
+export default function OurOffers({ data }) {
     const [height, setHeight] = useState();
     const [platform, setPlatform] = useState();
     useEffect(() => {
@@ -39,7 +48,7 @@ export default function OurOffers() {
                 />
                 <meta
                     property="og:description"
-                    content="Venez découvrir les offres de coaching en anglais professionnel d'Heart n Brain. Que vous soyez un particulier ou une entreprise, vous trouverez ici les informations concernant nos différents formats d'accompagnement !"
+                    content={`${data.description}`}
                 />
                 <meta
                     property="og:url"

@@ -4,7 +4,16 @@ import Link from "next/link";
 
 import styles from "../styles/Cvg.module.css";
 
-export default function TermOfSales() {
+export async function getStaticProps() {
+    // Fetch data from external API
+    const res = await fetch(`https://hnb-app.herokuapp.com/CVG`);
+    const data = await res.json();
+
+    // Pass data to the page via props
+    return { props: { data } };
+}
+
+export default function TermOfSales({ data }) {
     return (
         <Layout>
             <Head>
@@ -29,7 +38,7 @@ export default function TermOfSales() {
                 />
                 <meta
                     property="og:description"
-                    content="Solutions de coaching en anglais professionnel. Découvrez nos conditions générales de vente aux particuliers et aux entreprises. "
+                    content={`${data.description}`}
                 />
                 <meta
                     property="og:url"

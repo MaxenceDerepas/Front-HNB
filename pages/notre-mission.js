@@ -4,7 +4,16 @@ import styles from "../styles/OurPhilosophy.module.css";
 import Image from "next/image";
 import Photo from "../images/photo-equipe-heart-n-brain.jpg";
 
-export default function OurOffers() {
+export async function getStaticProps() {
+    // Fetch data from external API
+    const res = await fetch(`https://hnb-app.herokuapp.com/NotreMission`);
+    const data = await res.json();
+
+    // Pass data to the page via props
+    return { props: { data } };
+}
+
+export default function OurOffers({ data }) {
     return (
         <Layout>
             <Head>
@@ -30,7 +39,7 @@ export default function OurOffers() {
 
                 <meta
                     property="og:description"
-                    content="Notre mission chez Heart n Brain : Se libérer de sa peur de parler anglais au travail et adopter les bons outils de communication en anglais pour s’ouvrir de nouvelles opportunités professionnelles. Venez découvrir l'histoire d'Heart n Brain, quelques mots sur ses coaches et leurs valeurs !"
+                    content={`${data.description}`}
                 />
                 <meta
                     property="og:url"

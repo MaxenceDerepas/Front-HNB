@@ -4,7 +4,16 @@ import styles from "../styles/OurConcept.module.css";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-export default function OurConcept() {
+export async function getStaticProps() {
+    // Fetch data from external API
+    const res = await fetch(`https://hnb-app.herokuapp.com/NotreConcept`);
+    const data = await res.json();
+
+    // Pass data to the page via props
+    return { props: { data } };
+}
+
+export default function OurConcept({ data }) {
     const [height, setHeight] = useState();
     const [platform, setPlatform] = useState();
     useEffect(() => {
@@ -36,7 +45,7 @@ export default function OurConcept() {
                 <meta property="og:site_name" content="Heart n Brain" />
                 <meta
                     property="og:description"
-                    content="Notre concept de coaching en anglais professionnel se fonde sur une approche pédagogique à la fois bienveillante, afin de vous aider à dépasser vos blocages en anglais, et opérationnelle, afin de vous donner des outils et clés concrets pour vous aider à relever vos défis professionnels en anglais."
+                    content={`${data.description}`}
                 />
                 <meta
                     name="description"

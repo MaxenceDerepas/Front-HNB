@@ -3,7 +3,16 @@ import Head from "next/head";
 import styles from "../styles/LegalNotice.module.css";
 import Link from "next/link";
 
-export default function LegalNotice() {
+export async function getStaticProps() {
+    // Fetch data from external API
+    const res = await fetch(`https://hnb-app.herokuapp.com/MentionsLegales`);
+    const data = await res.json();
+
+    // Pass data to the page via props
+    return { props: { data } };
+}
+
+export default function LegalNotice({ data }) {
     return (
         <Layout>
             <Head>
@@ -19,6 +28,10 @@ export default function LegalNotice() {
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"
+                />
+                <meta
+                    property="og:description"
+                    content={`${data.description}`}
                 />
                 <meta
                     name="description"

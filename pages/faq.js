@@ -3,7 +3,16 @@ import Head from "next/head";
 import styles from "../styles/Faq.module.css";
 import Link from "next/link";
 
-export default function Faq() {
+export async function getStaticProps() {
+    // Fetch data from external API
+    const res = await fetch(`https://hnb-app.herokuapp.com/Faq`);
+    const data = await res.json();
+
+    // Pass data to the page via props
+    return { props: { data } };
+}
+
+export default function Faq({ data }) {
     return (
         <Layout>
             <Head>
@@ -39,7 +48,7 @@ export default function Faq() {
                 ></meta>
                 <meta
                     property="og:description"
-                    content="La méthode d’accompagnement en anglais Heart n Brain est-elle faite pour moi ? Comment se déroule une séance ? Comment ma progression est-elle mesurée ? Toutes les réponses aux questions fréquemment posées. "
+                    content={`${data.description}`}
                 />
                 <link rel="icon" href="/favicon-heart-n-brain.png" />
             </Head>

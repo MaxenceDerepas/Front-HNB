@@ -6,7 +6,16 @@ import Link from "next/link";
 
 import Parcours from "../images/parcours-collectif.png";
 
-export default function Collective() {
+export async function getStaticProps() {
+    // Fetch data from external API
+    const res = await fetch(`https://hnb-app.herokuapp.com/Collectif`);
+    const data = await res.json();
+
+    // Pass data to the page via props
+    return { props: { data } };
+}
+
+export default function Collective({ data }) {
     return (
         <Layout>
             <Head>
@@ -36,7 +45,7 @@ export default function Collective() {
                 />
                 <meta
                     property="og:description"
-                    content="N’ayez plus peur de prendre la parole en anglais. Heart n Brain vous accompagne individuellement pour améliorer votre anglais professionnel et vous libérer de vos blocages ! Heart n Brain vous propose un accompagnement personnalisé basé sur vos objectifs."
+                    content={`${data.description}`}
                 />
                 <meta
                     property="og:url"

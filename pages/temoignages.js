@@ -11,13 +11,15 @@ import LINKEDIN from "../images/LinkedIn.png";
 export async function getStaticProps() {
     // Fetch data from external API
     const res = await fetch(`https://hnb-app.herokuapp.com/Testimony`);
+    const response = await fetch(`https://hnb-app.herokuapp.com/Temoignages`);
+    const dataDescription = await response.json();
     const data = await res.json();
 
     // Pass data to the page via props
-    return { props: { data } };
+    return { props: { data, dataDescription } };
 }
 
-export default function Testimony({ data }) {
+export default function Testimony({ data, dataDescription }) {
     const [index, setIndex] = useState(0);
 
     const nextImage = () => {
@@ -70,7 +72,7 @@ export default function Testimony({ data }) {
                 ></meta>
                 <meta
                     property="og:description"
-                    content="Découvrez les témoignages de coachés qui ont testé la méthode Heart n Brain ainsi que les entreprises qui nous font confiance."
+                    content={`${dataDescription.description}`}
                 />
                 <link rel="icon" href="/favicon-heart-n-brain.png" />
             </Head>

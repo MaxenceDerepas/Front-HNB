@@ -1,7 +1,16 @@
 import Layout from "../components/layout";
 import Head from "next/head";
 
-export default function Blog() {
+export async function getStaticProps() {
+    // Fetch data from external API
+    const res = await fetch(`https://hnb-app.herokuapp.com/Blog`);
+    const data = await res.json();
+
+    // Pass data to the page via props
+    return { props: { data } };
+}
+
+export default function Blog({ data }) {
     return (
         <Layout>
             <Head>
@@ -25,7 +34,7 @@ export default function Blog() {
                 <meta property="og:title" content="Blog | Heart n Brain" />
                 <meta
                     property="og:description"
-                    content="Vos coachs Heart n Brain partagent leurs tips, bonnes pratiques et exemples d'expériences pour vous aider à améliorer votre pratique de l'anglais professionnel !"
+                    content={`${data.description}`}
                 />
                 <meta property="og:site_name" content="Heart n Brain" />
                 <meta property="og:type" content="website" />

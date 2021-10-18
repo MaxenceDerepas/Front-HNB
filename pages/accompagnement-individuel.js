@@ -9,7 +9,16 @@ import Pin from "../images/pin-heart-n-brain.png";
 import Point from "../images/Point.png";
 import Parcours from "../images/parcours-indiv.png";
 
-export default function Individual() {
+export async function getStaticProps() {
+    // Fetch data from external API
+    const res = await fetch(`https://hnb-app.herokuapp.com/Individuel`);
+    const data = await res.json();
+
+    // Pass data to the page via props
+    return { props: { data } };
+}
+
+export default function Individual({ data }) {
     return (
         <Layout>
             <Head>
@@ -39,7 +48,7 @@ export default function Individual() {
                 />
                 <meta
                     property="og:description"
-                    content="N’ayez plus peur de prendre la parole en anglais. Heart n Brain vous accompagne individuellement pour améliorer votre anglais professionnel et vous libérer de vos blocages ! Heart n Brain vous propose un accompagnement personnalisé basé sur vos objectifs."
+                    content={`${data.description}`}
                 />
                 <meta
                     property="og:url"
