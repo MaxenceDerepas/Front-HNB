@@ -4,14 +4,6 @@ import styles from "../styles/Testimony.module.css";
 import Image from "next/image";
 import { useState } from "react";
 
-import HEC from "../images/HEC-heart-n-brain.jpg";
-import LOREAL from "../images/LOreal-heart-n-brain.png";
-import KEOLIS from "../images/keolis-heart-n-brain.png";
-import ACCENTURE from "../images/Accenture-heart-n-brain.png";
-import PEGA from "../images/Pega-heart-n-brain.png";
-import DELSEY from "../images/Delsey-heart-n-brain.png";
-import UBISOFT from "../images/Ubisoft-heart-n-brain.jpg";
-import MA from "../images/MA.png";
 import Right from "../images/chevron-right.svg";
 import Left from "../images/chevron-left.svg";
 import LINKEDIN from "../images/LinkedIn.png";
@@ -341,96 +333,6 @@ export default function Testimony({ data }) {
                                     </div>
                                 );
                             })}
-                        </div>
-                    </div>
-                </div>
-                <div className={styles.trustUs}>
-                    <div className={styles.container}>
-                        <div className={styles.separatorWhite}></div>
-                        <h2 className={styles.h2}>ILS NOUS FONT CONFIANCE</h2>
-                        <div className={styles.trustBox}>
-                            <div className={styles.boxDarkBlue}>
-                                <div className={styles.contentBox}>
-                                    <Image
-                                        className={styles.img}
-                                        src={HEC}
-                                        alt="logo de HEC paris"
-                                        title="logo HEC"
-                                    />
-                                </div>
-                            </div>
-                            <div className={styles.boxYellow}>
-                                <div className={styles.contentBox}>
-                                    <Image
-                                        className={styles.img}
-                                        src={LOREAL}
-                                        alt="logo de L'Oreal Paris"
-                                        title="logo L'Oreal"
-                                    />
-                                </div>
-                            </div>
-                            <div className={styles.boxBlue}>
-                                <div className={styles.contentBox}>
-                                    <Image
-                                        className={styles.img}
-                                        src={KEOLIS}
-                                        alt="logo de keolis"
-                                        title="logo keolis"
-                                    />
-                                </div>
-                            </div>
-                            <div className={styles.boxGrey}>
-                                <div className={styles.contentBox}>
-                                    <Image
-                                        className={styles.img}
-                                        src={ACCENTURE}
-                                        alt="logo de Accenture"
-                                        title="logo accenture"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <div className={styles.trustBox2}>
-                            <div className={styles.boxBlue}>
-                                <div className={styles.contentBox}>
-                                    <Image
-                                        className={styles.img}
-                                        src={PEGA}
-                                        alt="logo de Pega"
-                                        title="logo pega"
-                                    />
-                                </div>
-                            </div>
-                            <div className={styles.boxGrey}>
-                                <div className={styles.contentBox}>
-                                    <Image
-                                        className={styles.img}
-                                        src={DELSEY}
-                                        alt="logo de Delsey Paris"
-                                        title="logo Delsey"
-                                    />
-                                </div>
-                            </div>
-                            <div className={styles.boxYellow}>
-                                <div className={styles.contentBox}>
-                                    <Image
-                                        className={styles.img}
-                                        src={UBISOFT}
-                                        alt="logo de Ubisoft"
-                                        title="logo ubisoft"
-                                    />
-                                </div>
-                            </div>
-                            <div className={styles.boxDarkBlue}>
-                                <div className={styles.contentBox}>
-                                    <Image
-                                        className={styles.img}
-                                        src={MA}
-                                        alt="logo de Meilleur agent"
-                                        title="logo Meilleur agent"
-                                    />
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

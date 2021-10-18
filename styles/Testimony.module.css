@@ -2,6 +2,7 @@
     color: white;
     font-weight: lighter;
     font-size: 15px;
+    margin-bottom: 30px;
 }
 .container {
     width: 980px;
@@ -29,7 +30,7 @@
 }
 .testimonyContent {
     width: 640px;
-    line-height: 18.5px;
+    line-height: 17px;
     margin-bottom: 40px;
 }
 .textTestimony {
@@ -50,15 +51,13 @@
     justify-content: center;
     align-items: center;
 }
-.trustUs {
-    margin-bottom: 40px;
-}
+
 .title {
-    font-size: 16px;
+    font-size: 13px;
     text-transform: uppercase;
     margin-bottom: 35px;
-    font-weight: bold;
-    letter-spacing: 5px;
+    font-family: "luloCleanOne";
+    letter-spacing: 3.9px;
     display: flex;
     align-items: flex-end;
     margin-top: -15px;
@@ -82,65 +81,7 @@
     height: 40px;
     border-top: white solid 2px;
 }
-.trustBox {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 33px;
-}
-.trustBox2 {
-    display: flex;
-    justify-content: center;
-}
-.boxDarkBlue {
-    height: 160px;
-    width: 160px;
-    box-sizing: border-box;
-    padding: 16px;
-    background-color: #324258;
-    margin: 0 27.5px;
-}
-.boxYellow {
-    height: 160px;
-    width: 160px;
-    box-sizing: border-box;
-    padding: 16px;
-    background-color: #f7b900;
-    margin: 0 27.5px;
-}
-.boxBlue {
-    height: 160px;
-    width: 160px;
-    box-sizing: border-box;
-    padding: 16px;
-    background-color: #043c53;
-    margin: 0 27.5px;
-}
-.boxGrey {
-    height: 160px;
-    width: 160px;
-    box-sizing: border-box;
-    padding: 16px;
-    background-color: #a19c9c;
-    margin: 0 27.5px;
-}
-.contentBox {
-    height: 100%;
-    width: 100%;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    padding: 0 3px;
-}
-.contrex {
-    display: flex;
-    align-items: center;
-}
+
 .text {
     margin-left: 20px;
     width: 480px;
@@ -164,27 +105,5 @@
     }
     .textMobile {
         padding-top: 30px;
-    }
-    .trustBox {
-        display: flex;
-        margin-bottom: 0;
-        flex-wrap: wrap;
-    }
-    .trustBox2 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .boxBlue {
-        margin-bottom: 20px;
-    }
-    .boxDarkBlue {
-        margin-bottom: 20px;
-    }
-    .boxGrey {
-        margin-bottom: 20px;
-    }
-    .boxYellow {
-        margin-bottom: 20px;
     }
 }
