@@ -490,8 +490,7 @@ export default function Layout({ children, visible }) {
                             </li>
                             <li
                                 className={
-                                    router.pathname === "/#contact" &&
-                                    visible === true
+                                    router.pathname === "/" && visible === true
                                         ? styles.liMobileActive
                                         : styles.liMobile
                                 }
