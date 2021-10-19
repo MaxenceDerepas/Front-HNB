@@ -260,7 +260,18 @@ export default function Layout({ children }) {
                             >
                                 <Link href="/faq">FAQ</Link>
                             </li>
-                            <li className={styles.li}>
+                            <li
+                                className={
+                                    router.pathname === "/"
+                                        ? children[2]._owner
+                                            ? children[2]._owner.memoizedState
+                                                  .baseState === true
+                                                ? styles.liActive
+                                                : styles.li
+                                            : styles.li
+                                        : styles.li
+                                }
+                            >
                                 <Link href="/#contact">Contact</Link>
                             </li>
                             <li
