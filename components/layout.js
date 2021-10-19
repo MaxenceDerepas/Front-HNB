@@ -18,8 +18,6 @@ export default function Layout({ children }) {
     const [openConceptMobile, setOpenConceptMobile] = useState(false);
     const [width, setWidth] = useState(null);
     const [widthMobile, setWidthMobile] = useState(null);
-    console.log(width);
-    console.log(widthMobile);
 
     useEffect(() => {
         if (typeof window !== "undefined") {

@@ -20,6 +20,7 @@ export async function getStaticProps() {
 
 export default function Home({ data }) {
     const [visible, setVisible] = useState(false);
+    console.log(visible);
 
     const { observe } = useInView({
         threshold: 1,
