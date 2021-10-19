@@ -6,8 +6,7 @@ import Image from "next/image";
 import Ampoule from "../images/ampoule-heart-n-brain.png";
 import Coeur from "../images/coeur-heart-n-brain.png";
 import Pin from "../images/pin-heart-n-brain.png";
-import { useEffect, useRef, useState } from "react";
-import { useRouter } from "next/router";
+import { useState } from "react";
 import useInView from "react-cool-inview";
 
 export async function getStaticProps() {
@@ -19,39 +18,12 @@ export async function getStaticProps() {
     return { props: { data } };
 }
 
-// const useOnScreen = (options) => {
-//     const ref = useRef;
-//     const [visible, setVisible] = useState(false);
-
-//     useEffect(() => {
-//         const observer = new IntersectionObserver(([entry]) => {
-//             setVisible(entry.isIntersecting);
-//         }, options);
-
-//         if ((ref.current = false)) {
-//             observer.observe(ref.current);
-//         }
-//         return () => {
-//             if (ref.current) {
-//                 observer.unobserve(ref.current);
-//             }
-//         };
-//     }, [ref, options]);
-//     return [ref, visible];
-// };
-
 export default function Home({ data }) {
     const [visible, setVisible] = useState(false);
-    // const [ref, visible] = useOnScreen({
-    //     rootMargin: "1330Px",
-    //     threshold: 1.0,
-    // });
+
     const { observe } = useInView({
-        // For an element to be considered "seen", we'll say it must be 100% in the viewport
         threshold: 1,
         onEnter: () => {
-            // Stop observe when the target enters the viewport, so the callback only triggered once
-            // Fire an analytic event to your tracking service
             setVisible(true);
         },
         onLeave: () => {
@@ -64,7 +36,6 @@ export default function Home({ data }) {
     const [sujet, setSujet] = useState("");
     const [message, setMessage] = useState("");
     const [succes, setSucces] = useState("");
-    const ref = useRef();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
