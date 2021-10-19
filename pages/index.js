@@ -19,7 +19,7 @@ export async function getStaticProps() {
 }
 
 export default function Home({ data }) {
-    const [visible, setVisible] = useState(false);
+    const [visible, setVisible] = useState(false); // const [visible, setVisible] = useState(false);
 
     const { observe } = useInView({
         threshold: 1,
@@ -44,7 +44,7 @@ export default function Home({ data }) {
     };
 
     return (
-        <Layout>
+        <Layout visible={visible}>
             <Head>
                 <title>
                     Coaching Anglais Professionnel | Paris | Heart n Brain

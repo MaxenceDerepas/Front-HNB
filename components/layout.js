@@ -9,7 +9,7 @@ import chevron from "../images/chevron-up.svg";
 import Menu from "../images/menu.svg";
 import Plus from "../images/plus.svg";
 
-export default function Layout({ children }) {
+export default function Layout({ children, visible }) {
     const router = useRouter();
     const [hoverConcept, setHoverConcept] = useState(false);
     const [hoverOffer, setHoverOffer] = useState(false);
@@ -18,7 +18,6 @@ export default function Layout({ children }) {
     const [openConceptMobile, setOpenConceptMobile] = useState(false);
     const [width, setWidth] = useState(null);
     const [widthMobile, setWidthMobile] = useState(null);
-    console.log(children);
 
     useEffect(() => {
         if (typeof window !== "undefined") {
@@ -263,13 +262,8 @@ export default function Layout({ children }) {
                             </li>
                             <li
                                 className={
-                                    router.pathname === "/"
-                                        ? children[2]._owner
-                                            ? children[2]._owner.memoizedState
-                                                  .baseState === true
-                                                ? styles.liActive
-                                                : styles.li
-                                            : styles.li
+                                    router.pathname === "/" && visible === true
+                                        ? styles.liActive
                                         : styles.li
                                 }
                             >
@@ -496,7 +490,8 @@ export default function Layout({ children }) {
                             </li>
                             <li
                                 className={
-                                    router.pathname === "/#contact"
+                                    router.pathname === "/#contact" &&
+                                    visible === true
                                         ? styles.liMobileActive
                                         : styles.liMobile
                                 }
