@@ -536,10 +536,8 @@ export default function Layout({ children, visible }) {
                         />
                     </div>
                 </section>
-                {cookiesAccept === null && (
-                    <Cookie acceptCookie={acceptCookie} />
-                )}
             </footer>
+            {cookiesAccept === null && <Cookie acceptCookie={acceptCookie} />}
         </>
     );
 }

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Cookie = ({ acceptCookie }) => {
     return (
-        <section className={styles.cookie}>
+        <div className={styles.cookie}>
             <p>
                 Nous utilisons des cookies pour vous assurer un bon
                 fonctionnement du site, établir des statistiques de
@@ -34,7 +34,7 @@ const Cookie = ({ acceptCookie }) => {
                     <p>Accepter</p>
                 </div>
             </div>
-        </section>
+        </div>
     );
 };
 export default Cookie;
