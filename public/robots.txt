@@ -10,6 +10,6 @@ Allow: /notre-methode
 Allow: /notre-mission
 Allow: /temoignages
 Allow: /mentions-legales-confidentialite
-Allow: /conditions-generales-de-vente
+Allow: /conditions-generales-de-ventes
 
 
