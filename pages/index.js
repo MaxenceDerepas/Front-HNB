@@ -11,6 +11,7 @@ import useInView from "react-cool-inview";
 
 import SocialLinkedin from "../images/linkedinSocial.webp";
 import SocialInsta from "../images/instaSocial.webp";
+import Qualiopi from "../images/Qualiopi.png";
 
 export async function getStaticProps() {
     // Fetch data from external API
@@ -396,45 +397,56 @@ export default function Home({ data }) {
                                     />
                                 </div>
                             </form>
-                            <div className={styles.buttonSocial}>
-                                <p
-                                    style={{
-                                        fontFamily: "luloCleanOne",
-                                        fontSize: "22px",
-                                    }}
-                                >
-                                    FOLLOW US
-                                </p>
-                                <div className={styles.imgSocial}>
-                                    <div>
-                                        <a
-                                            target="_blank"
-                                            style={{ cursor: "pointer" }}
-                                            href="https://www.linkedin.com/company/heart-n-brain/"
-                                        >
-                                            <Image
-                                                src={SocialLinkedin}
-                                                alt="lien linkedin heart n brain"
-                                                title="lien linkedin"
-                                                height={30}
-                                                width={30}
-                                            />
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <a
-                                            target="_blank"
-                                            style={{ cursor: "pointer" }}
-                                            href="https://www.instagram.com/_heart_n_brain_/"
-                                        >
-                                            <Image
-                                                src={SocialInsta}
-                                                alt="lien instagram heart n brain"
-                                                title="lien instagram"
-                                                height={30}
-                                                width={30}
-                                            />
-                                        </a>
+                            <div className={styles.contactRight}>
+                                <div>
+                                    <Image
+                                        src={Qualiopi}
+                                        alt="certifié qualiopi"
+                                        title="certification qualiopi"
+                                        width={192}
+                                        height={90}
+                                    />
+                                </div>
+                                <div className={styles.buttonSocial}>
+                                    <p
+                                        style={{
+                                            fontFamily: "Caviar Dreams",
+                                            fontSize: "22px",
+                                        }}
+                                    >
+                                        FOLLOW US
+                                    </p>
+                                    <div className={styles.imgSocial}>
+                                        <div className={styles.linkedin}>
+                                            <a
+                                                target="_blank"
+                                                style={{ cursor: "pointer" }}
+                                                href="https://www.linkedin.com/company/heart-n-brain/"
+                                            >
+                                                <Image
+                                                    src={SocialLinkedin}
+                                                    alt="lien linkedin heart n brain"
+                                                    title="lien linkedin"
+                                                    height={30}
+                                                    width={30}
+                                                />
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a
+                                                target="_blank"
+                                                style={{ cursor: "pointer" }}
+                                                href="https://www.instagram.com/_heart_n_brain_/"
+                                            >
+                                                <Image
+                                                    src={SocialInsta}
+                                                    alt="lien instagram heart n brain"
+                                                    title="lien instagram"
+                                                    height={30}
+                                                    width={30}
+                                                />
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
