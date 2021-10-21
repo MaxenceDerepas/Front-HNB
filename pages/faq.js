@@ -2,6 +2,7 @@ import Layout from "../components/layout";
 import Head from "next/head";
 import styles from "../styles/Faq.module.css";
 import Link from "next/link";
+import fond from "../images/heart-n-brain-fond-ecran.webp";
 
 export async function getStaticProps() {
     // Fetch data from external API
@@ -53,6 +54,7 @@ export default function Faq({ data }) {
                 <link rel="icon" href="/favicon-heart-n-brain.png" />
             </Head>
             <section className={styles.content}>
+                <img className={styles.fondEcran} src="/fond.webp" />
                 <div className={styles.container}>
                     <h1 className={styles.title}>
                         Comment savoir si la méthode Heart n Brain est faite

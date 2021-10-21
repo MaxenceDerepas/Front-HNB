@@ -55,6 +55,8 @@ export default function OurOffers({ data }) {
                 <link rel="icon" href="/favicon-heart-n-brain.png" />
             </Head>
             <div className={styles.content}>
+                <img className={styles.fondEcran} src="/fond.webp" />
+
                 <section className={styles.container}>
                     <div className={styles.padding}>
                         <div className={styles.rectangleWhiteLeft}>

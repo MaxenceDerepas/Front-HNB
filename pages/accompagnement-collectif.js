@@ -56,6 +56,8 @@ export default function Collective({ data }) {
                 <link rel="icon" href="/favicon-heart-n-brain.png" />
             </Head>
             <section className={styles.content}>
+                <img className={styles.fondEcran} src="/fond.webp" />
+
                 <div className={styles.container}>
                     <div className={styles.accompagnement}>
                         <div className={styles.separatorWhite}></div>
