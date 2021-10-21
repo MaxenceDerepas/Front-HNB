@@ -2,6 +2,8 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import Cookies from "js-cookie";
+import Cookie from "./cookie";
 
 import styles from "../styles/Layout.module.css";
 import Logo from "../images/Heart-n-Brain.png";
@@ -10,6 +12,9 @@ import Menu from "../images/menu.svg";
 import Plus from "../images/plus.svg";
 
 export default function Layout({ children, visible }) {
+    const [cookiesAccept, setCookiesAcept] = useState(
+        Cookies.get("cookies") || null
+    );
     const router = useRouter();
     const [hoverConcept, setHoverConcept] = useState(false);
     const [hoverOffer, setHoverOffer] = useState(false);
@@ -17,14 +22,16 @@ export default function Layout({ children, visible }) {
     const [openOfferMobile, setOpenOfferMobile] = useState(false);
     const [openConceptMobile, setOpenConceptMobile] = useState(false);
     const [width, setWidth] = useState(null);
-    const [widthMobile, setWidthMobile] = useState(null);
 
     useEffect(() => {
         if (typeof window !== "undefined") {
             setWidth(window.innerWidth);
-            setWidthMobile(window.screen.width / window.devicePixelRatio);
         }
     }, []);
+
+    const acceptCookie = (value) => {
+        setCookiesAcept(Cookies.set("cookies", value, { expires: 360 }));
+    };
 
     const navMobile = () => {
         if (openNavMobile && openOfferMobile) {
@@ -73,19 +80,13 @@ export default function Layout({ children, visible }) {
                               width: "100vw",
                               borderBottomLeftRadius: "20px",
                               borderBottomRightRadius: "20px",
-                              overflow:
-                                  width <= 650 || widthMobile <= 650
-                                      ? "hidden"
-                                      : "visible",
+                              overflow: width <= 650 ? "hidden" : "visible",
                           }
                         : {
                               boxSizing: "border-box",
                               zIndex: "1",
                               backgroundColor: "#FFF",
-                              overflow:
-                                  width <= 650 || widthMobile <= 650
-                                      ? "hidden"
-                                      : "visible",
+                              overflow: width <= 650 ? "hidden" : "visible",
                               height: "92px",
                               display: "flex",
                               flexDirection: "column",
@@ -535,6 +536,9 @@ export default function Layout({ children, visible }) {
                         />
                     </div>
                 </section>
+                {cookiesAccept === null && (
+                    <Cookie acceptCookie={acceptCookie} />
+                )}
             </footer>
         </>
     );

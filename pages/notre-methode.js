@@ -218,12 +218,12 @@ export default function OurOffers({ data }) {
                                             </li>
                                             <li>
                                                 Mettre en pratique dans son
-                                                univers
+                                                univers professionnel
                                             </li>
                                             <li>
-                                                professionnel Synthétiser et
-                                                auto-évaluer sa motivation et
-                                                l’atteinte de son objectif
+                                                Synthétiser et auto-évaluer sa
+                                                motivation et l’atteinte de son
+                                                objectif
                                             </li>
                                         </ul>
                                     </div>

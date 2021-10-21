@@ -127,6 +127,7 @@
     margin-bottom: 50px;
 }
 .containerFooter {
+    padding-left: 21px;
     width: 980px;
     display: flex;
     justify-content: space-between;

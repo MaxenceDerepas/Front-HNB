@@ -151,20 +151,26 @@
 .titleYellow {
     color: #f7b900;
     font-size: 14px;
-    letter-spacing: 3.5px;
+    letter-spacing: 5.6px;
     margin-bottom: 20px;
+    font-weight: 400;
+    line-height: 17px;
 }
 .titleBlue {
     color: #2b7c74;
     font-size: 14px;
-    letter-spacing: 3.5px;
+    letter-spacing: 5.6px;
+    font-weight: 400;
     margin-bottom: 20px;
+    line-height: 17px;
 }
 .titleGrey {
     color: #a19c9c;
     font-size: 14px;
-    letter-spacing: 3.5px;
+    letter-spacing: 5.6px;
     margin-bottom: 20px;
+    font-weight: 400;
+    line-height: 17px;
 }
 .infoText {
     margin-bottom: 20px;

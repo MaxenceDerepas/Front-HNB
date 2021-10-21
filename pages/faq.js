@@ -236,8 +236,8 @@ export default function Faq({ data }) {
                         Lors de la séance d'essai, votre coach vous propose de
                         vous positionner sur notre échelle d'aisance. Cette
                         échelle permet de définir un niveau d'aisance de départ
-                        "Aujourd’hui, je me sens confiant pour…" et un niveau
-                        cible "A terme, j'aimerais me sentir à l'aise pour…".
+                        « Aujourd’hui, je me sens confiant pour… » et un niveau
+                        cible « A terme, j'aimerais me sentir à l'aise pour… » .
                         <br />
                         Le nombre de niveaux à passer permet de déterminer le
                         nombre de séances approprié.

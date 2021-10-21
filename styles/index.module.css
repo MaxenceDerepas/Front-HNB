@@ -179,6 +179,48 @@
     color: #f7b800;
     text-decoration: underline;
 }
+.buttonSocial {
+    background: rgb(253, 233, 189);
+    background: linear-gradient(
+        90deg,
+        rgba(253, 233, 189, 1) 0%,
+        rgba(253, 198, 151, 1) 72%
+    );
+    height: 100px;
+    width: 285px;
+
+    border: white solid 1px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 13px 45px;
+    color: Black;
+}
+.imgSocial {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: space-around;
+    transition-duration: 0.5s;
+}
+.imgSocial:hover {
+    opacity: 1;
+    border-top: solid 1px black;
+    padding-top: 7px;
+    margin-top: 7px;
+    height: 70px;
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    transition-duration: 0.5s;
+}
+.formSocial {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 @media only screen and (min-width: 320px) and (max-width: 650px) {
     .content {
         width: 100vw;
@@ -260,5 +302,23 @@
     .text {
         width: 98%;
         margin: 0 auto;
+    }
+    .formSocial {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .imgSocial {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        opacity: 1;
+        border-top: solid 1px black;
+        padding-top: 10px;
+        margin-top: 10px;
+        height: 30px;
     }
 }

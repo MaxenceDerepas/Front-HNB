@@ -9,6 +9,9 @@ import Pin from "../images/pin-heart-n-brain.png";
 import { useState } from "react";
 import useInView from "react-cool-inview";
 
+import SocialLinkedin from "../images/linkedinSocial.webp";
+import SocialInsta from "../images/instaSocial.webp";
+
 export async function getStaticProps() {
     // Fetch data from external API
     const res = await fetch(`https://hnb-app.herokuapp.com/Home`);
@@ -19,7 +22,7 @@ export async function getStaticProps() {
 }
 
 export default function Home({ data }) {
-    const [visible, setVisible] = useState(false); // const [visible, setVisible] = useState(false);
+    const [visible, setVisible] = useState(false);
 
     const { observe } = useInView({
         threshold: 1,
@@ -335,59 +338,107 @@ export default function Home({ data }) {
                                 contact@heart-n-brain.com
                             </span>
                         </p>
-                        <form className={styles.form} onSubmit={handleSubmit}>
-                            <input
-                                required
-                                className={styles.input}
-                                placeholder="Nom*"
-                                type="text"
-                                name="name"
-                                value={name}
-                                onChange={(e) => {
-                                    setName(e.target.value);
-                                }}
-                            />
-                            <input
-                                required
-                                className={styles.input}
-                                placeholder="Email*"
-                                type="email"
-                                name="email"
-                                value={email}
-                                onChange={(e) => {
-                                    setEmail(e.target.value);
-                                }}
-                            />
-                            <input
-                                className={styles.input}
-                                type="text"
-                                placeholder="Sujet"
-                                name="sujet"
-                                value={sujet}
-                                onChange={(e) => {
-                                    setSujet(e.target.value);
-                                }}
-                            />
-                            <textarea
-                                required
-                                className={styles.area}
-                                type="textarea"
-                                placeholder="Message*"
-                                name="message"
-                                value={message}
-                                onChange={(e) => {
-                                    setMessage(e.target.value);
-                                }}
-                            />
-                            <div className={styles.succes}>
-                                <p>{succes}</p>
+                        <div className={styles.formSocial}>
+                            <form
+                                className={styles.form}
+                                onSubmit={handleSubmit}
+                            >
                                 <input
-                                    className={styles.button}
-                                    type="submit"
-                                    value="Envoyer"
+                                    required
+                                    className={styles.input}
+                                    placeholder="Nom*"
+                                    type="text"
+                                    name="name"
+                                    value={name}
+                                    onChange={(e) => {
+                                        setName(e.target.value);
+                                    }}
                                 />
+                                <input
+                                    required
+                                    className={styles.input}
+                                    placeholder="Email*"
+                                    type="email"
+                                    name="email"
+                                    value={email}
+                                    onChange={(e) => {
+                                        setEmail(e.target.value);
+                                    }}
+                                />
+                                <input
+                                    required
+                                    className={styles.input}
+                                    type="text"
+                                    placeholder="Sujet*"
+                                    name="sujet"
+                                    value={sujet}
+                                    onChange={(e) => {
+                                        setSujet(e.target.value);
+                                    }}
+                                />
+                                <textarea
+                                    required
+                                    className={styles.area}
+                                    type="textarea"
+                                    placeholder="Message*"
+                                    name="message"
+                                    value={message}
+                                    onChange={(e) => {
+                                        setMessage(e.target.value);
+                                    }}
+                                />
+                                <div className={styles.succes}>
+                                    <p>{succes}</p>
+                                    <input
+                                        className={styles.button}
+                                        type="submit"
+                                        value="Envoyer"
+                                    />
+                                </div>
+                            </form>
+                            <div className={styles.buttonSocial}>
+                                <p
+                                    style={{
+                                        fontFamily: "luloCleanOne",
+                                        fontSize: "22px",
+                                    }}
+                                >
+                                    FOLLOW US
+                                </p>
+                                <div className={styles.imgSocial}>
+                                    <div>
+                                        <a
+                                            target="_blank"
+                                            style={{ cursor: "pointer" }}
+                                            href="https://www.linkedin.com/company/heart-n-brain/"
+                                        >
+                                            <Image
+                                                src={SocialLinkedin}
+                                                alt="lien linkedin heart n brain"
+                                                title="lien linkedin"
+                                                height={30}
+                                                width={30}
+                                            />
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a
+                                            target="_blank"
+                                            style={{ cursor: "pointer" }}
+                                            href="https://www.instagram.com/_heart_n_brain_/"
+                                        >
+                                            <Image
+                                                src={SocialInsta}
+                                                alt="lien instagram heart n brain"
+                                                title="lien instagram"
+                                                height={30}
+                                                width={30}
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </section>

@@ -1,0 +1,48 @@
+.cookie {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    padding: 20px;
+    line-height: inherit;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+}
+.a {
+    text-decoration: underline;
+}
+.refuse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 33px;
+    width: 100px;
+    cursor: pointer;
+    background-color: #000;
+    color: white;
+    border: white solid 1px;
+    margin-right: 10px;
+}
+.refuse:hover {
+    color: lightgray;
+    border: lightgray solid 1px;
+}
+.accept {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 33px;
+    width: 100px;
+    color: black;
+    background-color: #fff;
+}
+.accept:hover {
+    background-color: lightgray;
+}
