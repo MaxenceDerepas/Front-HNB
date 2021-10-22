@@ -419,6 +419,7 @@ export default function Home({ data }) {
                                     <div className={styles.imgSocial}>
                                         <div className={styles.linkedin}>
                                             <a
+                                                rel="noopener"
                                                 target="_blank"
                                                 style={{ cursor: "pointer" }}
                                                 href="https://www.linkedin.com/company/heart-n-brain/"
@@ -434,6 +435,7 @@ export default function Home({ data }) {
                                         </div>
                                         <div>
                                             <a
+                                                rel="noopener"
                                                 target="_blank"
                                                 style={{ cursor: "pointer" }}
                                                 href="https://www.instagram.com/_heart_n_brain_/"
