@@ -1,0 +1,41 @@
+.container {
+    width: 1060px;
+    margin: auto;
+    padding-top: 30px;
+}
+.article {
+    width: 1060px;
+    height: 386px;
+    background-color: #fff;
+    display: flex;
+}
+
+.imageArticle {
+    width: 530px;
+    padding: 1px;
+}
+.img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.columnDescription {
+    width: 530px;
+    padding: 30px 40px;
+    color: black;
+}
+.columnDescription:hover {
+    color: #f7b800;
+}
+.title {
+    font-family: "luloCleanOne";
+    font-size: 17px;
+    line-height: 21px;
+    margin-bottom: 15px;
+}
+.description {
+    font-size: 15px;
+    line-height: 22.5px;
+    width: 455px;
+    font-family: "Avenir Light";
+}

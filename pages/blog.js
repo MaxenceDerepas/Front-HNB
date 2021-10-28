@@ -1,16 +1,23 @@
 import Layout from "../components/layout";
 import Head from "next/head";
+import styles from "../styles/Blog.module.css";
+import Link from "next/link";
 
 export async function getStaticProps() {
     // Fetch data from external API
     const res = await fetch(`https://hnb-app.herokuapp.com/Blog`);
+    const responseArticle = await fetch(
+        `https://hnb-app.herokuapp.com/blogList`
+    );
     const data = await res.json();
+    const dataArticle = await responseArticle.json();
 
     // Pass data to the page via props
-    return { props: { data } };
+    return { props: { data, dataArticle } };
 }
 
-export default function Blog({ data }) {
+export default function Blog({ data, dataArticle }) {
+    console.log(dataArticle);
     return (
         <Layout>
             <Head>
@@ -41,6 +48,33 @@ export default function Blog({ data }) {
 
                 <link rel="icon" href="/favicon-heart-n-brain.png" />
             </Head>
+            <section className={styles.container}>
+                {dataArticle.map((elem, i) => {
+                    return (
+                        <Link key={elem._id} href={`/posts/${elem._id}`}>
+                            <a>
+                                <section className={styles.article}>
+                                    <div className={styles.imageArticle}>
+                                        <img
+                                            src={`${elem.urlMedia}`}
+                                            alt="image article"
+                                            className={styles.img}
+                                        />
+                                    </div>
+                                    <div className={styles.columnDescription}>
+                                        <h1 className={styles.title}>
+                                            {elem.title}
+                                        </h1>
+                                        <p className={styles.description}>
+                                            {elem.description}
+                                        </p>
+                                    </div>
+                                </section>
+                            </a>
+                        </Link>
+                    );
+                })}
+            </section>
         </Layout>
     );
 }
