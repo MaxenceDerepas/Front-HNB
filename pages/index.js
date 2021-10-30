@@ -9,6 +9,7 @@ import Pin from "../images/pin-heart-n-brain.png";
 import { useState } from "react";
 import useInView from "react-cool-inview";
 import emailjs from "emailjs-com";
+import Loader from "../components/loader";
 
 import SocialLinkedin from "../images/linkedinSocial.webp";
 import SocialInsta from "../images/instaSocial.webp";
@@ -25,6 +26,7 @@ export async function getStaticProps() {
 
 export default function Home({ data }) {
     const [visible, setVisible] = useState(false);
+    const [loader, setLoader] = useState(false);
 
     const { observe } = useInView({
         threshold: 1,
@@ -42,23 +44,19 @@ export default function Home({ data }) {
     const [message, setMessage] = useState("");
     const [succes, setSucces] = useState("");
 
-    emailjs.init(process.env.EMAILJS_USER_ID);
-
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setLoader(true);
         let templateParams = {
             name: name,
             email: email,
             subject: subject,
             message: message,
         };
+        emailjs.init(`user_jhtpYoLR6FfQSgbz40D4s`);
 
         await emailjs
-            .send(
-                process.env.EMAILJS_SERVICE_ID,
-                "template_n6crlho",
-                templateParams
-            )
+            .send("service_8fqxzxv", "template_n6crlho", templateParams)
             .then(
                 function (response) {
                     console.log("SUCCESS!", response.status, response.text);
@@ -69,6 +67,8 @@ export default function Home({ data }) {
                     setSucces("Une erreur s'est produite");
                 }
             );
+
+        setLoader(false);
     };
 
     return (
@@ -417,11 +417,15 @@ export default function Home({ data }) {
                                 />
                                 <div className={styles.succes}>
                                     <p>{succes}</p>
-                                    <input
-                                        className={styles.button}
-                                        type="submit"
-                                        value="Envoyer"
-                                    />
+                                    {loader === false ? (
+                                        <input
+                                            className={styles.button}
+                                            type="submit"
+                                            value="Envoyer"
+                                        />
+                                    ) : (
+                                        <Loader />
+                                    )}
                                 </div>
                             </form>
                             <div className={styles.contactRight}>
