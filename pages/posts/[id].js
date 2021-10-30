@@ -22,7 +22,7 @@ export default function Blog({ data }) {
                 <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
                 <link
                     rel="canonical"
-                    href="https://front-hnb.vercel.app/blog"
+                    href={`https://front-hnb.vercel.app/posts/${data.titleUrl}`}
                 ></link>
                 <meta
                     name="description"
