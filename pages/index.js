@@ -8,6 +8,7 @@ import Coeur from "../images/coeur-heart-n-brain.png";
 import Pin from "../images/pin-heart-n-brain.png";
 import { useState } from "react";
 import useInView from "react-cool-inview";
+import emailjs from "emailjs-com";
 
 import SocialLinkedin from "../images/linkedinSocial.webp";
 import SocialInsta from "../images/instaSocial.webp";
@@ -37,14 +38,37 @@ export default function Home({ data }) {
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
-    const [sujet, setSujet] = useState("");
+    const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
     const [succes, setSucces] = useState("");
 
+    emailjs.init(process.env.EMAILJS_USER_ID);
+
     const handleSubmit = async (e) => {
         e.preventDefault();
+        let templateParams = {
+            name: name,
+            email: email,
+            subject: subject,
+            message: message,
+        };
 
-        setSucces("Message envoyé !");
+        await emailjs
+            .send(
+                process.env.EMAILJS_SERVICE_ID,
+                "template_n6crlho",
+                templateParams
+            )
+            .then(
+                function (response) {
+                    console.log("SUCCESS!", response.status, response.text);
+                    setSucces("Message envoyé !");
+                },
+                function (error) {
+                    console.log("FAILED...", error);
+                    setSucces("Une erreur s'est produite");
+                }
+            );
     };
 
     return (
@@ -374,10 +398,10 @@ export default function Home({ data }) {
                                     className={styles.input}
                                     type="text"
                                     placeholder="Sujet*"
-                                    name="sujet"
-                                    value={sujet}
+                                    name="subject"
+                                    value={subject}
                                     onChange={(e) => {
-                                        setSujet(e.target.value);
+                                        setSubject(e.target.value);
                                     }}
                                 />
                                 <textarea

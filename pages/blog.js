@@ -94,15 +94,29 @@ export default function Blog({ data, dataArticle }) {
                 </div>
                 {results.map((elem, i) => {
                     return (
-                        <Link key={elem._id} href={`/posts/${elem.titleUrl}`}>
+                        <Link
+                            style={{ marginBottom: "30px" }}
+                            key={elem._id}
+                            href={`/posts/${elem.titleUrl}`}
+                        >
                             <a>
                                 <section className={styles.article}>
                                     <div className={styles.imageArticle}>
-                                        <img
-                                            src={`${elem.urlMedia.url}`}
-                                            alt="image article"
-                                            className={styles.img}
-                                        />
+                                        {elem.urlMedia.type === "image" && (
+                                            <img
+                                                src={`${elem.urlMedia.url}`}
+                                                alt="image article"
+                                                className={styles.img}
+                                            />
+                                        )}
+                                        {elem.urlMedia.type === "video" && (
+                                            <video
+                                                className={styles.movie}
+                                                src={`${elem.urlMedia.url}`}
+                                                alt="video article"
+                                                title="article"
+                                            />
+                                        )}
                                     </div>
                                     <div className={styles.columnDescription}>
                                         <h1 className={styles.title}>
