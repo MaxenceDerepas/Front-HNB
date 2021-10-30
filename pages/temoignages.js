@@ -46,6 +46,8 @@ export default function Testimony({ data, dataDescription }) {
                 </title>
                 <meta name="robots" content="index,follow" />
                 <meta name="googlebot" content="index,follow" />
+                <meta property="og:image" content="/partage.png" />
+
                 <link
                     rel="canonical"
                     href="https://front-hnb.vercel.app/temoignages"

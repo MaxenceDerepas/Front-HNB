@@ -19,6 +19,7 @@ export default function LegalNotice({ data }) {
                 <title>
                     Mentions Légales et confidentialité | Heart n Brain
                 </title>
+                <meta property="og:image" content="/partage.png" />
 
                 <link
                     rel="canonical"

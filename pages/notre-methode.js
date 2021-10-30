@@ -24,6 +24,7 @@ export default function OurOffers({ data }) {
                 </title>
                 <meta name="robots" content="index,follow" />
                 <meta name="googlebot" content="index,follow" />
+                <meta property="og:image" content="/partage.png" />
 
                 <link
                     rel="canonical"

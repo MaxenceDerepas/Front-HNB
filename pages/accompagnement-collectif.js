@@ -19,6 +19,8 @@ export default function Collective({ data }) {
     return (
         <Layout>
             <Head>
+                <meta property="og:image" content="/partage.png" />
+
                 <title>
                     Coaching anglais collectif entreprises | Paris | Heart n
                     Brain

@@ -18,6 +18,7 @@ export default function TermOfSales({ data }) {
         <Layout>
             <Head>
                 <title>Conditions Générales de Vente | Heart n Brain</title>
+                <meta property="og:image" content="/partage.png" />
 
                 <link
                     rel="canonical"

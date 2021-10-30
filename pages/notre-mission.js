@@ -20,6 +20,7 @@ export default function OurOffers({ data }) {
                 <title>Notre mission | Paris | Heart n Brain</title>
                 <meta name="robots" content="index,follow" />
                 <meta name="googlebot" content="index,follow" />
+                <meta property="og:image" content="/partage.png" />
 
                 <link
                     rel="canonical"

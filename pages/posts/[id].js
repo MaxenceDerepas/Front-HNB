@@ -1,8 +1,14 @@
 import Layout from "../../components/layout";
 import Head from "next/head";
 import styles from "../../styles/[id].module.css";
+import { useEffect, useState } from "react";
 
 export default function Blog({ data }) {
+    const [url, setUrl] = useState(null);
+    const [visible, setVisible] = useState(false);
+    useEffect(() => {
+        setUrl(window.location.href);
+    }, []);
     console.log(data);
     return (
         <Layout>
@@ -23,6 +29,8 @@ export default function Blog({ data }) {
                     content="Vos coachs Heart n Brain partagent leurs tips, bonnes pratiques et exemples d'expériences pour vous aider à améliorer votre pratique de l'anglais professionnel !"
                 />
                 <meta property="og:title" content="Blog | Heart n Brain" />
+                <meta property="og:image" content="/partage.png" />
+
                 <meta
                     property="og:description"
                     content="Vos coachs Heart n Brain partagent leurs tips, bonnes pratiques et exemples d'expériences pour vous aider à améliorer votre pratique de l'anglais professionnel !"
@@ -219,22 +227,70 @@ export default function Blog({ data }) {
                     })}
                     <div className={styles.separatorGray}> </div>
                     <div className={styles.logo}>
-                        <div className={styles.Linkedin}>
-                            <img
-                                src="/linkedin-2.svg"
-                                alt="logo reseau linkedin"
-                                title="logo reseau linkedin"
-                                className={styles.logoLinkedin}
-                            />
-                        </div>
-                        <div className={styles.link}>
+                        <a
+                            rel="noopener noreferrer"
+                            href={`https://www.linkedin.com/sharing/share-offsite/?url=${url}`}
+                            target="_blank"
+                            title="Share on LinkedIn"
+                        >
+                            <div className={styles.Linkedin}>
+                                <img
+                                    src="/linkedin-2.svg"
+                                    alt="logo linkedin"
+                                    title="logo linkedin"
+                                    className={styles.logoLinkedin}
+                                />
+                            </div>
+                        </a>
+
+                        <div
+                            onClick={() => {
+                                setVisible(true);
+                            }}
+                            className={styles.link}
+                        >
                             <img
                                 src="/link-2.svg"
-                                alt="logo reseau linkedin"
-                                title="logo reseau linkedin"
+                                alt="logo reseau "
+                                title="copié url"
                                 className={styles.logos}
                             />
                         </div>
+                    </div>
+                </div>
+                <div
+                    className={
+                        visible === false ? styles.modalNone : styles.modal
+                    }
+                >
+                    <img
+                        onClick={() => {
+                            setVisible(false);
+                        }}
+                        src="/x.svg"
+                        alt="close"
+                        title="close Modal"
+                        className={styles.closed}
+                    />
+                    <div className={styles.modalContent}>
+                        <h3 className={styles.titleModal}>
+                            <div className={styles.link}>
+                                <img
+                                    src="/link-2-bold.svg"
+                                    alt="logo reseau "
+                                    title="copié url"
+                                    className={styles.logoModal}
+                                />
+                            </div>
+                            <span style={{ marginLeft: "20px" }}>
+                                PARTAGER LE LIEN
+                            </span>
+                        </h3>
+                        <input
+                            type="text"
+                            value={url}
+                            className={styles.copy}
+                        />
                     </div>
                 </div>
             </section>

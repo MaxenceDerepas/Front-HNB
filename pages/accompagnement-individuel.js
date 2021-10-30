@@ -22,6 +22,8 @@ export default function Individual({ data }) {
     return (
         <Layout>
             <Head>
+                <meta property="og:image" content="/partage.png" />
+
                 <title>
                     Coaching anglais individuel particuliers | Paris | Heart n
                     Brain

@@ -28,6 +28,8 @@ export default function OurOffers({ data }) {
                 <title>
                     Nos offres d'accompagnement | Paris | Heart n Brain
                 </title>
+                <meta property="og:image" content="/partage.png" />
+
                 <meta name="robots" content="index,follow" />
                 <meta name="googlebot" content="index,follow" />
                 <link

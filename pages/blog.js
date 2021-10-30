@@ -22,6 +22,7 @@ export default function Blog({ data, dataArticle }) {
         <Layout>
             <Head>
                 <title>Blog | Heart n Brain</title>
+                <meta property="og:image" content="/partage.png" />
 
                 <meta
                     name="viewport"

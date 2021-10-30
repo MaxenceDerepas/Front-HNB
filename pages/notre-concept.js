@@ -30,6 +30,8 @@ export default function OurConcept({ data }) {
                     property="og:title"
                     content="Notre concept | Paris | Heart n Brain"
                 />
+                <meta property="og:image" content="/partage.png" />
+
                 <meta name="robots" content="index,follow" />
                 <meta name="googlebot" content="index,follow" />
 
