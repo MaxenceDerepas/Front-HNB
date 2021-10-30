@@ -234,11 +234,11 @@ export default function Blog({ data }) {
                             title="Share on LinkedIn"
                         >
                             <div className={styles.Linkedin}>
-                                <i
+                                <img
                                     src="/linkedin-2.svg"
                                     alt="logo linkedin"
                                     title="logo linkedin"
-                                    className={"fab -fa-linkedin"}
+                                    className={styles.logoLinkedin}
                                 />
                             </div>
                         </a>
