@@ -4,7 +4,7 @@ import styles from "../../styles/[id].module.css";
 import { useEffect, useState } from "react";
 
 export default function Blog({ data }) {
-    const [url, setUrl] = useState(null);
+    const [url, setUrl] = useState("");
     const [visible, setVisible] = useState(false);
     useEffect(() => {
         setUrl(window.location.href);
@@ -12,7 +12,7 @@ export default function Blog({ data }) {
     return (
         <Layout>
             <Head>
-                <title>Blog | Heart n Brain</title>
+                <title>{`${data.title}`} | Blog | Heart n Brain</title>
 
                 <meta
                     name="viewport"
@@ -292,6 +292,7 @@ export default function Blog({ data }) {
                             type="text"
                             value={url}
                             className={styles.copy}
+                            readOnly
                         />
                     </div>
                 </div>
