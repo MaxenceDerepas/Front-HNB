@@ -2,6 +2,7 @@ import Layout from "../components/layout";
 import Head from "next/head";
 import styles from "../styles/Blog.module.css";
 import Link from "next/link";
+import { useState } from "react";
 
 export async function getStaticProps() {
     // Fetch data from external API
@@ -17,7 +18,26 @@ export async function getStaticProps() {
 }
 
 export default function Blog({ data, dataArticle }) {
-    console.log(dataArticle);
+    const [results, setResults] = useState(dataArticle);
+    console.log(dataArticle[0].title.toLowerCase());
+
+    const search = (event) => {
+        let newResult = [];
+        if (event.target.value === "") {
+            setResults(dataArticle);
+        } else {
+            for (let i = 0; i < dataArticle.length; i++) {
+                if (
+                    dataArticle[i].title
+                        .toLowerCase()
+                        .indexOf(event.target.value.toLowerCase()) !== -1
+                ) {
+                    newResult.push(dataArticle[i]);
+                }
+            }
+            setResults(newResult);
+        }
+    };
     return (
         <Layout>
             <Head>
@@ -53,9 +73,26 @@ export default function Blog({ data, dataArticle }) {
             </Head>
             <section className={styles.container}>
                 <div className={styles.search}>
-                    <input type="text" placeholder="Rechercher un article" />
+                    <img
+                        src="/search.svg"
+                        alt="rechercher un article"
+                        title="rechercher un article"
+                        style={{
+                            height: "15px",
+                            width: "15px",
+                            marginRight: "7px",
+                        }}
+                    />{" "}
+                    <input
+                        onChange={(event) => {
+                            search(event);
+                        }}
+                        type="text"
+                        className={styles.inputSearch}
+                        placeholder="Rechercher un article"
+                    />
                 </div>
-                {dataArticle.map((elem, i) => {
+                {results.map((elem, i) => {
                     return (
                         <Link key={elem._id} href={`/posts/${elem.titleUrl}`}>
                             <a>

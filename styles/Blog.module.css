@@ -39,3 +39,20 @@
     width: 455px;
     font-family: "Avenir Light";
 }
+.search {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding-bottom: 7px;
+    width: min-content;
+}
+.inputSearch {
+    background-color: #000;
+    border: none;
+    font-size: 15px;
+    color: gray;
+}
+.inputSearch:focus {
+    outline: none;
+}

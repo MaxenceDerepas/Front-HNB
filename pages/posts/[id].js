@@ -210,6 +210,7 @@ export default function Blog({ data }) {
                                                             .map((elem, i) => {
                                                                 return (
                                                                     <span
+                                                                        key={i}
                                                                         style={{
                                                                             display:
                                                                                 "block",
