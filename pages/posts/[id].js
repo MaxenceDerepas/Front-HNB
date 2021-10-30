@@ -301,7 +301,7 @@ export async function getStaticPaths() {
     const res = await fetch(`https://hnb-app.herokuapp.com/blogList`);
     const data = await res.json();
 
-    const paths = data.map((elem) => ({ params: { id: elem._id } }));
+    const paths = data.map((elem) => ({ params: { id: elem.titleUrl } }));
     return {
         paths,
         fallback: false,

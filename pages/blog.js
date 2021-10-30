@@ -54,12 +54,12 @@ export default function Blog({ data, dataArticle }) {
             <section className={styles.container}>
                 {dataArticle.map((elem, i) => {
                     return (
-                        <Link key={elem._id} href={`/posts/${elem._id}`}>
+                        <Link key={elem._id} href={`/posts/${elem.titleUrl}`}>
                             <a>
                                 <section className={styles.article}>
                                     <div className={styles.imageArticle}>
                                         <img
-                                            src={`${elem.urlMedia}`}
+                                            src={`${elem.urlMedia.url}`}
                                             alt="image article"
                                             className={styles.img}
                                         />
