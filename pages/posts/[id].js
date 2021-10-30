@@ -29,7 +29,7 @@ export default function Blog({ data }) {
                     content="Vos coachs Heart n Brain partagent leurs tips, bonnes pratiques et exemples d'expériences pour vous aider à améliorer votre pratique de l'anglais professionnel !"
                 />
                 <meta property="og:title" content="Blog | Heart n Brain" />
-                <meta property="og:image" content="/partage.png" />
+                <meta property="og:image" content={`${data.urlMedia}`} />
 
                 <meta
                     property="og:description"
@@ -234,11 +234,11 @@ export default function Blog({ data }) {
                             title="Share on LinkedIn"
                         >
                             <div className={styles.Linkedin}>
-                                <img
+                                <i
                                     src="/linkedin-2.svg"
                                     alt="logo linkedin"
                                     title="logo linkedin"
-                                    className={styles.logoLinkedin}
+                                    className={"fab -fa-linkedin"}
                                 />
                             </div>
                         </a>

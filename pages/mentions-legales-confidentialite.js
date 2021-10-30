@@ -20,6 +20,8 @@ export default function LegalNotice({ data }) {
                     Mentions Légales et confidentialité | Heart n Brain
                 </title>
                 <meta property="og:image" content="/partage.png" />
+                <meta property="og:image:width" content="600" />
+                <meta property="og:image:height" content="390" />
 
                 <link
                     rel="canonical"

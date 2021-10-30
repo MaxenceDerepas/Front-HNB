@@ -23,6 +23,8 @@ export default function Individual({ data }) {
         <Layout>
             <Head>
                 <meta property="og:image" content="/partage.png" />
+                <meta property="og:image:width" content="600" />
+                <meta property="og:image:height" content="390" />
 
                 <title>
                     Coaching anglais individuel particuliers | Paris | Heart n
