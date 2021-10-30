@@ -9,7 +9,6 @@ export default function Blog({ data }) {
     useEffect(() => {
         setUrl(window.location.href);
     }, []);
-    console.log(data);
     return (
         <Layout>
             <Head>
@@ -28,7 +27,10 @@ export default function Blog({ data }) {
                     name="description"
                     content="Vos coachs Heart n Brain partagent leurs tips, bonnes pratiques et exemples d'expériences pour vous aider à améliorer votre pratique de l'anglais professionnel !"
                 />
-                <meta property="og:title" content="Blog | Heart n Brain" />
+                <meta
+                    property="og:title"
+                    content={`${data.title} | Heart n Brain"`}
+                />
                 <meta property="og:image" content={`${data.urlMedia}`} />
 
                 <meta

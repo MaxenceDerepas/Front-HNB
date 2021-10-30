@@ -52,6 +52,9 @@ export default function Blog({ data, dataArticle }) {
                 <link rel="icon" href="/favicon-heart-n-brain.png" />
             </Head>
             <section className={styles.container}>
+                <div className={styles.search}>
+                    <input type="text" placeholder="Rechercher un article" />
+                </div>
                 {dataArticle.map((elem, i) => {
                     return (
                         <Link key={elem._id} href={`/posts/${elem.titleUrl}`}>
