@@ -108,14 +108,18 @@ export default function Blog({ data, dataArticle }) {
                                                     className={styles.img}
                                                 />
                                             )}
-                                            {elem.urlMedia.type === "video" && (
-                                                <video
-                                                    className={styles.movie}
-                                                    src={`${elem.urlMedia.url}`}
-                                                    alt="video article"
-                                                    title="article"
-                                                />
-                                            )}
+                                            {elem.urlMedia.type === "video" &&
+                                                elem.urlMedia.url !== "" && (
+                                                    <iframe
+                                                        width="100%"
+                                                        height="100%"
+                                                        src={`${elem.urlMedia.url}`}
+                                                        title="YouTube video player"
+                                                        frameborder="0"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowfullscreen
+                                                    ></iframe>
+                                                )}
                                         </div>
                                         <div
                                             className={styles.columnDescription}

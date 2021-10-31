@@ -136,7 +136,7 @@ export default function Blog({ data }) {
                                         />
                                     </div>
                                 )}
-                                {elem.type === "video" && (
+                                {elem.type === "video" && elem.url !== "" && (
                                     <div
                                         style={
                                             elem.style.textAlign === "center"
@@ -161,18 +161,15 @@ export default function Blog({ data }) {
                                                   }
                                         }
                                     >
-                                        <video
-                                            controls
+                                        <iframe
+                                            width={`${elem.style.width}`}
+                                            height={`${elem.style.height}`}
                                             src={`${elem.url}`}
-                                            height={`${elem.style.height}px`}
-                                            width={
-                                                width > 650
-                                                    ? `${elem.style.width}px`
-                                                    : "100%"
-                                            }
-                                            alt="video presentation heart n brain"
-                                            title="presentation heart n brain"
-                                        />
+                                            title="YouTube video player"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen
+                                        ></iframe>
                                     </div>
                                 )}
                                 {elem.type === "block" && (
