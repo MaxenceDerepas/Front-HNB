@@ -17,6 +17,7 @@
 .title {
     font-family: "luloCleanOne";
     font-size: 28px;
+    line-height: 42px;
 }
 .separatorGray {
     border-top: #cbcaca solid 1px;
