@@ -93,41 +93,44 @@ export default function Blog({ data, dataArticle }) {
                 </div>
                 {results.map((elem, i) => {
                     return (
-                        <Link
-                            style={{ marginBottom: "30px" }}
-                            key={elem._id}
-                            href={`/posts/${elem.titleUrl}`}
-                        >
-                            <a>
-                                <section className={styles.article}>
-                                    <div className={styles.imageArticle}>
-                                        {elem.urlMedia.type === "image" && (
-                                            <img
-                                                src={`${elem.urlMedia.url}`}
-                                                alt="image article"
-                                                className={styles.img}
-                                            />
-                                        )}
-                                        {elem.urlMedia.type === "video" && (
-                                            <video
-                                                className={styles.movie}
-                                                src={`${elem.urlMedia.url}`}
-                                                alt="video article"
-                                                title="article"
-                                            />
-                                        )}
-                                    </div>
-                                    <div className={styles.columnDescription}>
-                                        <h1 className={styles.title}>
-                                            {elem.title}
-                                        </h1>
-                                        <p className={styles.description}>
-                                            {elem.description}
-                                        </p>
-                                    </div>
-                                </section>
-                            </a>
-                        </Link>
+                        <div style={{ marginBottom: "30px" }}>
+                            <Link
+                                key={elem._id}
+                                href={`/posts/${elem.titleUrl}`}
+                            >
+                                <a>
+                                    <section className={styles.article}>
+                                        <div className={styles.imageArticle}>
+                                            {elem.urlMedia.type === "image" && (
+                                                <img
+                                                    src={`${elem.urlMedia.url}`}
+                                                    alt="image article"
+                                                    className={styles.img}
+                                                />
+                                            )}
+                                            {elem.urlMedia.type === "video" && (
+                                                <video
+                                                    className={styles.movie}
+                                                    src={`${elem.urlMedia.url}`}
+                                                    alt="video article"
+                                                    title="article"
+                                                />
+                                            )}
+                                        </div>
+                                        <div
+                                            className={styles.columnDescription}
+                                        >
+                                            <h1 className={styles.title}>
+                                                {elem.title}
+                                            </h1>
+                                            <p className={styles.description}>
+                                                {elem.description}
+                                            </p>
+                                        </div>
+                                    </section>
+                                </a>
+                            </Link>
+                        </div>
                     );
                 })}
             </section>
