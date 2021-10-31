@@ -7,7 +7,6 @@ export default function Blog({ data }) {
     const [url, setUrl] = useState("");
     const [width, setWidth] = useState(null);
     const [visible, setVisible] = useState(false);
-    console.log(width);
     useEffect(() => {
         setUrl(window.location.href);
         setWidth(window.innerWidth);
