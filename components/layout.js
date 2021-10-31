@@ -24,9 +24,7 @@ export default function Layout({ children, visible }) {
     const [width, setWidth] = useState(null);
 
     useEffect(() => {
-        if (typeof window !== "undefined") {
-            setWidth(window.innerWidth);
-        }
+        setWidth(window.innerWidth);
     }, []);
 
     const acceptCookie = (value) => {
@@ -81,6 +79,7 @@ export default function Layout({ children, visible }) {
                               borderBottomLeftRadius: "20px",
                               borderBottomRightRadius: "20px",
                               overflow: width <= 650 ? "hidden" : "visible",
+                              boxShadow: "10px 10px 5px 0px rgba(0,0,0,0.6)",
                           }
                         : {
                               boxSizing: "border-box",

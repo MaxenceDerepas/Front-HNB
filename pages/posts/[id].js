@@ -5,9 +5,12 @@ import { useEffect, useState } from "react";
 
 export default function Blog({ data }) {
     const [url, setUrl] = useState("");
+    const [width, setWidth] = useState(null);
     const [visible, setVisible] = useState(false);
+    console.log(width);
     useEffect(() => {
         setUrl(window.location.href);
+        setWidth(window.innerWidth);
     }, []);
     return (
         <Layout>
@@ -122,8 +125,14 @@ export default function Blog({ data }) {
                                             src={`${elem.url}`}
                                             alt="imgRender"
                                             style={{
-                                                height: `${elem.style.height}px`,
-                                                width: `${elem.style.width}px`,
+                                                height:
+                                                    width > 650
+                                                        ? `${elem.style.height}px`
+                                                        : "",
+                                                width:
+                                                    width > 650
+                                                        ? `${elem.style.width}px`
+                                                        : "100%",
                                             }}
                                         />
                                     </div>
@@ -157,7 +166,11 @@ export default function Blog({ data }) {
                                             controls
                                             src={`${elem.url}`}
                                             height={`${elem.style.height}px`}
-                                            width={`${elem.style.width}px`}
+                                            width={
+                                                width > 650
+                                                    ? `${elem.style.width}px`
+                                                    : "100%"
+                                            }
                                             alt="video presentation heart n brain"
                                             title="presentation heart n brain"
                                         />
@@ -189,7 +202,10 @@ export default function Blog({ data }) {
                                                     elem.image.style.float ===
                                                         "left" && "40px",
                                                 marginBottom: "10px",
-                                                width: `${elem.image.style.width}px`,
+                                                width:
+                                                    width > 650
+                                                        ? `${elem.image.style.width}px`
+                                                        : "100%",
                                                 float: elem.image.style.float,
                                             }}
                                         />

@@ -61,6 +61,10 @@ export default function Home({ data }) {
                 function (response) {
                     console.log("SUCCESS!", response.status, response.text);
                     setSucces("Message envoyé !");
+                    setName("");
+                    setEmail("");
+                    setMessage("");
+                    setSubject("");
                 },
                 function (error) {
                     console.log("FAILED...", error);

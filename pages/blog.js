@@ -19,7 +19,6 @@ export async function getStaticProps() {
 
 export default function Blog({ data, dataArticle }) {
     const [results, setResults] = useState(dataArticle);
-    console.log(dataArticle[0].title.toLowerCase());
 
     const search = (event) => {
         let newResult = [];
