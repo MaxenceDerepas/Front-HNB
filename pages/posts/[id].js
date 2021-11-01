@@ -2,6 +2,7 @@ import Layout from "../../components/layout";
 import Head from "next/head";
 import styles from "../../styles/[id].module.css";
 import { useEffect, useState } from "react";
+import { PinterestShareButton } from "react-share";
 
 export default function Blog({ data }) {
     const [url, setUrl] = useState("");
@@ -52,48 +53,86 @@ export default function Blog({ data }) {
                         return (
                             <div key={i}>
                                 {elem.type === "text" && (
-                                    <div
+                                    <p
                                         style={{
                                             marginTop: `${elem.style.marginTop}px`,
+                                            textAlign: elem.style.textAlign,
                                         }}
                                     >
-                                        {elem.text
-                                            .split("<br/>")
-                                            .map((item, j) => {
-                                                return (
-                                                    <p
-                                                        key={j}
-                                                        style={{
-                                                            fontFamily:
-                                                                elem.style
-                                                                    .fontFamily,
-                                                            textAlign:
-                                                                elem.style
-                                                                    .textAlign,
-                                                            color: elem.style
-                                                                .color,
-                                                            fontWeight:
-                                                                elem.style
-                                                                    .fontWeight,
-                                                            fontStyle:
-                                                                elem.style
-                                                                    .fontStyle,
-                                                            textDecoration:
-                                                                elem.style
-                                                                    .textDecoration,
-                                                            fontSize: `${elem.style.fontSize}px`,
-                                                            lineHeight:
-                                                                elem.style
-                                                                    .fontSize <
-                                                                    22 &&
-                                                                "22.5px",
-                                                        }}
-                                                    >
-                                                        {item}
-                                                    </p>
-                                                );
-                                            })}
-                                    </div>
+                                        {elem.paragraph.map((item, j) => {
+                                            return (
+                                                <span
+                                                    style={{
+                                                        color: item.style.color,
+                                                        fontSize: `${item.style.fontSize}px`,
+                                                        fontWeight:
+                                                            item.style
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            item.style
+                                                                .fontStyle,
+                                                        textDecoration:
+                                                            item.style
+                                                                .textDecoration,
+                                                        fontFamily:
+                                                            item.style
+                                                                .fontFamily,
+                                                        lineHeight:
+                                                            item.style
+                                                                .fontSize < 22
+                                                                ? "22.5px"
+                                                                : "",
+                                                    }}
+                                                >
+                                                    {item.type === "text" &&
+                                                    item.text.indexOf(
+                                                        "<br/>"
+                                                    ) === -1 ? (
+                                                        <>{item.text}</>
+                                                    ) : (
+                                                        item.type ===
+                                                            "link" && (
+                                                            <a
+                                                                href={`${item.url}`}
+                                                            >
+                                                                {item.text}
+                                                            </a>
+                                                        )
+                                                    )}
+                                                    {item.type === "text" &&
+                                                    item.text.indexOf(
+                                                        "<br/>"
+                                                    ) !== -1 ? (
+                                                        <>
+                                                            {item.text
+                                                                .split("<br/>")
+                                                                .map(
+                                                                    (
+                                                                        element,
+                                                                        z
+                                                                    ) => {
+                                                                        return (
+                                                                            <span
+                                                                                style={{
+                                                                                    display:
+                                                                                        "block",
+                                                                                }}
+                                                                            >
+                                                                                {
+                                                                                    element
+                                                                                }
+                                                                            </span>
+                                                                        );
+                                                                    }
+                                                                )}
+                                                        </>
+                                                    ) : (
+                                                        <></>
+                                                    )}
+                                                </span>
+                                            );
+                                        })}
+                                    </p>
                                 )}
                                 {elem.type === "image" && (
                                     <div
@@ -205,6 +244,7 @@ export default function Blog({ data }) {
                                                 float: elem.image.style.float,
                                             }}
                                         />
+
                                         {elem.paragraph.text
                                             .split("</r>")
                                             .map((item, z) => {
