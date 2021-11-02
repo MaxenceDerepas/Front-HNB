@@ -15,7 +15,6 @@
     box-sizing: border-box;
     overflow: hidden;
     position: relative;
-    border: red solid 1px;
 }
 .slider::before,
 .slider::after {
