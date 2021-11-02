@@ -15,6 +15,13 @@ export default function Blog({ data }) {
     return (
         <Layout>
             <Head>
+                <script
+                    type="text/javascript"
+                    async
+                    defer
+                    src="//assets.pinterest.com/js/pinit.js"
+                ></script>
+
                 <title>{`${data.title}`} | Blog | Heart n Brain</title>
                 <link rel="preload" />
                 <meta name="robots" content="index,follow" />
