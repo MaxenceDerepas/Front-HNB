@@ -277,6 +277,74 @@ export default function Home({ data }) {
                                     </p>
                                 </div>
                             </div>
+                            <div className={styles.slider}>
+                                <div className={styles.sliderTrack}>
+                                    <div className={styles.slide}>
+                                        <img
+                                            className={styles.imgSlide}
+                                            src="/L'Oréal.png"
+                                            alt="logo l'oréal"
+                                            title="logo l'oréal"
+                                        />
+                                    </div>
+                                    <div className={styles.slide}>
+                                        <img
+                                            className={styles.imgSlide}
+                                            src="/Accenture.png"
+                                            alt="logo Accenture"
+                                            title="logo Accenture"
+                                        />
+                                    </div>
+                                    <div className={styles.slide}>
+                                        <img
+                                            className={styles.imgSlide}
+                                            src="/Delsey.png"
+                                            alt="logo delsey"
+                                            title="logo delsey"
+                                        />
+                                    </div>
+                                    <div className={styles.slide}>
+                                        <img
+                                            className={styles.imgSlide}
+                                            src="/HEC.png"
+                                            alt="logo HEC"
+                                            title="logo HEC"
+                                        />
+                                    </div>
+                                    <div className={styles.slide}>
+                                        <img
+                                            className={styles.imgSlide}
+                                            src="/Keolis.png"
+                                            alt="logo Keolis"
+                                            title="logo Keolis"
+                                        />
+                                    </div>
+                                    <div className={styles.slide}>
+                                        <img
+                                            className={styles.imgSlide}
+                                            src="/Meilleurs-Agents.png"
+                                            alt="logo meilleurs agents"
+                                            title="logo meilleurs agents"
+                                        />
+                                    </div>
+                                    <div className={styles.slide}>
+                                        <img
+                                            className={styles.imgSlide}
+                                            src="/Pega.png"
+                                            alt="logo Pega"
+                                            title="logo Pega"
+                                        />
+                                    </div>
+                                    <div className={styles.slide}>
+                                        <img
+                                            className={styles.imgSlide}
+                                            src="/ubisoft.png"
+                                            alt="logo ubisoft"
+                                            title="logo ubisoft"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
