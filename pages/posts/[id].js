@@ -15,6 +15,12 @@ export default function Blog({ data }) {
     return (
         <Layout>
             <Head>
+                <script
+                    type="text/javascript"
+                    async
+                    defer
+                    src="//assets.pinterest.com/js/pinit.js"
+                ></script>
                 <title>{`${data.title}`} | Blog | Heart n Brain</title>
                 <link rel="preload" />
                 <meta name="robots" content="index,follow" />
@@ -37,14 +43,12 @@ export default function Blog({ data }) {
                     content={`${data.title} | Heart n Brain"`}
                 />
                 <meta property="og:image" content={`${data.urlMedia}`} />
-
                 <meta
                     property="og:description"
                     content="Vos coachs Heart n Brain partagent leurs tips, bonnes pratiques et exemples d'expériences pour vous aider à améliorer votre pratique de l'anglais professionnel !"
                 />
                 <meta property="og:site_name" content="Heart n Brain" />
                 <meta property="og:type" content="website" />
-
                 <link rel="icon" href="/favicon-heart-n-brain.png" />
             </Head>
             <section className={styles.container}>
@@ -161,20 +165,25 @@ export default function Blog({ data }) {
                                                   }
                                         }
                                     >
-                                        <img
-                                            src={`${elem.url}`}
-                                            alt="imgRender"
-                                            style={{
-                                                height:
-                                                    width > 650
-                                                        ? `${elem.style.height}px`
-                                                        : "",
-                                                width:
-                                                    width > 650
-                                                        ? `${elem.style.width}px`
-                                                        : "100%",
-                                            }}
-                                        />
+                                        <a
+                                            href="https://www.pinterest.com/pin/create/button/"
+                                            data-pin-do="buttonBookmark"
+                                        >
+                                            <img
+                                                src={`${elem.url}`}
+                                                alt="imgRender"
+                                                style={{
+                                                    height:
+                                                        width > 650
+                                                            ? `${elem.style.height}px`
+                                                            : "",
+                                                    width:
+                                                        width > 650
+                                                            ? `${elem.style.width}px`
+                                                            : "100%",
+                                                }}
+                                            />{" "}
+                                        </a>
                                     </div>
                                 )}
                                 {elem.type === "video" && elem.url !== "" && (
@@ -227,26 +236,33 @@ export default function Blog({ data }) {
                                                 elem.paragraph.style.fontFamily,
                                         }}
                                     >
-                                        <img
-                                            src={`${elem.image.url}`}
-                                            alt="float"
-                                            style={{
-                                                height: `${elem.image.style.height}px`,
-                                                marginLeft:
-                                                    elem.image.style.float ===
-                                                        "right" && "40px",
-                                                marginRight:
-                                                    elem.image.style.float ===
-                                                        "left" && "40px",
-                                                marginBottom: "10px",
-                                                width:
-                                                    width > 650
-                                                        ? `${elem.image.style.width}px`
-                                                        : "100%",
-                                                float: elem.image.style.float,
-                                            }}
-                                        />
-
+                                        <a
+                                            href="https://www.pinterest.com/pin/create/button/"
+                                            data-pin-do="buttonBookmark"
+                                        >
+                                            <img
+                                                src={`${elem.image.url}`}
+                                                alt="float"
+                                                style={{
+                                                    height: `${elem.image.style.height}px`,
+                                                    marginLeft:
+                                                        elem.image.style
+                                                            .float ===
+                                                            "right" && "40px",
+                                                    marginRight:
+                                                        elem.image.style
+                                                            .float === "left" &&
+                                                        "40px",
+                                                    marginBottom: "10px",
+                                                    width:
+                                                        width > 650
+                                                            ? `${elem.image.style.width}px`
+                                                            : "100%",
+                                                    float: elem.image.style
+                                                        .float,
+                                                }}
+                                            />
+                                        </a>
                                         {elem.paragraph.text
                                             .split("</r>")
                                             .map((item, z) => {
