@@ -22,6 +22,8 @@ export default function Individual({ data }) {
     return (
         <Layout>
             <Head>
+                <link rel="preload" />
+
                 <meta property="og:image" content="/partage.png" />
                 <meta property="og:image:width" content="600" />
                 <meta property="og:image:height" content="390" />

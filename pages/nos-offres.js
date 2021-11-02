@@ -54,6 +54,8 @@ export default function OurOffers({ data }) {
                     property="og:description"
                     content={`${data.description}`}
                 />
+                <link rel="preload" />
+
                 <meta
                     property="og:url"
                     content="https://www.heart-n-brain.com/nos-offres"

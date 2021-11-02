@@ -17,6 +17,8 @@ export default function Faq({ data }) {
     return (
         <Layout>
             <Head>
+                <link rel="preload" />
+
                 <title>
                     Foire aux questions | Coaching Anglais Professionnel | Paris
                     | Heart n Brain

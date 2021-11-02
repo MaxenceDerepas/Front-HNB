@@ -16,6 +16,8 @@ export default function LegalNotice({ data }) {
     return (
         <Layout>
             <Head>
+                <link rel="preload" />
+
                 <title>
                     Mentions Légales et confidentialité | Heart n Brain
                 </title>

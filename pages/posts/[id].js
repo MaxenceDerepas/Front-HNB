@@ -16,7 +16,7 @@ export default function Blog({ data }) {
         <Layout>
             <Head>
                 <title>{`${data.title}`} | Blog | Heart n Brain</title>
-
+                <link rel="preload" />
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"

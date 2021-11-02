@@ -17,6 +17,8 @@ export default function OurOffers({ data }) {
     return (
         <Layout>
             <Head>
+                <link rel="preload" />
+
                 <title>Notre mission | Paris | Heart n Brain</title>
                 <meta name="robots" content="index,follow" />
                 <meta name="googlebot" content="index,follow" />

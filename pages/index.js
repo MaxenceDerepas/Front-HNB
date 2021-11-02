@@ -78,6 +78,8 @@ export default function Home({ data }) {
     return (
         <Layout visible={visible}>
             <Head>
+                <link rel="preload" />
+
                 <title>
                     Coaching Anglais Professionnel | Paris | Heart n Brain
                 </title>

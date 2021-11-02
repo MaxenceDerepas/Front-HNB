@@ -41,6 +41,8 @@ export default function Blog({ data, dataArticle }) {
         <Layout>
             <Head>
                 <title>Blog | Heart n Brain</title>
+                <link rel="preload" />
+
                 <meta property="og:image" content="/partage.png" />
                 <meta property="og:image:width" content="600px" />
                 <meta property="og:image:height" content="390px" />

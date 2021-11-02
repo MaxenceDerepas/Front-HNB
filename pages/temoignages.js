@@ -40,6 +40,8 @@ export default function Testimony({ data, dataDescription }) {
     return (
         <Layout>
             <Head>
+                <link rel="preload" />
+
                 <title>
                     Coaching anglais professionnel | Ils parlent de nous | Heart
                     n Brain

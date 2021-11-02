@@ -25,6 +25,8 @@ export default function OurConcept({ data }) {
     return (
         <Layout>
             <Head>
+                <link rel="preload" />
+
                 <title>Notre concept | Paris | Heart n Brain</title>
                 <meta
                     property="og:title"

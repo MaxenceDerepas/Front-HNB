@@ -18,6 +18,8 @@ export default function OurOffers({ data }) {
     return (
         <Layout>
             <Head>
+                <link rel="preload" />
+
                 <title>
                     Notre méthode de coaching en anglais professionnel | Paris |
                     Heart n Brain
