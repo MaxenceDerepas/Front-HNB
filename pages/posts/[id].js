@@ -17,6 +17,8 @@ export default function Blog({ data }) {
             <Head>
                 <title>{`${data.title}`} | Blog | Heart n Brain</title>
                 <link rel="preload" />
+                <meta name="robots" content="index,follow" />
+                <meta name="googlebot" content="index,follow" />
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"
