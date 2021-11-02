@@ -15,12 +15,6 @@ export default function Blog({ data }) {
     return (
         <Layout>
             <Head>
-                <script
-                    type="text/javascript"
-                    async
-                    defer
-                    src="//assets.pinterest.com/js/pinit.js"
-                ></script>
                 <title>{`${data.title}`} | Blog | Heart n Brain</title>
                 <link rel="preload" />
                 <meta name="robots" content="index,follow" />
@@ -165,25 +159,20 @@ export default function Blog({ data }) {
                                                   }
                                         }
                                     >
-                                        <a
-                                            href="https://www.pinterest.com/pin/create/button/"
-                                            data-pin-do="buttonBookmark"
-                                        >
-                                            <img
-                                                src={`${elem.url}`}
-                                                alt="imgRender"
-                                                style={{
-                                                    height:
-                                                        width > 650
-                                                            ? `${elem.style.height}px`
-                                                            : "",
-                                                    width:
-                                                        width > 650
-                                                            ? `${elem.style.width}px`
-                                                            : "100%",
-                                                }}
-                                            />{" "}
-                                        </a>
+                                        <img
+                                            src={`${elem.url}`}
+                                            alt="imgRender"
+                                            style={{
+                                                height:
+                                                    width > 650
+                                                        ? `${elem.style.height}px`
+                                                        : "",
+                                                width:
+                                                    width > 650
+                                                        ? `${elem.style.width}px`
+                                                        : "100%",
+                                            }}
+                                        />{" "}
                                     </div>
                                 )}
                                 {elem.type === "video" && elem.url !== "" && (
@@ -236,36 +225,26 @@ export default function Blog({ data }) {
                                                 elem.paragraph.style.fontFamily,
                                         }}
                                     >
-                                        <a
-                                            href="https://www.pinterest.com/pin/create/button/"
-                                            data-pin-do="buttonBookmark"
+                                        <img
+                                            src={`${elem.image.url}`}
+                                            alt="float"
                                             style={{
+                                                height: `${elem.image.style.height}px`,
+                                                marginLeft:
+                                                    elem.image.style.float ===
+                                                        "right" && "40px",
+                                                marginRight:
+                                                    elem.image.style.float ===
+                                                        "left" && "40px",
+                                                marginBottom: "10px",
+                                                width:
+                                                    width > 650
+                                                        ? `${elem.image.style.width}px`
+                                                        : "100%",
                                                 float: elem.image.style.float,
                                             }}
-                                        >
-                                            <img
-                                                src={`${elem.image.url}`}
-                                                alt="float"
-                                                style={{
-                                                    height: `${elem.image.style.height}px`,
-                                                    marginLeft:
-                                                        elem.image.style
-                                                            .float ===
-                                                            "right" && "40px",
-                                                    marginRight:
-                                                        elem.image.style
-                                                            .float === "left" &&
-                                                        "40px",
-                                                    marginBottom: "10px",
-                                                    width:
-                                                        width > 650
-                                                            ? `${elem.image.style.width}px`
-                                                            : "100%",
-                                                    float: elem.image.style
-                                                        .float,
-                                                }}
-                                            />
-                                        </a>
+                                        />
+
                                         {elem.paragraph.text
                                             .split("</r>")
                                             .map((item, z) => {
