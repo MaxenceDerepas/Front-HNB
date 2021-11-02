@@ -239,6 +239,9 @@ export default function Blog({ data }) {
                                         <a
                                             href="https://www.pinterest.com/pin/create/button/"
                                             data-pin-do="buttonBookmark"
+                                            style={{
+                                                float: elem.image.style.float,
+                                            }}
                                         >
                                             <img
                                                 src={`${elem.image.url}`}
