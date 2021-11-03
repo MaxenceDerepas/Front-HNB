@@ -290,7 +290,9 @@
         background-image: none;
         background-color: black;
     }
-
+    .slider {
+        width: 100vw;
+    }
     .container {
         margin: 0 auto;
         width: 100vw;
