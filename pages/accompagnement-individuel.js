@@ -65,7 +65,7 @@ export default function Individual({ data }) {
                 <link rel="icon" href="/favicon-heart-n-brain.png" />
             </Head>
             <section className={styles.content}>
-                <img className={styles.fondEcran} src="/fond.webp" />
+                <img className={styles.fondEcran} src="/fond.png" />
 
                 <div className={styles.container}>
                     <div className={styles.parcours}>
