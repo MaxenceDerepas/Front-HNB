@@ -2,7 +2,6 @@ import Layout from "../../components/layout";
 import Head from "next/head";
 import styles from "../../styles/[id].module.css";
 import { useEffect, useState } from "react";
-import { PinterestShareButton } from "react-share";
 
 export default function Blog({ data }) {
     const [url, setUrl] = useState("");
@@ -15,19 +14,7 @@ export default function Blog({ data }) {
     return (
         <Layout>
             <Head>
-                <script
-                    type="text/javascript"
-                    async
-                    defer
-                    src="//assets.pinterest.com/js/pinit.js"
-                ></script>
-
                 <title>{`${data.title}`} | Blog | Heart n Brain</title>
-                <link rel="preload" />
-                <link rel="manifest" href="/manifest.json" />
-                <meta name="theme-color" content="#fff" />
-                <link rel="apple-touch-icon" href="/logo96.png" />
-                <meta name="apple-mobile-web-app-status-bar" content="#FFF" />
                 <meta name="robots" content="index,follow" />
                 <meta name="googlebot" content="index,follow" />
                 <meta
@@ -37,7 +24,7 @@ export default function Blog({ data }) {
                 <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
                 <link
                     rel="canonical"
-                    href={`https://front-hnb.vercel.app/posts/${data.titleUrl}`}
+                    href={`https://front-hnb-ten.vercel.app/posts/${data.titleUrl}`}
                 ></link>
                 <meta
                     name="description"
@@ -73,6 +60,7 @@ export default function Blog({ data }) {
                                         {elem.paragraph.map((item, j) => {
                                             return (
                                                 <span
+                                                    key={j}
                                                     style={{
                                                         color: item.style.color,
                                                         fontSize: `${item.style.fontSize}px`,
@@ -124,6 +112,9 @@ export default function Blog({ data }) {
                                                                     ) => {
                                                                         return (
                                                                             <span
+                                                                                key={
+                                                                                    z
+                                                                                }
                                                                                 style={{
                                                                                     display:
                                                                                         "block",
@@ -216,9 +207,7 @@ export default function Blog({ data }) {
                                             height={`${elem.style.height}`}
                                             src={`${elem.url}`}
                                             title="YouTube video player"
-                                            frameborder="0"
                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen
                                         ></iframe>
                                     </div>
                                 )}

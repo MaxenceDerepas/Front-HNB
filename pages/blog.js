@@ -94,11 +94,8 @@ export default function Blog({ data, dataArticle }) {
                 </div>
                 {results.map((elem, i) => {
                     return (
-                        <div style={{ marginBottom: "30px" }}>
-                            <Link
-                                key={elem._id}
-                                href={`/posts/${elem.titleUrl}`}
-                            >
+                        <div key={elem._id} style={{ marginBottom: "30px" }}>
+                            <Link href={`/posts/${elem.titleUrl}`}>
                                 <a>
                                     <section className={styles.article}>
                                         <div className={styles.imageArticle}>
@@ -116,9 +113,7 @@ export default function Blog({ data, dataArticle }) {
                                                         height="100%"
                                                         src={`${elem.urlMedia.url}`}
                                                         title="YouTube video player"
-                                                        frameborder="0"
                                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                        allowfullscreen
                                                     ></iframe>
                                                 )}
                                         </div>

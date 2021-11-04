@@ -2,7 +2,6 @@ import Layout from "../components/layout";
 import Head from "next/head";
 import styles from "../styles/Faq.module.css";
 import Link from "next/link";
-import fond from "../images/heart-n-brain-fond-ecran.webp";
 
 export async function getStaticProps() {
     // Fetch data from external API
