@@ -8,7 +8,7 @@
         url("LuloCleanW01-OneBold.svg#LuloCleanW01-OneBold") format("svg");
     font-weight: bold;
     font-style: normal;
-    font-display: swap;
+    font-display: optional;
 }
 
 @font-face {
@@ -21,7 +21,7 @@
         url("TwCenMT-Regular.svg#TwCenMT-Regular") format("svg");
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
+    font-display: optional;
 }
 @font-face {
     font-family: "Caviar Dreams";
@@ -33,7 +33,7 @@
         url("CaviarDreams.svg#CaviarDreams") format("svg");
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
+    font-display: optional;
 }
 @font-face {
     font-family: "Avenir Light";
@@ -44,4 +44,5 @@
         url(./AvenirLight.ttf) format("truetype"),
         url(./AvenirLight.svg#Avenir%20Light) format("svg"),
         url(./AvenirLight.otf) format("otf");
+    font-display: optional;
 }

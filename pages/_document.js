@@ -10,7 +10,11 @@ class MyDocument extends Document {
         return (
             <Html lang="fr">
                 <Head>
-                    <link rel="stylesheet" href="/fonts/stylesheet.css" />
+                    <link
+                        rel="preload"
+                        rel="stylesheet"
+                        href="/fonts/stylesheet.css"
+                    />
                 </Head>
                 <body>
                     <Main />
