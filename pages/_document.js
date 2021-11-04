@@ -10,7 +10,7 @@ class MyDocument extends Document {
         return (
             <Html lang="fr">
                 <Head>
-                    <link rel="stylesheet" href="styles/globals.css" />
+                    <link rel="stylesheet" href="/fonts/stylesheet.css" />
                     <link rel="manifest" href="/manifest.json" />
                     <link
                         rel="apple-touch-icon"

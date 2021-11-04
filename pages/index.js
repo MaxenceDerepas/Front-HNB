@@ -280,7 +280,7 @@ export default function Home({ data }) {
                                     <div className={styles.slide}>
                                         <img
                                             className={styles.imgSlide}
-                                            src="/L'Oréal.png"
+                                            src="/loreal.png"
                                             alt="logo l'oréal"
                                             title="logo l'oréal"
                                         />
@@ -344,7 +344,7 @@ export default function Home({ data }) {
                                     <div className={styles.slide}>
                                         <img
                                             className={styles.imgSlide}
-                                            src="/L'Oréal.png"
+                                            src="/loreal.png"
                                             alt="logo l'oréal"
                                             title="logo l'oréal"
                                         />

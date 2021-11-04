@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import "../fonts/stylesheet.css";
+import "../public/fonts/stylesheet.css";
 import * as gtag from "../lib/gtag";
 import { useEffect } from "react";
 import Script from "next/script";
