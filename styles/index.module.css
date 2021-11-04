@@ -49,7 +49,6 @@
 }
 .imgSlide {
     height: 35px;
-    opacity: 0.8;
 }
 @keyframes scroll {
     0% {
