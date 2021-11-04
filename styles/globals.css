@@ -100,10 +100,7 @@ nav,
 section {
     display: block;
 }
-h2,
-h3 {
-    font-family: sans-serif;
-}
+
 body {
     line-height: 1;
     font-family: "Avenir Light";

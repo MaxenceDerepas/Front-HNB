@@ -47,16 +47,16 @@ export default function Home({ data }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setLoader(true);
-        let templateParams = {
-            name: name,
-            email: email,
-            subject: subject,
-            message: message,
-        };
+
         emailjs.init(`user_jhtpYoLR6FfQSgbz40D4s`);
 
         await emailjs
-            .send("service_8fqxzxv", "template_n6crlho", templateParams)
+            .send("service_8fqxzxv", "template_n6crlho", {
+                name: name,
+                email: email,
+                subject: subject,
+                message: message,
+            })
             .then(
                 function (response) {
                     console.log("SUCCESS!", response.status, response.text);
@@ -120,12 +120,7 @@ export default function Home({ data }) {
                 ></meta>
                 <link rel="icon" href="/favicon-heart-n-brain.png" />
             </Head>
-            <section
-                onScrollCapture={() => {
-                    console.log("coucou");
-                }}
-                className={styles.content}
-            >
+            <section className={styles.content}>
                 <div className={styles.title}>
                     <div className={styles.container}>
                         <h1>
@@ -473,7 +468,7 @@ export default function Home({ data }) {
                                     Pour en savoir davantage sur nos
                                     accompagnements et notre méthode,{" "}
                                     <Link href="/notre-methode">
-                                        <a className={styles.a}>
+                                        <a id="contact" className={styles.a}>
                                             c’est par ici.
                                         </a>
                                     </Link>
@@ -483,7 +478,7 @@ export default function Home({ data }) {
                     </div>
                 </div>
             </section>
-            <section ref={observe} id="contact" className={styles.contact}>
+            <section ref={observe} className={styles.contact}>
                 <div className={styles.container}>
                     <div className={styles.padding}>
                         <div className={styles.separatorWhite}></div>
