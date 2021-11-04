@@ -19,8 +19,6 @@ export default function Collective({ data }) {
     return (
         <Layout>
             <Head>
-                <link rel="preload" />
-
                 <meta property="og:image" content="/partage.png" />
                 <meta property="og:image:width" content="600" />
                 <meta property="og:image:height" content="390" />
@@ -34,7 +32,7 @@ export default function Collective({ data }) {
                 <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
                 <link
                     rel="canonical"
-                    href="https://front-hnb.vercel.app/accompagnement-collectif"
+                    href="https://front-hnb-ten.vercel.app/accompagnement-collectif"
                 ></link>
                 <meta
                     name="viewport"

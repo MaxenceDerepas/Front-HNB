@@ -17,8 +17,6 @@ export default function OurOffers({ data }) {
     return (
         <Layout>
             <Head>
-                <link rel="preload" />
-
                 <title>Notre mission | Paris | Heart n Brain</title>
                 <meta name="robots" content="index,follow" />
                 <meta name="googlebot" content="index,follow" />
@@ -28,7 +26,7 @@ export default function OurOffers({ data }) {
 
                 <link
                     rel="canonical"
-                    href="https://front-hnb.vercel.app/notre-mission"
+                    href="https://front-hnb-ten.vercel.app/notre-mission"
                 ></link>
                 <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
                 <meta

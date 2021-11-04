@@ -36,7 +36,7 @@ export default function OurOffers({ data }) {
                 <meta name="googlebot" content="index,follow" />
                 <link
                     rel="canonical"
-                    href="https://front-hnb.vercel.app/nos-offres"
+                    href="https://front-hnb-ten.vercel.app/nos-offres"
                 ></link>
                 <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
                 <meta

@@ -40,12 +40,11 @@ export default function Testimony({ data, dataDescription }) {
     return (
         <Layout>
             <Head>
-                <link rel="preload" />
-
                 <title>
                     Coaching anglais professionnel | Ils parlent de nous | Heart
                     n Brain
                 </title>
+
                 <meta name="robots" content="index,follow" />
                 <meta name="googlebot" content="index,follow" />
                 <meta property="og:image" content="/partage.png" />
@@ -54,7 +53,7 @@ export default function Testimony({ data, dataDescription }) {
 
                 <link
                     rel="canonical"
-                    href="https://front-hnb.vercel.app/temoignages"
+                    href="https://front-hnb-ten.vercel.app/temoignages"
                 ></link>
                 <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
                 <meta

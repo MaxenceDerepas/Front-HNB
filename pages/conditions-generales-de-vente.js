@@ -17,8 +17,6 @@ export default function TermOfSales({ data }) {
     return (
         <Layout>
             <Head>
-                <link rel="preload" />
-
                 <title>Conditions Générales de Vente | Heart n Brain</title>
                 <meta property="og:image" content="/partage.png" />
                 <meta property="og:image:width" content="600" />
@@ -26,7 +24,7 @@ export default function TermOfSales({ data }) {
 
                 <link
                     rel="canonical"
-                    href="https://front-hnb.vercel.app/conditions-generales-de-vente"
+                    href="https://front-hnb-ten.vercel.app/conditions-generales-de-vente"
                 ></link>
                 <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
                 <meta

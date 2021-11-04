@@ -25,8 +25,6 @@ export default function OurConcept({ data }) {
     return (
         <Layout>
             <Head>
-                <link rel="preload" />
-
                 <title>Notre concept | Paris | Heart n Brain</title>
                 <meta
                     property="og:title"
@@ -41,7 +39,7 @@ export default function OurConcept({ data }) {
 
                 <link
                     rel="canonical"
-                    href="https://front-hnb.vercel.app/notre-concet"
+                    href="https://front-hnb-ten.vercel.app/notre-concet"
                 ></link>
                 <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
                 <meta

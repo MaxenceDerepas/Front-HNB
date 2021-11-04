@@ -24,6 +24,10 @@ export default function Blog({ data }) {
 
                 <title>{`${data.title}`} | Blog | Heart n Brain</title>
                 <link rel="preload" />
+                <link rel="manifest" href="/manifest.json" />
+                <meta name="theme-color" content="#fff" />
+                <link rel="apple-touch-icon" href="/logo96.png" />
+                <meta name="apple-mobile-web-app-status-bar" content="#FFF" />
                 <meta name="robots" content="index,follow" />
                 <meta name="googlebot" content="index,follow" />
                 <meta

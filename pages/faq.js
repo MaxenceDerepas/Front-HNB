@@ -17,8 +17,6 @@ export default function Faq({ data }) {
     return (
         <Layout>
             <Head>
-                <link rel="preload" />
-
                 <title>
                     Foire aux questions | Coaching Anglais Professionnel | Paris
                     | Heart n Brain
@@ -31,7 +29,7 @@ export default function Faq({ data }) {
 
                 <link
                     rel="canonical"
-                    href="https://front-hnb.vercel.app/faq"
+                    href="https://front-hnb-ten.vercel.app/faq"
                 ></link>
                 <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
                 <meta
@@ -49,6 +47,7 @@ export default function Faq({ data }) {
                     property="og:title"
                     content="Foire aux questions | Coaching Anglais Professionnel | Paris | Heart n Brain"
                 />
+
                 <meta
                     property="og:url"
                     content="https://www.heart-n-brain.com/faq"

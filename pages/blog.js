@@ -41,7 +41,6 @@ export default function Blog({ data, dataArticle }) {
         <Layout>
             <Head>
                 <title>Blog | Heart n Brain</title>
-                <link rel="preload" />
 
                 <meta property="og:image" content="/partage.png" />
                 <meta property="og:image:width" content="600px" />
@@ -56,7 +55,7 @@ export default function Blog({ data, dataArticle }) {
                 <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
                 <link
                     rel="canonical"
-                    href="https://front-hnb.vercel.app/blog"
+                    href="https://front-hnb-ten.vercel.app/blog"
                 ></link>
                 <meta
                     name="description"

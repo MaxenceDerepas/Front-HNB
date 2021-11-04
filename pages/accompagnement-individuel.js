@@ -22,8 +22,6 @@ export default function Individual({ data }) {
     return (
         <Layout>
             <Head>
-                <link rel="preload" />
-
                 <meta property="og:image" content="/partage.png" />
                 <meta property="og:image:width" content="600" />
                 <meta property="og:image:height" content="390" />
@@ -38,7 +36,7 @@ export default function Individual({ data }) {
                 <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
                 <link
                     rel="canonical"
-                    href="https://front-hnb.vercel.app/accompagnement-individuel"
+                    href="https://front-hnb-ten.vercel.app/accompagnement-individuel"
                 ></link>
                 <meta
                     name="viewport"

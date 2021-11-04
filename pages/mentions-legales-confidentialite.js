@@ -16,8 +16,6 @@ export default function LegalNotice({ data }) {
     return (
         <Layout>
             <Head>
-                <link rel="preload" />
-
                 <title>
                     Mentions Légales et confidentialité | Heart n Brain
                 </title>
@@ -27,7 +25,7 @@ export default function LegalNotice({ data }) {
 
                 <link
                     rel="canonical"
-                    href="https://www.heart-n-brain.com/mentions-legales-confidentialite"
+                    href="https://front-hnb-ten.vercel.app/mentions-legales-confidentialite"
                 ></link>
                 <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
                 <meta

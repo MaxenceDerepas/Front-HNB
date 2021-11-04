@@ -78,8 +78,6 @@ export default function Home({ data }) {
     return (
         <Layout visible={visible}>
             <Head>
-                <link rel="preload" />
-
                 <title>
                     Coaching Anglais Professionnel | Paris | Heart n Brain
                 </title>
@@ -87,7 +85,7 @@ export default function Home({ data }) {
                 <meta name="googlebot" content="index,follow" />
                 <link
                     rel="canonical"
-                    href="https://front-hnb.vercel.app/"
+                    href="https://front-hnb-ten.vercel.app/"
                 ></link>
                 <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
                 <meta
