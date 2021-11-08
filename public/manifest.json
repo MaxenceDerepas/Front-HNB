@@ -10,6 +10,12 @@
     "description": "Vos coachs Heart n Brain partagent leurs tips, bonnes pratiques et exemples d'exp\u00e9riences pour vous aider \u00e0 am\u00e9liorer votre pratique de l'anglais professionnel !",
     "icons": [
         {
+            "src": "/icon-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
             "src": "/icon-192x192.png",
             "sizes": "192x192",
             "type": "image/png",
