@@ -275,6 +275,7 @@ export default function Home({ data }) {
                                     <div className={styles.slide}>
                                         <img
                                             className={styles.imgSlide}
+                                            style={{ width: "144px" }}
                                             src="/loreal.png"
                                             alt="logo l'oréal"
                                             title="logo l'oréal"
@@ -283,6 +284,7 @@ export default function Home({ data }) {
                                     <div className={styles.slide}>
                                         <img
                                             className={styles.imgSlide}
+                                            style={{ width: "131px" }}
                                             src="/Accenture.png"
                                             alt="logo Accenture"
                                             title="logo Accenture"
@@ -291,6 +293,7 @@ export default function Home({ data }) {
                                     <div className={styles.slide}>
                                         <img
                                             className={styles.imgSlide}
+                                            style={{ width: "121px" }}
                                             src="/Delsey.png"
                                             alt="logo delsey"
                                             title="logo delsey"
@@ -299,6 +302,7 @@ export default function Home({ data }) {
                                     <div className={styles.slide}>
                                         <img
                                             className={styles.imgSlide}
+                                            style={{ width: "71px" }}
                                             src="/HEC.png"
                                             alt="logo HEC"
                                             title="logo HEC"
@@ -307,6 +311,7 @@ export default function Home({ data }) {
                                     <div className={styles.slide}>
                                         <img
                                             className={styles.imgSlide}
+                                            style={{ width: "229px" }}
                                             src="/Keolis.png"
                                             alt="logo Keolis"
                                             title="logo Keolis"
@@ -315,6 +320,7 @@ export default function Home({ data }) {
                                     <div className={styles.slide}>
                                         <img
                                             className={styles.imgSlide}
+                                            style={{ width: "124px" }}
                                             src="/Meilleurs-Agents.png"
                                             alt="logo meilleurs agents"
                                             title="logo meilleurs agents"
@@ -323,6 +329,7 @@ export default function Home({ data }) {
                                     <div className={styles.slide}>
                                         <img
                                             className={styles.imgSlide}
+                                            style={{ width: "121px" }}
                                             src="/Pega.png"
                                             alt="logo Pega"
                                             title="logo Pega"
@@ -331,6 +338,7 @@ export default function Home({ data }) {
                                     <div className={styles.slide}>
                                         <img
                                             className={styles.imgSlide}
+                                            style={{ width: "109px" }}
                                             src="/ubisoft.png"
                                             alt="logo ubisoft"
                                             title="logo ubisoft"
@@ -339,6 +347,7 @@ export default function Home({ data }) {
                                     <div className={styles.slide}>
                                         <img
                                             className={styles.imgSlide}
+                                            style={{ width: "144px" }}
                                             src="/loreal.png"
                                             alt="logo l'oréal"
                                             title="logo l'oréal"
@@ -347,6 +356,7 @@ export default function Home({ data }) {
                                     <div className={styles.slide}>
                                         <img
                                             className={styles.imgSlide}
+                                            style={{ width: "131px" }}
                                             src="/Accenture.png"
                                             alt="logo Accenture"
                                             title="logo Accenture"
@@ -355,6 +365,7 @@ export default function Home({ data }) {
                                     <div className={styles.slide}>
                                         <img
                                             className={styles.imgSlide}
+                                            style={{ width: "121px" }}
                                             src="/Delsey.png"
                                             alt="logo delsey"
                                             title="logo delsey"
@@ -363,6 +374,7 @@ export default function Home({ data }) {
                                     <div className={styles.slide}>
                                         <img
                                             className={styles.imgSlide}
+                                            style={{ width: "71px" }}
                                             src="/HEC.png"
                                             alt="logo HEC"
                                             title="logo HEC"
@@ -371,6 +383,7 @@ export default function Home({ data }) {
                                     <div className={styles.slide}>
                                         <img
                                             className={styles.imgSlide}
+                                            style={{ width: "229px" }}
                                             src="/Keolis.png"
                                             alt="logo Keolis"
                                             title="logo Keolis"
@@ -379,6 +392,7 @@ export default function Home({ data }) {
                                     <div className={styles.slide}>
                                         <img
                                             className={styles.imgSlide}
+                                            style={{ width: "124px" }}
                                             src="/Meilleurs-Agents.png"
                                             alt="logo meilleurs agents"
                                             title="logo meilleurs agents"
@@ -387,6 +401,7 @@ export default function Home({ data }) {
                                     <div className={styles.slide}>
                                         <img
                                             className={styles.imgSlide}
+                                            style={{ width: "121px" }}
                                             src="/Pega.png"
                                             alt="logo Pega"
                                             title="logo Pega"
@@ -395,6 +410,7 @@ export default function Home({ data }) {
                                     <div className={styles.slide}>
                                         <img
                                             className={styles.imgSlide}
+                                            style={{ width: "109px" }}
                                             src="/ubisoft.png"
                                             alt="logo ubisoft"
                                             title="logo ubisoft"
