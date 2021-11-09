@@ -58,7 +58,11 @@ export default function Faq({ data }) {
                 <link rel="icon" href="/favicon-heart-n-brain.png" />
             </Head>
             <section className={styles.content}>
-                <img className={styles.fondEcran} src="/fond.png" />
+                <img
+                    className={styles.fondEcran}
+                    src="/fond.png"
+                    alt="fond-ecran"
+                />
                 <div className={styles.container}>
                     <h1 className={styles.title}>
                         Comment savoir si la méthode Heart n Brain est faite
