@@ -63,12 +63,7 @@ export default function Individual({ data }) {
                 <link rel="icon" href="/favicon-heart-n-brain.png" />
             </Head>
             <section className={styles.content}>
-                <img
-                    className={styles.fondEcran}
-                    src="/fond.png"
-                    alt="fond-ecran"
-                />
-
+                <div className={styles.fondEcran}></div>
                 <div className={styles.container}>
                     <div className={styles.parcours}>
                         <div className={styles.separatorWhite}></div>
