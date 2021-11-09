@@ -64,10 +64,11 @@
     font-family: "luloCleanOne";
     text-transform: uppercase;
     font-size: 12px;
-    line-height: 13px;
+    line-height: 15px;
     margin-bottom: 40px;
     font-weight: bold;
     display: block;
+    margin-top: 3px;
 }
 .team {
     margin-top: 30px;
