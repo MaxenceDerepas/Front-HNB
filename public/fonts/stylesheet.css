@@ -8,6 +8,7 @@
         url("LuloCleanW01-OneBold.svg#LuloCleanW01-OneBold") format("svg");
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {

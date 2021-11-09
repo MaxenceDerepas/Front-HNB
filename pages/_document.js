@@ -11,11 +11,6 @@ class MyDocument extends Document {
             <Html lang="fr">
                 <Head>
                     <meta charset="utf-8" />
-                    <link
-                        rel="preload"
-                        rel="stylesheet"
-                        href="/fonts/stylesheet.css"
-                    />
                     <link rel="manifest" href="/manifest.json" />
                     <meta name="theme-color" content="#000" />
                     <link rel="apple-touch-icon" href="/logo-192x192.png" />
