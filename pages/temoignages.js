@@ -49,7 +49,7 @@ export default function Testimony({ data, dataDescription }) {
                 <meta name="googlebot" content="index,follow" />
                 <meta property="og:image" content="/partage.png" />
                 <meta property="og:image:width" content="600" />
-                <meta property="og:image:height" content="390" />
+                <meta property="og:image:height" content="313" />
 
                 <link
                     rel="canonical"

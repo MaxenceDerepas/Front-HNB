@@ -94,7 +94,7 @@ export default function Home({ data }) {
                 />
                 <meta property="og:image" content="/partage.png" />
                 <meta property="og:image:width" content="600" />
-                <meta property="og:image:height" content="390" />
+                <meta property="og:image:height" content="313" />
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"

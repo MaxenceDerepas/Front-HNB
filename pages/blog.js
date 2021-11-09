@@ -44,7 +44,7 @@ export default function Blog({ data, dataArticle }) {
 
                 <meta property="og:image" content="/partage.png" />
                 <meta property="og:image:width" content="600px" />
-                <meta property="og:image:height" content="390px" />
+                <meta property="og:image:height" content="313px" />
 
                 <meta
                     name="viewport"
