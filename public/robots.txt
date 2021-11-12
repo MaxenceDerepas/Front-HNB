@@ -9,8 +9,8 @@ Allow: /notre-concept
 Allow: /notre-methode
 Allow: /notre-mission
 Allow: /temoignages
-Allow: /mentions-legales-confidentialite
-Allow: /conditions-generales-de-ventes
-Allow: /posts/[id]
+Disallow: /mentions-legales-confidentialite
+Disallow: /conditions-generales-de-ventes
+Allow: /posts/
 
 

@@ -273,8 +273,8 @@ export default function Faq({ data }) {
                         </li>
                         <li>
                             Sur une échelle de 1 à 10, nos coachés répondent en
-                            moyenne 9 à la question "Avez-vous atteint votre
-                            objectif ?"{" "}
+                            moyenne 9 à la question « Avez-vous atteint votre
+                            objectif ? »{" "}
                             <span className={styles.textMin}>
                                 (mesure réalisée lors de la synthèse finale,
                                 lors de l'échange de cloture réalisé avec le
@@ -360,7 +360,7 @@ export default function Faq({ data }) {
                     </h2>
                     <p className={styles.text}>
                         Les séances de coaching présentiel peuvent se dérouler à
-                        votre convenance (à Paris en Ile-de-France) :
+                        votre convenance (à Paris ou en Ile-de-France) :
                     </p>
                     <ul className={styles.list}>
                         <li>Dans vos locaux professionnels</li>

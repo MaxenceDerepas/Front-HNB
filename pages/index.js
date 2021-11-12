@@ -121,6 +121,7 @@ export default function Home({ data }) {
                 <link rel="icon" href="/favicon-heart-n-brain.png" />
             </Head>
             <section className={styles.content}>
+                <div className={styles.fondEcran}></div>
                 <div className={styles.title}>
                     <div className={styles.container}>
                         <h1>
@@ -133,9 +134,129 @@ export default function Home({ data }) {
 
                 <div className={styles.promise}>
                     <div className={styles.container}>
+                        <div className={styles.slider}>
+                            <div className={styles.sliderTrack}>
+                                <div className={styles.slide}>
+                                    <img
+                                        className={styles.imgSlide}
+                                        style={{ width: "144px" }}
+                                        src="/loreal.png"
+                                        alt="logo l'oréal"
+                                        title="logo l'oréal"
+                                    />
+                                </div>
+                                <div className={styles.slide}>
+                                    <img
+                                        className={styles.imgSlide}
+                                        style={{ width: "131px" }}
+                                        src="/Accenture.png"
+                                        alt="logo Accenture"
+                                        title="logo Accenture"
+                                    />
+                                </div>
+                                <div className={styles.slide}>
+                                    <img
+                                        className={styles.imgSlide}
+                                        style={{ width: "121px" }}
+                                        src="/Delsey.png"
+                                        alt="logo delsey"
+                                        title="logo delsey"
+                                    />
+                                </div>
+                                <div className={styles.slide}>
+                                    <img
+                                        className={styles.imgSlide}
+                                        style={{ width: "71px" }}
+                                        src="/HEC.png"
+                                        alt="logo HEC"
+                                        title="logo HEC"
+                                    />
+                                </div>
+                                <div className={styles.slide}>
+                                    <img
+                                        className={styles.imgSlide}
+                                        style={{ width: "229px" }}
+                                        src="/Keolis.png"
+                                        alt="logo Keolis"
+                                        title="logo Keolis"
+                                    />
+                                </div>
+                                <div className={styles.slide}>
+                                    <img
+                                        className={styles.imgSlide}
+                                        style={{ width: "124px" }}
+                                        src="/Meilleurs-Agents.png"
+                                        alt="logo meilleurs agents"
+                                        title="logo meilleurs agents"
+                                    />
+                                </div>
+                                <div className={styles.slide}>
+                                    <img
+                                        className={styles.imgSlide}
+                                        style={{ width: "121px" }}
+                                        src="/Pega.png"
+                                        alt="logo Pega"
+                                        title="logo Pega"
+                                    />
+                                </div>
+                                <div className={styles.slide}>
+                                    <img
+                                        className={styles.imgSlide}
+                                        style={{ width: "109px" }}
+                                        src="/ubisoft.png"
+                                        alt="logo ubisoft"
+                                        title="logo ubisoft"
+                                    />
+                                </div>
+                                <div className={styles.slide}>
+                                    <img
+                                        className={styles.imgSlide}
+                                        style={{ width: "144px" }}
+                                        src="/loreal.png"
+                                        alt="logo l'oréal"
+                                        title="logo l'oréal"
+                                    />
+                                </div>
+                                <div className={styles.slide}>
+                                    <img
+                                        className={styles.imgSlide}
+                                        style={{ width: "131px" }}
+                                        src="/Accenture.png"
+                                        alt="logo Accenture"
+                                        title="logo Accenture"
+                                    />
+                                </div>
+                                <div className={styles.slide}>
+                                    <img
+                                        className={styles.imgSlide}
+                                        style={{ width: "121px" }}
+                                        src="/Delsey.png"
+                                        alt="logo delsey"
+                                        title="logo delsey"
+                                    />
+                                </div>
+                                <div className={styles.slide}>
+                                    <img
+                                        className={styles.imgSlide}
+                                        style={{ width: "71px" }}
+                                        src="/HEC.png"
+                                        alt="logo HEC"
+                                        title="logo HEC"
+                                    />
+                                </div>
+                                <div className={styles.slide}>
+                                    <img
+                                        className={styles.imgSlide}
+                                        style={{ width: "229px" }}
+                                        src="/Keolis.png"
+                                        alt="logo Keolis"
+                                        title="logo Keolis"
+                                    />
+                                </div>
+                            </div>
+                        </div>
                         <div className={styles.padding}>
                             <div className={styles.separatorWhite}></div>
-
                             <h2 className={styles.h2}>NOTRE PROMESSE</h2>
                             <div className={styles.columns}>
                                 <div className={styles.column}>
@@ -268,154 +389,6 @@ export default function Home({ data }) {
                                         long du parcours pour vous garantir une
                                         évolution soutenue.
                                     </p>
-                                </div>
-                            </div>
-                            <div className={styles.slider}>
-                                <div className={styles.sliderTrack}>
-                                    <div className={styles.slide}>
-                                        <img
-                                            className={styles.imgSlide}
-                                            style={{ width: "144px" }}
-                                            src="/loreal.png"
-                                            alt="logo l'oréal"
-                                            title="logo l'oréal"
-                                        />
-                                    </div>
-                                    <div className={styles.slide}>
-                                        <img
-                                            className={styles.imgSlide}
-                                            style={{ width: "131px" }}
-                                            src="/Accenture.png"
-                                            alt="logo Accenture"
-                                            title="logo Accenture"
-                                        />
-                                    </div>
-                                    <div className={styles.slide}>
-                                        <img
-                                            className={styles.imgSlide}
-                                            style={{ width: "121px" }}
-                                            src="/Delsey.png"
-                                            alt="logo delsey"
-                                            title="logo delsey"
-                                        />
-                                    </div>
-                                    <div className={styles.slide}>
-                                        <img
-                                            className={styles.imgSlide}
-                                            style={{ width: "71px" }}
-                                            src="/HEC.png"
-                                            alt="logo HEC"
-                                            title="logo HEC"
-                                        />
-                                    </div>
-                                    <div className={styles.slide}>
-                                        <img
-                                            className={styles.imgSlide}
-                                            style={{ width: "229px" }}
-                                            src="/Keolis.png"
-                                            alt="logo Keolis"
-                                            title="logo Keolis"
-                                        />
-                                    </div>
-                                    <div className={styles.slide}>
-                                        <img
-                                            className={styles.imgSlide}
-                                            style={{ width: "124px" }}
-                                            src="/Meilleurs-Agents.png"
-                                            alt="logo meilleurs agents"
-                                            title="logo meilleurs agents"
-                                        />
-                                    </div>
-                                    <div className={styles.slide}>
-                                        <img
-                                            className={styles.imgSlide}
-                                            style={{ width: "121px" }}
-                                            src="/Pega.png"
-                                            alt="logo Pega"
-                                            title="logo Pega"
-                                        />
-                                    </div>
-                                    <div className={styles.slide}>
-                                        <img
-                                            className={styles.imgSlide}
-                                            style={{ width: "109px" }}
-                                            src="/ubisoft.png"
-                                            alt="logo ubisoft"
-                                            title="logo ubisoft"
-                                        />
-                                    </div>
-                                    <div className={styles.slide}>
-                                        <img
-                                            className={styles.imgSlide}
-                                            style={{ width: "144px" }}
-                                            src="/loreal.png"
-                                            alt="logo l'oréal"
-                                            title="logo l'oréal"
-                                        />
-                                    </div>
-                                    <div className={styles.slide}>
-                                        <img
-                                            className={styles.imgSlide}
-                                            style={{ width: "131px" }}
-                                            src="/Accenture.png"
-                                            alt="logo Accenture"
-                                            title="logo Accenture"
-                                        />
-                                    </div>
-                                    <div className={styles.slide}>
-                                        <img
-                                            className={styles.imgSlide}
-                                            style={{ width: "121px" }}
-                                            src="/Delsey.png"
-                                            alt="logo delsey"
-                                            title="logo delsey"
-                                        />
-                                    </div>
-                                    <div className={styles.slide}>
-                                        <img
-                                            className={styles.imgSlide}
-                                            style={{ width: "71px" }}
-                                            src="/HEC.png"
-                                            alt="logo HEC"
-                                            title="logo HEC"
-                                        />
-                                    </div>
-                                    <div className={styles.slide}>
-                                        <img
-                                            className={styles.imgSlide}
-                                            style={{ width: "229px" }}
-                                            src="/Keolis.png"
-                                            alt="logo Keolis"
-                                            title="logo Keolis"
-                                        />
-                                    </div>
-                                    <div className={styles.slide}>
-                                        <img
-                                            className={styles.imgSlide}
-                                            style={{ width: "124px" }}
-                                            src="/Meilleurs-Agents.png"
-                                            alt="logo meilleurs agents"
-                                            title="logo meilleurs agents"
-                                        />
-                                    </div>
-                                    <div className={styles.slide}>
-                                        <img
-                                            className={styles.imgSlide}
-                                            style={{ width: "121px" }}
-                                            src="/Pega.png"
-                                            alt="logo Pega"
-                                            title="logo Pega"
-                                        />
-                                    </div>
-                                    <div className={styles.slide}>
-                                        <img
-                                            className={styles.imgSlide}
-                                            style={{ width: "109px" }}
-                                            src="/ubisoft.png"
-                                            alt="logo ubisoft"
-                                            title="logo ubisoft"
-                                        />
-                                    </div>
                                 </div>
                             </div>
                         </div>

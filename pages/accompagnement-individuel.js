@@ -244,8 +244,8 @@ export default function Individual({ data }) {
                             <span className={styles.span}>Parcours adapté</span>
                             <br />
                             composé de plusieurs séances <br />
-                            individuelles de coaching ou soutien ad hoc en face
-                            à face et/ou à distance
+                            individuelles de coaching et de quelques séances de
+                            soutien ad hoc en face à face et/ou à distance
                         </p>
                         <p className={styles.essaiText}>
                             <span className={styles.span}>

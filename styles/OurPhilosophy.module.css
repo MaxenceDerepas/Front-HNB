@@ -76,6 +76,8 @@
     align-items: center;
 }
 .teamText {
+    border: white solid 3px;
+    box-sizing: border-box;
     font-size: 15px;
     line-height: 17px;
     margin-left: 40px;
@@ -198,6 +200,7 @@
     }
     .teamText {
         padding-top: 20px;
+        height: max-content;
         margin: 0 auto;
     }
     .valueBox {

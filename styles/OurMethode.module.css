@@ -7,7 +7,8 @@
     width: 100%;
     height: 100%;
     position: fixed;
-    background-image: url("../public/fond.png");
+    background-image: url("../public/fond.jpg");
+    background-size: cover;
     z-index: -1;
 }
 .container {
@@ -15,6 +16,7 @@
     background-color: #000;
     width: 980px;
     padding-top: 15px;
+    padding-bottom: 20px;
     color: #fefdfd;
 }
 .padding {
