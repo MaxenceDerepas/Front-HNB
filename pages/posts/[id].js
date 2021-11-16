@@ -110,19 +110,28 @@ export default function Blog({ data }) {
                                                                         element,
                                                                         z
                                                                     ) => {
+                                                                        console.log(
+                                                                            item.text.split(
+                                                                                "<br/>"
+                                                                            )
+                                                                        );
                                                                         return (
                                                                             <span
                                                                                 key={
                                                                                     z
                                                                                 }
-                                                                                style={{
-                                                                                    display:
-                                                                                        "block",
-                                                                                }}
                                                                             >
                                                                                 {
                                                                                     element
                                                                                 }
+                                                                                {z !==
+                                                                                    item.text.split(
+                                                                                        "<br/>"
+                                                                                    )
+                                                                                        .length -
+                                                                                        1 && (
+                                                                                    <br />
+                                                                                )}
                                                                             </span>
                                                                         );
                                                                     }

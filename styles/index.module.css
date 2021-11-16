@@ -1,7 +1,4 @@
 .content {
-    /* background-image: url("../images/heart-n-brain-fond-ecran.webp");
-    background-repeat: no-repeat;
-    background-size: cover; */
     padding-top: 30px;
     color: white;
     font-weight: lighter;
@@ -10,11 +7,10 @@
 .fondEcran {
     margin-top: -30px;
     width: 100%;
-    height: 1068px;
+    height: 1388px;
     position: absolute;
-    background-image: url("../images/heart-n-brain-fond-ecran.webp");
+    background-image: url("../images/heart-n-brain-fond-ecran2.webp");
     background-repeat: no-repeat;
-
     background-size: cover;
     z-index: -1;
 }
@@ -299,6 +295,9 @@
         width: 100vw;
         background-image: none;
         background-color: black;
+    }
+    .fondEcran {
+        display: none;
     }
     .slider {
         width: 100vw;
