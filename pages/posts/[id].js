@@ -110,11 +110,6 @@ export default function Blog({ data }) {
                                                                         element,
                                                                         z
                                                                     ) => {
-                                                                        console.log(
-                                                                            item.text.split(
-                                                                                "<br/>"
-                                                                            )
-                                                                        );
                                                                         return (
                                                                             <span
                                                                                 key={

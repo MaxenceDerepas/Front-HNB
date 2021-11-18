@@ -174,8 +174,10 @@ export default function Home({ data }) {
                                 </div>
                                 <div className={styles.slide}>
                                     <img
-                                        className={styles.imgSlide}
-                                        style={{ width: "229px" }}
+                                        style={{
+                                            width: "163px",
+                                            height: "25px",
+                                        }}
                                         src="/Keolis.png"
                                         alt="logo Keolis"
                                         title="logo Keolis"
@@ -246,8 +248,10 @@ export default function Home({ data }) {
                                 </div>
                                 <div className={styles.slide}>
                                     <img
-                                        className={styles.imgSlide}
-                                        style={{ width: "229px" }}
+                                        style={{
+                                            width: "163px",
+                                            height: "25px",
+                                        }}
                                         src="/Keolis.png"
                                         alt="logo Keolis"
                                         title="logo Keolis"
