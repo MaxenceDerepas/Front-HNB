@@ -36,7 +36,7 @@ export default function Individual({ data }) {
                 <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
                 <link
                     rel="canonical"
-                    href="https://front-hnb-ten.vercel.app/accompagnement-individuel"
+                    href="https://www.heart-n-brain.com/accompagnement-individuel"
                 ></link>
                 <meta
                     name="viewport"

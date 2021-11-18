@@ -24,7 +24,7 @@ export default function TermOfSales({ data }) {
 
                 <link
                     rel="canonical"
-                    href="https://front-hnb-ten.vercel.app/conditions-generales-de-vente"
+                    href="https://www.heart-n-brain.com/conditions-generales-de-vente"
                 ></link>
                 <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
                 <meta

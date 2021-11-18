@@ -85,7 +85,7 @@ export default function Home({ data }) {
                 <meta name="googlebot" content="index,follow" />
                 <link
                     rel="canonical"
-                    href="https://front-hnb-ten.vercel.app/"
+                    href="https://www.heart-n-brain.com/"
                 ></link>
                 <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
                 <meta

@@ -32,7 +32,7 @@ export default function Collective({ data }) {
                 <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
                 <link
                     rel="canonical"
-                    href="https://front-hnb-ten.vercel.app/accompagnement-collectif"
+                    href="https://www.heart-n-brain.com/accompagnement-collectif"
                 ></link>
                 <meta
                     name="viewport"
