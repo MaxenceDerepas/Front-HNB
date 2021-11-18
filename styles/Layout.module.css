@@ -161,9 +161,13 @@
     .title {
         display: flex;
         align-items: center;
+        margin: 0 auto;
     }
     .title h1 {
-        margin-left: 8px;
+        font-size: 9px;
+    }
+    .title h1 span {
+        font-size: 13px;
     }
 
     .navigation {

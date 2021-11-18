@@ -115,8 +115,8 @@ export default function Layout({ children, visible }) {
 
                         <h1
                             style={{
-                                fontSize: width > 650 ? "9px" : "13px",
-                                lineHeight: width < 650 && " 13px",
+                                fontSize: "9px",
+                                // lineHeight: width < 650 && " 13px",
                                 letterSpacing: "1.4px",
                             }}
                         >
