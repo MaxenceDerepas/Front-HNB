@@ -226,9 +226,15 @@
         font-size: 13px;
         line-height: 13px;
     }
+
     .p {
-        margin-bottom: 9px;
         line-height: 15px;
+        margin-bottom: 9px;
+        margin-left: 0px;
+    }
+    .pEnd {
+        line-height: 15px;
+        margin-left: 0px;
     }
     .infos {
         display: flex;
@@ -265,5 +271,11 @@
     }
     .contact {
         width: 100%;
+    }
+    .exemple {
+        padding-bottom: 0px;
+    }
+    .infos {
+        margin-bottom: 15px;
     }
 }

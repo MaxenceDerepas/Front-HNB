@@ -206,7 +206,13 @@
         line-height: 14px;
     }
     .p {
-        margin-bottom: 6px;
+        margin-bottom: 9px;
+        margin-left: 0px;
+        line-height: 15px;
+    }
+    .pEnd {
+        margin-left: 0px;
+        line-height: 15px;
     }
     .img {
         display: none;
@@ -225,6 +231,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 15px;
     }
     .infoThematique {
         width: 100%;

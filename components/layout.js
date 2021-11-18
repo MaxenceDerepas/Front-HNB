@@ -381,7 +381,7 @@ export default function Layout({ children, visible }) {
                                                     : styles.liMobile2
                                             }
                                         >
-                                            Notre methode
+                                            Notre méthode
                                         </a>
                                     </Link>
                                 </div>
