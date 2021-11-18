@@ -113,9 +113,9 @@ export default function Individual({ data }) {
                                     <strong className={styles.strong}>
                                         Votre objectif et votre ambition
                                     </strong>
-                                    <br />
-                                    "J'ai identifié le défi que je souhaite
-                                    relever et je connais mon échéance"
+                                    <br />« J'ai identifié le défi que je
+                                    souhaite relever et je connais mon échéance
+                                    »
                                 </p>
                             </div>
                             <div className={styles.info}>
@@ -130,9 +130,9 @@ export default function Individual({ data }) {
                                     <strong className={styles.strong}>
                                         Vos univers lexicaux
                                     </strong>
-                                    <br />
-                                    "J'identifie les univers dans lesquels j'ai
-                                    envie et besoin de m'améliorer"
+                                    <br />« J'identifie les univers dans
+                                    lesquels j'ai envie et besoin de m'améliorer
+                                    »
                                 </p>
                             </div>
                             <div className={styles.info}>
@@ -147,9 +147,9 @@ export default function Individual({ data }) {
                                     <strong className={styles.strong}>
                                         Vos freins
                                     </strong>
-                                    <br />
-                                    "J'identifie les freins qui m'empêchent
-                                    d'être à l'aise et performant en anglais"
+                                    <br />« J'identifie les freins qui
+                                    m'empêchent d'être à l'aise et performant en
+                                    anglais »
                                 </p>
                             </div>
                         </div>
