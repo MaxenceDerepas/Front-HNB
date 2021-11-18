@@ -165,6 +165,7 @@
     }
     .title h1 {
         font-size: 9px;
+        margin-left: 8px;
     }
     .title h1 span {
         font-size: 13px;
@@ -199,8 +200,7 @@
     .liMobile2 {
         color: black;
     }
-    .liMobileActive2 {
-    }
+
     .liMobileActive {
         display: flex;
         flex-direction: column;
