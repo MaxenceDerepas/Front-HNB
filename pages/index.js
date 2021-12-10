@@ -48,10 +48,10 @@ export default function Home({ data }) {
         e.preventDefault();
         setLoader(true);
 
-        emailjs.init(`user_jhtpYoLR6FfQSgbz40D4s`);
+        emailjs.init(`user_pdd4xrYEWf15fTrS03aXr`);
 
         await emailjs
-            .send("service_8fqxzxv", "template_n6crlho", {
+            .send("service_ouw6v6j", "template_80x9feq", {
                 name: name,
                 email: email,
                 subject: subject,

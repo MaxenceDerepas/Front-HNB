@@ -14,7 +14,7 @@ export async function getStaticProps() {
     const dataArticle = await responseArticle.json();
 
     // Pass data to the page via props
-    return { props: { data, dataArticle } };
+    return { props: { data, dataArticle }, revalidate: 17280 };
 }
 
 export default function Blog({ data, dataArticle }) {

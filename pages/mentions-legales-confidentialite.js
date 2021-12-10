@@ -66,9 +66,9 @@ export default function LegalNotice({ data }) {
                 <h3 style={{ marginBottom: "5px" }} className={styles.h3}>
                     Hébergeur
                 </h3>
-                <p>wix</p>
-                <a className={styles.a} href="https://www.wix.com/">
-                    https://www.wix.com/
+                <p>hostinger</p>
+                <a className={styles.a} href="https://www.hostinger.fr/">
+                    https://www.hostinger.fr/
                 </a>
                 <p style={{ marginBottom: "30px" }}> </p>
                 <h2 className={styles.h2}>

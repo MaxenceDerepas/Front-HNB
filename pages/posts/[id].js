@@ -364,7 +364,7 @@ export async function getStaticPaths() {
     const paths = data.map((elem) => ({ params: { id: elem.titleUrl } }));
     return {
         paths,
-        fallback: false,
+        fallback: "blocking",
     };
 }
 export async function getStaticProps({ params }) {
@@ -375,5 +375,6 @@ export async function getStaticProps({ params }) {
 
     return {
         props: { data },
+        revalidate: 17280,
     };
 }
