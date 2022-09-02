@@ -212,6 +212,21 @@ export default function Home({ data }) {
                                 </div>
                                 <div className={styles.slide}>
                                     <img
+                                        style={{ height: "40px" }}
+                                        src="/Decathlon.png"
+                                        alt="logo Decathlon"
+                                        title="logo Decarhlon"
+                                    />
+                                </div>
+                                <div className={styles.slide}>
+                                    <img
+                                        src="/allianz-trade.png"
+                                        alt="Allianz"
+                                        title="Allianz"
+                                    />
+                                </div>
+                                <div className={styles.slide}>
+                                    <img
                                         className={styles.imgSlide}
                                         style={{ width: "144px" }}
                                         src="/loreal.png"

@@ -42,7 +42,7 @@
 }
 .sliderTrack {
     display: flex;
-    width: calc(250px * 13);
+    width: calc(254px * 15);
     animation: scroll 40s infinite linear;
     justify-content: space-between;
 }
@@ -63,7 +63,7 @@
     }
 
     100% {
-        transform: translateX(-2075.5px);
+        transform: translateX(-2669px);
     }
 }
 
