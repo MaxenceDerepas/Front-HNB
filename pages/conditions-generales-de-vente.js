@@ -71,9 +71,9 @@ export default function TermOfSales({ data }) {
                     <br />
                     "Heart n Brain" ou "Société" désigne la société Heart n
                     Brain, une société par actions simplifiée au capital de
-                    5.000 €, dont le siège social est situé au 15, rue Moret à
-                    Paris (75011) et dont le numéro d’identification unique est
-                    le 850 609 389 RCS Paris.
+                    5.000 €, dont le siège social est situé au 117, boulevard
+                    Finot, 93200 Saint-Denis et dont le numéro d’identification
+                    unique est le 850 609 389 RCS Paris.
                 </p>
                 <h3 className={styles.h3}>2. OBJET ET CHAMP D’APPLICATION</h3>
                 <p className={styles.p}>
@@ -388,9 +388,9 @@ export default function TermOfSales({ data }) {
                     coaching ou de formation auprès de Heart n Brain. "Heart n
                     Brain" ou "Société" désigne la société Heart n Brain, une
                     société par actions simplifiée au capital de 5.000 €, dont
-                    le siège social est situé au 15, rue Moret à Paris (75011)
-                    et dont le numéro d’identification unique est le 850 609 389
-                    RCS Paris. <br />
+                    le siège social est situé au 17, boulevard Finot, 93200
+                    Saint-Denis et dont le numéro d’identification unique est le
+                    850 609 389 RCS Paris. <br />
                     "Stagiaire" ou "Stagiaires" désigne toute personne physique
                     désignée par le Client qui bénéficie d’un coaching ou d’une
                     formation.

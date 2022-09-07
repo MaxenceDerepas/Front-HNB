@@ -55,11 +55,11 @@ export default function LegalNotice({ data }) {
                 <Link href="/">
                     <a className={styles.a}>https://www.heart-n-brain.com/</a>
                 </Link>
-                <p>15 rue moret</p>
-                <p>75011 Paris</p>
+                <p>17, Boulevard FINOT</p>
+                <p>93200 Saint-Denis</p>
                 <p>contact@heart-n-brain.com</p>
                 <p>Capital social de 5.000 euros</p>
-                <p>SIRET 850 609 389 00018</p>
+                <p>SIRET 850 609 389 00026</p>
                 <p style={{ marginBottom: "20px" }}>
                     Directeur de la publication : Sarah EKIZIAN
                 </p>
@@ -100,8 +100,9 @@ export default function LegalNotice({ data }) {
                     Vos données sont collectées par :<br />
                     Heart n Brain, SAS au capital de 5.000 euros, immatriculée
                     au Registre du Commerce et des Sociétés de Paris sous le n°
-                    850 609 389, dont le siège social se situe au 15, rue Moret,
-                    75011 PARIS, représentée par Morgane Duphot, Présidente.
+                    850 609 389, dont le siège social se situe au 17, boulevard
+                    Finot, 93200 Saint-Denis, représentée par Morgane Duphot,
+                    Présidente.
                     <br />
                     Ci-après dénommée « HnB » Au sens des articles 34 et 35 de
                     la Loi 78-17, HnB agit en tant que Responsable de
@@ -243,7 +244,7 @@ export default function LegalNotice({ data }) {
                     suivante :
                 </p>
                 <p className={styles.p}>
-                    Heart n Brain – 15 rue Moret - 75011 paris
+                    Heart n Brain – 17, boulevard Finot - 93200 Saint-Denis
                     <br />
                     Ou par email : contact@heart-n-brain.com
                 </p>
