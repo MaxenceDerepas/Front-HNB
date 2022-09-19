@@ -209,12 +209,12 @@ export default function Collective({ data }) {
                                 clubs/ingénierie pédagogique nécessaire)
                             </p>
                             <p className={styles.essaiText}>
-                                Des formats courts pour les CLUBS à distance (4
+                                Des formats courts pour les CLUBS à distance (3
                                 personnes maximum)
                             </p>
                             <p className={styles.essaiText}>
-                                Des ateliers en présentiel de 2h à la journée
-                                (de 2 à 8 personnes)
+                                DES ATELIERS EN PRÉSENTIEL DE 4H (DE 2 À 6
+                                PERSONNES)
                                 <br />à distance, dans vos locaux ou un lieu de
                                 votre choix
                             </p>
