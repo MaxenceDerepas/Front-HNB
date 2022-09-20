@@ -8,7 +8,7 @@ import Coeur from "../images/coeur-heart-n-brain.png";
 import Pin from "../images/pin-heart-n-brain.png";
 import { useState } from "react";
 import useInView from "react-cool-inview";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import Loader from "../components/loader";
 
 import SocialLinkedin from "../images/linkedinSocial.webp";
