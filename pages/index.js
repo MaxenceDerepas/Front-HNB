@@ -7,9 +7,9 @@ import Ampoule from "../images/ampoule-heart-n-brain.png";
 import Coeur from "../images/coeur-heart-n-brain.png";
 import Pin from "../images/pin-heart-n-brain.png";
 import { useState } from "react";
-import useInView from "react-cool-inview";
+import { useInView } from "react-cool-inview";
 import emailjs from "@emailjs/browser";
-import Loader from "../components/loader";
+import { TailSpin } from "react-loader-spinner";
 
 import SocialLinkedin from "../images/linkedinSocial.webp";
 import SocialInsta from "../images/instaSocial.webp";
@@ -563,7 +563,16 @@ export default function Home({ data }) {
                                             value="Envoyer"
                                         />
                                     ) : (
-                                        <Loader />
+                                        <TailSpin
+                                            height="30"
+                                            width="30"
+                                            color="#8D8D8D"
+                                            ariaLabel="tail-spin-loading"
+                                            radius="1"
+                                            wrapperStyle={{}}
+                                            wrapperClass=""
+                                            visible={true}
+                                        />
                                     )}
                                 </div>
                             </form>
