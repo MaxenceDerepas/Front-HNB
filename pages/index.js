@@ -24,7 +24,7 @@ export async function getStaticProps() {
     return { props: { data } };
 }
 
-export default function Home({ data }) {
+export default function Home() {
     const [visible, setVisible] = useState(false);
     const [loader, setLoader] = useState(false);
 
@@ -108,7 +108,7 @@ export default function Home({ data }) {
                 />
                 <meta
                     property="og:description"
-                    content={`${data.description}`}
+                    // content={`${data.description}`}
                 />
                 <meta
                     name="description"
@@ -577,14 +577,20 @@ export default function Home({ data }) {
                                 </div>
                             </form>
                             <div className={styles.contactRight}>
-                                <div>
+                                <div className={styles.qualiopi}>
                                     <Image
                                         src={Qualiopi}
                                         alt="certifié qualiopi"
                                         title="certification qualiopi"
-                                        width={192}
-                                        height={90}
+                                        width={205}
+                                        height={94}
                                     />
+                                    <p className={styles.qualiopiP}>
+                                        La certification de qualité a été
+                                        délivrée au titre de la catégorie
+                                        d'action suivante : ACTIONS DE
+                                        FORMATION.
+                                    </p>
                                 </div>
                                 <div className={styles.buttonSocial}>
                                     <p

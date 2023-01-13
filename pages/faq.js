@@ -263,8 +263,8 @@ export default function Faq({ data }) {
                         </li>
                         <li>
                             A l'issue de leur parcours, nos coachés ont acquis
-                            en moyenne 88% des compétences de niveau 1 (anglais
-                            opérationnel) et 83% des critères de niveau 2
+                            en moyenne 85% des compétences de niveau 1 (anglais
+                            opérationnel) et 86% des critères de niveau 2
                             (anglais managérial){" "}
                             <span className={styles.textMin}>
                                 (mesure réalisée lors de la synthèse finale,
@@ -434,7 +434,7 @@ export default function Faq({ data }) {
                         dépasser 5 personnes.
                     </p>
                     <p className={styles.textMin}>
-                        Dernière mise à jour : Juillet 2021
+                        Dernière mise à jour : Janvier 2023
                     </p>
                 </div>
             </section>
