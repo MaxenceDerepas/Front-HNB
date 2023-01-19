@@ -299,12 +299,26 @@
     text-align: center;
     margin-bottom: 30px;
 }
+.LogoFinal {
+    padding-top: 30px;
+}
+.contactTextHnb {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+}
 
 @media only screen and (min-width: 320px) and (max-width: 650px) {
     .content {
         width: 100vw;
         background-image: none;
         background-color: black;
+    }
+    .LogoFinal {
+        margin-bottom: 20px;
+    }
+    .contact {
+        margin-bottom: 190px;
     }
     .qualiopi {
         margin-left: 0px;

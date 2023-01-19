@@ -282,6 +282,9 @@ export default function Faq({ data }) {
                             </span>
                         </li>
                     </ul>
+                    <p className={styles.text}>
+                        Période de référence :2019-2023
+                    </p>
 
                     <h2 className={styles.title}>
                         Comment suivre ma progression ?

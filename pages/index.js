@@ -6,7 +6,7 @@ import Image from "next/image";
 import Ampoule from "../images/ampoule-heart-n-brain.png";
 import Coeur from "../images/coeur-heart-n-brain.png";
 import Pin from "../images/pin-heart-n-brain.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useInView } from "react-cool-inview";
 import emailjs from "@emailjs/browser";
 import { TailSpin } from "react-loader-spinner";
@@ -14,6 +14,7 @@ import { TailSpin } from "react-loader-spinner";
 import SocialLinkedin from "../images/linkedinSocial.webp";
 import SocialInsta from "../images/instaSocial.webp";
 import Qualiopi from "../images/Qualiopi.png";
+import LogoFinal from "../images/LOGO-FINAL.png";
 
 export async function getStaticProps() {
     // Fetch data from external API
@@ -24,9 +25,14 @@ export async function getStaticProps() {
     return { props: { data } };
 }
 
-export default function Home() {
+export default function Home({ data }) {
     const [visible, setVisible] = useState(false);
     const [loader, setLoader] = useState(false);
+    const [width, setWidth] = useState(null);
+
+    useEffect(() => {
+        setWidth(window.innerWidth);
+    }, []);
 
     const { observe } = useInView({
         threshold: 1,
@@ -108,7 +114,7 @@ export default function Home() {
                 />
                 <meta
                     property="og:description"
-                    // content={`${data.description}`}
+                    content={`${data.description}`}
                 />
                 <meta
                     name="description"
@@ -491,20 +497,37 @@ export default function Home() {
                     <div className={styles.padding}>
                         <div className={styles.separatorWhite}></div>
                         <h2 className={styles.h2}>CONTACT</h2>
-                        <p className={styles.text}>
-                            Besoin d'un renseignement ? Envie de vous lancer ?
-                            <br />
-                            Vous ne trouvez pas la réponse à une question
-                            spécifique (déroulement des séances, certification,
-                            accueil des personnes en situation de handicap… ) ?
-                            <br />
-                            N'hésitez pas à nous écrire !<br /> Le premier
-                            échange et la séance d'essai sont gratuits et sans
-                            engagement !{" "}
-                            <span className={styles.span}>
-                                contact@heart-n-brain.com
-                            </span>
-                        </p>
+                        <div className={styles.contactTextHnb}>
+                            <p className={styles.text}>
+                                Besoin d'un renseignement ? Envie de vous lancer
+                                ?
+                                <br />
+                                Vous ne trouvez pas la réponse à une question
+                                spécifique (déroulement des séances,
+                                certification, accueil des personnes en
+                                situation de handicap… ) ?
+                                <br />
+                                N'hésitez pas à nous écrire !<br /> Le premier
+                                échange et la séance d'essai sont gratuits et
+                                sans engagement !{" "}
+                                <span className={styles.span}>
+                                    contact@heart-n-brain.com
+                                </span>
+                            </p>
+                            {width > 650 && (
+                                <div className={styles.LogoFinal}>
+                                    <Image
+                                        className={styles.LogoFinal}
+                                        src={LogoFinal}
+                                        alt="certifié qualiopi"
+                                        title="certification qualiopi"
+                                        height={118}
+                                        width={205}
+                                    />
+                                </div>
+                            )}
+                        </div>
+
                         <div className={styles.formSocial}>
                             <form
                                 className={styles.form}
@@ -577,13 +600,25 @@ export default function Home() {
                                 </div>
                             </form>
                             <div className={styles.contactRight}>
+                                {width <= 650 && (
+                                    <div className={styles.LogoFinal}>
+                                        <Image
+                                            className={styles.LogoFinal}
+                                            src={LogoFinal}
+                                            alt="certifié qualiopi"
+                                            title="certification qualiopi"
+                                            height={118}
+                                            width={205}
+                                        />
+                                    </div>
+                                )}
                                 <div className={styles.qualiopi}>
                                     <Image
                                         src={Qualiopi}
                                         alt="certifié qualiopi"
                                         title="certification qualiopi"
                                         width={205}
-                                        height={94}
+                                        height={109}
                                     />
                                     <p className={styles.qualiopiP}>
                                         La certification de qualité a été
