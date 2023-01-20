@@ -291,21 +291,28 @@
     align-items: center;
     justify-content: space-between;
 }
-
+.qualiopi {
+    width: 137px;
+    display: flex;
+    flex-direction: column;
+}
 .qualiopiP {
-    font-size: 13px;
-    line-height: 15px;
-    width: 205px;
+    margin-top: 10px;
+    font-size: 10.5px;
+    line-height: 13px;
     text-align: center;
     margin-bottom: 30px;
 }
 .LogoFinal {
-    padding-top: 30px;
+    padding-top: 65px;
 }
 .contactTextHnb {
     display: flex;
     justify-content: space-between;
-    padding-right: 40px;
+    padding-right: 57px;
+}
+.logoEtQualiopi {
+    display: flex;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 650px) {
@@ -316,9 +323,10 @@
     }
     .LogoFinal {
         margin-bottom: 20px;
+        padding-top: 20px;
     }
     .contact {
-        margin-bottom: 190px;
+        margin-bottom: 160px;
     }
     .qualiopi {
         margin-left: 0px;

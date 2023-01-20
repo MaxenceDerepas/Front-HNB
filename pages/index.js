@@ -521,8 +521,8 @@ export default function Home({ data }) {
                                         src={LogoFinal}
                                         alt="certifié qualiopi"
                                         title="certification qualiopi"
-                                        height={118}
-                                        width={205}
+                                        width={174}
+                                        height={100}
                                     />
                                 </div>
                             )}
@@ -607,26 +607,28 @@ export default function Home({ data }) {
                                             src={LogoFinal}
                                             alt="certifié qualiopi"
                                             title="certification qualiopi"
-                                            height={118}
-                                            width={205}
+                                            height={100}
+                                            width={174}
                                         />
                                     </div>
                                 )}
+
                                 <div className={styles.qualiopi}>
                                     <Image
                                         src={Qualiopi}
                                         alt="certifié qualiopi"
                                         title="certification qualiopi"
-                                        width={205}
-                                        height={109}
+                                        width={131}
+                                        height={70}
                                     />
                                     <p className={styles.qualiopiP}>
                                         La certification de qualité a été
                                         délivrée au titre de la catégorie
-                                        d'action suivante : ACTIONS DE
+                                        d'action suivante : <br /> ACTIONS DE
                                         FORMATION.
                                     </p>
                                 </div>
+
                                 <div className={styles.buttonSocial}>
                                     <p
                                         style={{
