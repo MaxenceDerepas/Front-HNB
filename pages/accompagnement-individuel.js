@@ -231,6 +231,10 @@ export default function Individual({ data }) {
                                 </p>
                             </div>
                         </div>
+                        <p className={styles.finEnjeux}>
+                            Tous nos accompagnements peuvent également se
+                            décliner en français sur demande
+                        </p>
                     </div>
                     <div className={styles.essai}>
                         <p className={styles.essaiText}>

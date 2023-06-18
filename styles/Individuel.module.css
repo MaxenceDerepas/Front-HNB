@@ -182,6 +182,13 @@
     font-size: 14px;
     line-height: 15.5px;
 }
+.finEnjeux {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+    font-size: 15px;
+}
 
 @media only screen and (min-width: 320px) and (max-width: 650px) {
     .content {

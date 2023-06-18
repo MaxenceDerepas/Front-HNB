@@ -416,6 +416,10 @@ export default function Home({ data }) {
                                     </p>
                                 </div>
                             </div>
+                            <p className={styles.finPromess}>
+                                Tous nos accompagnements peuvent également se
+                                décliner en français sur demande
+                            </p>
                         </div>
                     </div>
                 </div>

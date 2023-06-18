@@ -57,6 +57,12 @@
 .imgSlide {
     height: 35px;
 }
+.finPromess {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: lighter;
+    font-size: 15px;
+}
 @keyframes scroll {
     0% {
         transform: translateX(0%);
