@@ -233,7 +233,7 @@ export default function Individual({ data }) {
                         </div>
                         <p className={styles.finEnjeux}>
                             Tous nos accompagnements peuvent également se
-                            décliner en français sur demande
+                            décliner en français sur demande.
                         </p>
                     </div>
                     <div className={styles.essai}>

@@ -442,4 +442,9 @@
     .contactRight {
         height: 215px;
     }
+    .finPromess {
+        text-align: left;
+        line-height: 17px;
+        margin-top: -5px;
+    }
 }

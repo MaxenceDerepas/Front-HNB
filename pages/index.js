@@ -418,7 +418,7 @@ export default function Home({ data }) {
                             </div>
                             <p className={styles.finPromess}>
                                 Tous nos accompagnements peuvent également se
-                                décliner en français sur demande
+                                décliner en français sur demande.
                             </p>
                         </div>
                     </div>
