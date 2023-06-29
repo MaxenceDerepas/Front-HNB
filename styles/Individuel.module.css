@@ -287,9 +287,11 @@
         margin-bottom: 15px;
     }
     .finEnjeux {
-        margin-top: -35px;
+        margin-top: -30px;
         text-align: left;
         font-size: 14.5px;
         line-height: 17px;
+        border-top: solid 1px black;
+        padding-top: 25px;
     }
 }
