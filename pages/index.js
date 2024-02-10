@@ -126,6 +126,9 @@ export default function Home({ data }) {
                 ></meta>
                 <link rel="icon" href="/favicon-heart-n-brain.png" />
             </Head>
+            <a href="/CertificatRNQ.pdf" target="_blank">
+                clique ici
+            </a>
             <section className={styles.content}>
                 <div className={styles.fondEcran}></div>
                 <div className={styles.title}>
@@ -630,6 +633,15 @@ export default function Home({ data }) {
                                         délivrée au titre de la catégorie
                                         d'action suivante : <br /> ACTIONS DE
                                         FORMATION.
+                                        <br />
+                                        <br />
+                                        <a
+                                            className={styles.buttonCertif}
+                                            href="/CertificatRNQ.pdf"
+                                            target="_blank"
+                                        >
+                                            CONSULTER LE CERTIFICAT
+                                        </a>
                                     </p>
                                 </div>
 

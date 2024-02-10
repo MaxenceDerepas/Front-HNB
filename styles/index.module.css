@@ -204,7 +204,7 @@
     margin-bottom: 8px;
     border: solid #fefdfd 2px;
     background-color: #000;
-    height: 130px;
+    height: 160px;
     padding: 5px;
     font-size: 15px;
     font-family: "Tw Cen MT";
@@ -230,6 +230,12 @@
 }
 .button:hover {
     color: #f7b800;
+}
+.buttonCertif:hover {
+    color: #f7b800;
+}
+.buttonCertif {
+    margin-top: 15px;
 }
 .succes {
     color: #f7b800;
