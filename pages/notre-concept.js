@@ -6,7 +6,9 @@ import { useEffect, useState } from "react";
 
 export async function getStaticProps() {
     // Fetch data from external API
-    const res = await fetch(`https://hnb-app.herokuapp.com/NotreConcept`);
+    const res = await fetch(
+        `https://hnb-2d6315d48174.herokuapp.com/NotreConcept`
+    );
     const data = await res.json();
 
     // Pass data to the page via props

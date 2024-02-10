@@ -7,7 +7,9 @@ import Visuel from "../images/Heart-n-brain-parcours-de-Chloe.png";
 
 export async function getStaticProps() {
     // Fetch data from external API
-    const res = await fetch(`https://hnb-app.herokuapp.com/NotreMethode`);
+    const res = await fetch(
+        `https://hnb-2d6315d48174.herokuapp.com/NotreMethode`
+    );
     const data = await res.json();
 
     // Pass data to the page via props

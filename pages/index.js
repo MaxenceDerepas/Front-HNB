@@ -18,7 +18,7 @@ import LogoFinal from "../images/LOGO-FINAL.png";
 
 export async function getStaticProps() {
     // Fetch data from external API
-    const res = await fetch(`https://hnb-app.herokuapp.com/Home`);
+    const res = await fetch(`https://hnb-2d6315d48174.herokuapp.com/Home`);
     const data = await res.json();
 
     // Pass data to the page via props

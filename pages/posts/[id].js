@@ -358,7 +358,7 @@ export default function Blog({ data }) {
     );
 }
 export async function getStaticPaths() {
-    const res = await fetch(`https://hnb-app.herokuapp.com/blogList`);
+    const res = await fetch(`https://hnb-2d6315d48174.herokuapp.com/blogList`);
     const data = await res.json();
 
     const paths = data.map((elem) => ({ params: { id: elem.titleUrl } }));
@@ -369,7 +369,7 @@ export async function getStaticPaths() {
 }
 export async function getStaticProps({ params }) {
     const res = await fetch(
-        `https://hnb-app.herokuapp.com/article/${params.id}`
+        `https://hnb-2d6315d48174.herokuapp.com/article/${params.id}`
     );
     const data = await res.json();
 
