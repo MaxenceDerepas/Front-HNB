@@ -427,7 +427,7 @@ export default function Faq({ data }) {
                         dépasser 5 personnes.
                     </p>
                     <p className={styles.textMin}>
-                        Dernière mise à jour : Janvier 2023
+                        Dernière mise à jour : Juin 2025
                     </p>
                 </div>
             </section>
