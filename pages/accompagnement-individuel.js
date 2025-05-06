@@ -12,7 +12,7 @@ import Parcours from "../images/parcours-indiv.png";
 export async function getStaticProps() {
     // Fetch data from external API
     const res = await fetch(
-        `https://hnb-2d6315d48174.herokuapp.com/Individuel`
+        `https://back-hnb-80318acc2db1.herokuapp.com/Individuel`
     );
     const data = await res.json();
 

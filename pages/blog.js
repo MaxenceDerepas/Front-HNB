@@ -6,9 +6,9 @@ import { useState } from "react";
 
 export async function getStaticProps() {
     // Fetch data from external API
-    const res = await fetch(`https://hnb-2d6315d48174.herokuapp.com/Blog`);
+    const res = await fetch(`https://back-hnb-80318acc2db1.herokuapp.com/Blog`);
     const responseArticle = await fetch(
-        `https://hnb-2d6315d48174.herokuapp.com/blogList`
+        `https://back-hnb-80318acc2db1.herokuapp.com/blogList`
     );
     const data = await res.json();
     const dataArticle = await responseArticle.json();

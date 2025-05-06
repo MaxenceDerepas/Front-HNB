@@ -18,7 +18,7 @@ import LogoFinal from "../images/LOGO-FINAL.png";
 
 export async function getStaticProps() {
     // Fetch data from external API
-    const res = await fetch(`https://hnb-2d6315d48174.herokuapp.com/Home`);
+    const res = await fetch(`https://back-hnb-80318acc2db1.herokuapp.com/Home`);
     const data = await res.json();
 
     // Pass data to the page via props
@@ -114,7 +114,7 @@ export default function Home({ data }) {
                 />
                 <meta
                     property="og:description"
-                    content={`${data.description}`}
+                    content="Améliorez votre anglais professionnel grâce à la méthode de coaching Heart n Brain. Libérez-vous de vos blocages en anglais et faites de vos futurs défis professionnels un succès. En bref, révélez l’anglofan qui est en vous !"
                 />
                 <meta
                     name="description"

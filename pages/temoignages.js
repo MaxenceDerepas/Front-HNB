@@ -10,9 +10,11 @@ import LINKEDIN from "../images/LinkedIn.png";
 
 export async function getStaticProps() {
     // Fetch data from external API
-    const res = await fetch(`https://hnb-2d6315d48174.herokuapp.com/Testimony`);
+    const res = await fetch(
+        `https://back-hnb-80318acc2db1.herokuapp.com/Testimony`
+    );
     const response = await fetch(
-        `https://hnb-2d6315d48174.herokuapp.com/Temoignages`
+        `https://back-hnb-80318acc2db1.herokuapp.com/Temoignages`
     );
     const dataDescription = await response.json();
     const data = await res.json();

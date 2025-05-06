@@ -6,7 +6,7 @@ import Link from "next/link";
 export async function getStaticProps() {
     // Fetch data from external API
     const res = await fetch(
-        `https://hnb-2d6315d48174.herokuapp.com/MentionsLegales`
+        `https://back-hnb-80318acc2db1.herokuapp.com/MentionsLegales`
     );
     const data = await res.json();
 

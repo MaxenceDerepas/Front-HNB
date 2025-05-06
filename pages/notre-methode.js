@@ -8,7 +8,7 @@ import Visuel from "../images/Heart-n-brain-parcours-de-Chloe.png";
 export async function getStaticProps() {
     // Fetch data from external API
     const res = await fetch(
-        `https://hnb-2d6315d48174.herokuapp.com/NotreMethode`
+        `https://back-hnb-80318acc2db1.herokuapp.com/NotreMethode`
     );
     const data = await res.json();
 
