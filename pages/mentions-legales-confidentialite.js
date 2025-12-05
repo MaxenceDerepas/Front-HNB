@@ -53,7 +53,7 @@ export default function LegalNotice({ data }) {
             <section className={styles.container}>
                 <h1 className={styles.h1}>MENTIONS LéGALEs</h1>
                 <h3 className={styles.h3}>EDITEUR</h3>
-                <p>Heart n Brain SAS</p>
+                <p>Heart n Brain SARL</p>
                 <Link href="/">
                     <a className={styles.a}>https://www.heart-n-brain.com/</a>
                 </Link>
@@ -100,7 +100,7 @@ export default function LegalNotice({ data }) {
                 </h3>
                 <p style={{ marginBottom: "20px" }}>
                     Vos données sont collectées par :<br />
-                    Heart n Brain, SAS au capital de 5.000 euros, immatriculée
+                    Heart n Brain, SARL au capital de 5.000 euros, immatriculée
                     au Registre du Commerce et des Sociétés de Paris sous le n°
                     850 609 389, dont le siège social se situe au 17, boulevard
                     Finot, 93200 Saint-Denis, représentée par Morgane Duphot,

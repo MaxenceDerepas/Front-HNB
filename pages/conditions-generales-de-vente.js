@@ -70,7 +70,7 @@ export default function TermOfSales({ data }) {
                     Brain et en bénéficie.
                     <br />
                     "Heart n Brain" ou "Société" désigne la société Heart n
-                    Brain, une société par actions simplifiée au capital de
+                    Brain, une société à responsabilité limitée au capital de
                     5.000 €, dont le siège social est situé au 17, boulevard
                     Finot, 93200 Saint-Denis et dont le numéro d’identification
                     unique est le 850 609 389 RCS Paris.
