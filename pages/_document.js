@@ -10,7 +10,7 @@ class MyDocument extends Document {
         return (
             <Html lang="fr">
                 <Head>
-                    <meta charset="utf-8" />
+                    <meta charSet="utf-8" />
                     <link rel="manifest" href="/manifest.json" />
                     <meta name="theme-color" content="#000" />
                     <link rel="apple-touch-icon" href="/logo-192x192.png" />

@@ -93,7 +93,7 @@ export default function Home({ data }) {
                     rel="canonical"
                     href="https://www.heart-n-brain.com/"
                 ></link>
-                <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
+                <meta httpEquiv="Accept-CH" content="Viewport-Width, Width" />
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"
@@ -101,10 +101,6 @@ export default function Home({ data }) {
                 <meta property="og:image" content="/partage.png" />
                 <meta property="og:image:width" content="600" />
                 <meta property="og:image:height" content="313" />
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1.0"
-                />
 
                 <meta property="og:site_name" content="Heart n Brain" />
                 <meta property="og:type" content="website" />

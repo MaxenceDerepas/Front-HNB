@@ -43,7 +43,7 @@ export default function OurConcept({ data }) {
                     rel="canonical"
                     href="https://www.heart-n-brain.com/notre-concept"
                 ></link>
-                <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
+                <meta httpEquiv="Accept-CH" content="Viewport-Width, Width" />
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"

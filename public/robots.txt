@@ -10,7 +10,8 @@ Allow: /notre-methode
 Allow: /notre-mission
 Allow: /temoignages
 Disallow: /mentions-legales-confidentialite
-Disallow: /conditions-generales-de-ventes
+Disallow: /conditions-generales-de-vente
 Allow: /posts/
+Sitemap: https://www.heart-n-brain.com/sitemap.xml
 
 

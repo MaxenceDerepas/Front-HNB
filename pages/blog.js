@@ -52,7 +52,7 @@ export default function Blog({ data, dataArticle }) {
                 />
                 <meta name="robots" content="index,follow" />
                 <meta name="googlebot" content="index,follow" />
-                <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
+                <meta httpEquiv="Accept-CH" content="Viewport-Width, Width" />
                 <link
                     rel="canonical"
                     href="https://www.heart-n-brain.com/blog"

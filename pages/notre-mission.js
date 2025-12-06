@@ -30,7 +30,7 @@ export default function OurOffers({ data }) {
                     rel="canonical"
                     href="https://www.heart-n-brain.com/notre-mission"
                 ></link>
-                <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
+                <meta httpEquiv="Accept-CH" content="Viewport-Width, Width" />
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"
@@ -48,7 +48,7 @@ export default function OurOffers({ data }) {
                 />
                 <meta
                     property="og:url"
-                    content="https://www.heart-n-brain.com/mission"
+                    content="https://www.heart-n-brain.com/notre-mission"
                 ></meta>
 
                 <meta

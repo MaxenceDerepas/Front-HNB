@@ -21,7 +21,7 @@ export default function Blog({ data }) {
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"
                 />
-                <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
+                <meta httpEquiv="Accept-CH" content="Viewport-Width, Width" />
                 <link
                     rel="canonical"
                     href={`https://www.heart-n-brain.com/posts/${data.titleUrl}`}
@@ -32,7 +32,7 @@ export default function Blog({ data }) {
                 />
                 <meta
                     property="og:title"
-                    content={`${data.title} | Heart n Brain"`}
+                    content={`${data.title} | Heart n Brain`}
                 />
                 <meta property="og:image" content={`${data.urlMedia}`} />
                 <meta
@@ -40,7 +40,7 @@ export default function Blog({ data }) {
                     content="Vos coachs Heart n Brain partagent leurs tips, bonnes pratiques et exemples d'expériences pour vous aider à améliorer votre pratique de l'anglais professionnel !"
                 />
                 <meta property="og:site_name" content="Heart n Brain" />
-                <meta property="og:type" content="website" />
+                <meta property="og:type" content="article" />
                 <link rel="icon" href="/favicon-heart-n-brain.png" />
             </Head>
             <section className={styles.container}>
