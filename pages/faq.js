@@ -251,13 +251,13 @@ export default function Faq({ data }) {
                             objectif ? »{" "}
                             <span className={styles.textMin}>
                                 (mesure réalisée lors de la synthèse finale,
-                                lors de l’échange de cloture réalisé avec le
+                                lors de l’échange de clôture réalisé avec le
                                 coaché)
                             </span>
                         </li>
                     </ul>
                     <p className={styles.text}>
-                        Période de référence :2019-2025
+                        Période de référence : 2019-2025
                     </p>
 
                     <h2 className={styles.title}>
@@ -337,8 +337,8 @@ export default function Faq({ data }) {
                     </h2>
                     <p className={styles.text}>
                         Une session de coaching d’1h à distance + préparation et
-                        suivi coute en générale 250 €HT. Le tarif peut varier
-                        varie en fonction du public (Entreprises ou
+                        suivi coûte en général 250 €HT. Le tarif peut
+                        varier en fonction du public (Entreprises ou
                         Particuliers), de la durée, des modalités et du nombre
                         de séances.
                         <br />A l’issue de la séance d’essai, votre coach vous
