@@ -358,25 +358,26 @@ export default function Blog({ data }) {
     );
 }
 export async function getStaticPaths() {
-    const res = await fetch(
-        `https://back-hnb-80318acc2db1.herokuapp.com/blogList`
-    );
-    const data = await res.json();
+    const { default: dbConnect } = await import("../../lib/dbConnect");
+    const { default: Blog } = await import("../../lib/models/Blog");
+    await dbConnect();
 
-    const paths = data.map((elem) => ({ params: { id: elem.titleUrl } }));
+    const articles = await Blog.find().lean();
+    const paths = articles.map((elem) => ({ params: { id: elem.titleUrl } }));
     return {
         paths,
         fallback: "blocking",
     };
 }
 export async function getStaticProps({ params }) {
-    const res = await fetch(
-        `https://back-hnb-80318acc2db1.herokuapp.com/article/${params.id}`
-    );
-    const data = await res.json();
+    const { default: dbConnect } = await import("../../lib/dbConnect");
+    const { default: Blog } = await import("../../lib/models/Blog");
+    await dbConnect();
+
+    const data = await Blog.findOne({ titleUrl: params.id }).lean();
 
     return {
-        props: { data },
+        props: { data: JSON.parse(JSON.stringify(data)) },
         revalidate: 17280,
     };
 }

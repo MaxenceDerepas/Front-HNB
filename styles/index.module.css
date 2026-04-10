@@ -42,8 +42,8 @@
 }
 .sliderTrack {
     display: flex;
-    width: calc(254px * 15);
-    animation: scroll 40s infinite linear;
+    width: calc(254px * 17);
+    animation: scroll 46s infinite linear;
     justify-content: space-between;
 }
 .slide {
@@ -69,7 +69,7 @@
     }
 
     100% {
-        transform: translateX(-2669px);
+        transform: translateX(-3192px);
     }
 }
 

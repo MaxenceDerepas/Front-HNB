@@ -9,18 +9,21 @@ import Left from "../images/chevron-left.svg";
 import LINKEDIN from "../images/LinkedIn.png";
 
 export async function getStaticProps() {
-    // Fetch data from external API
-    const res = await fetch(
-        `https://back-hnb-80318acc2db1.herokuapp.com/Testimony`
-    );
-    const response = await fetch(
-        `https://back-hnb-80318acc2db1.herokuapp.com/Temoignages`
-    );
-    const dataDescription = await response.json();
-    const data = await res.json();
+    const { default: dbConnect } = await import("../lib/dbConnect");
+    const { default: Testimony } = await import("../lib/models/Testimony");
+    const { default: Description } = await import("../lib/models/Description");
+    await dbConnect();
 
-    // Pass data to the page via props
-    return { props: { data, dataDescription }, revalidate: 17280 };
+    const data = await Testimony.find().lean();
+    const dataDescription = await Description.findOne({ page: "Temoignages" }).lean();
+
+    return {
+        props: {
+            data: JSON.parse(JSON.stringify(data)),
+            dataDescription: JSON.parse(JSON.stringify(dataDescription)),
+        },
+        revalidate: 17280,
+    };
 }
 
 export default function Testimony({ data, dataDescription }) {
@@ -81,7 +84,7 @@ export default function Testimony({ data, dataDescription }) {
                 ></meta>
                 <meta
                     property="og:description"
-                    content={`${dataDescription.description}`}
+                    content={`${dataDescription?.description || ""}`}
                 />
                 <link rel="icon" href="/favicon-heart-n-brain.png" />
             </Head>

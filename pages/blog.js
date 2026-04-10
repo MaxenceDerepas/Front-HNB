@@ -5,16 +5,21 @@ import Link from "next/link";
 import { useState } from "react";
 
 export async function getStaticProps() {
-    // Fetch data from external API
-    const res = await fetch(`https://back-hnb-80318acc2db1.herokuapp.com/Blog`);
-    const responseArticle = await fetch(
-        `https://back-hnb-80318acc2db1.herokuapp.com/blogList`
-    );
-    const data = await res.json();
-    const dataArticle = await responseArticle.json();
+    const { default: dbConnect } = await import("../lib/dbConnect");
+    const { default: Description } = await import("../lib/models/Description");
+    const { default: Blog } = await import("../lib/models/Blog");
+    await dbConnect();
 
-    // Pass data to the page via props
-    return { props: { data, dataArticle }, revalidate: 17280 };
+    const data = await Description.findOne({ page: "Blog" }).lean();
+    const dataArticle = await Blog.find().sort({ order: "desc" }).lean();
+
+    return {
+        props: {
+            data: JSON.parse(JSON.stringify(data)),
+            dataArticle: JSON.parse(JSON.stringify(dataArticle)),
+        },
+        revalidate: 17280,
+    };
 }
 
 export default function Blog({ data, dataArticle }) {

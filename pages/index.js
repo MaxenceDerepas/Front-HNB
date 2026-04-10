@@ -17,12 +17,12 @@ import Qualiopi from "../images/Qualiopi.png";
 import LogoFinal from "../images/LOGO-FINAL.png";
 
 export async function getStaticProps() {
-    // Fetch data from external API
-    const res = await fetch(`https://back-hnb-80318acc2db1.herokuapp.com/Home`);
-    const data = await res.json();
+    const { default: dbConnect } = await import("../lib/dbConnect");
+    const { default: Description } = await import("../lib/models/Description");
+    await dbConnect();
+    const data = await Description.findOne({ page: "Home" }).lean();
 
-    // Pass data to the page via props
-    return { props: { data } };
+    return { props: { data: JSON.parse(JSON.stringify(data)) } };
 }
 
 export default function Home({ data }) {
@@ -75,7 +75,7 @@ export default function Home({ data }) {
                 function (error) {
                     console.log("FAILED...", error);
                     setSucces("Une erreur s'est produite");
-                }
+                },
             );
 
         setLoader(false);
@@ -230,6 +230,25 @@ export default function Home({ data }) {
                                         title="Allianz"
                                     />
                                 </div>
+                                <div className={styles.slide}>
+                                    <img
+                                        className={styles.imgSlide}
+                                        style={{ width: "119px" }}
+                                        src="/logo-yousign-blanc.png"
+                                        alt="logo Yousign"
+                                        title="logo Yousign"
+                                    />
+                                </div>
+                                <div className={styles.slide}>
+                                    <img
+                                        className={styles.imgSlide}
+                                        style={{ height: "40px", width: "auto" }}
+                                        src="/sonepar-logo-blanc.png"
+                                        alt="logo Sonepar"
+                                        title="logo Sonepar"
+                                    />
+                                </div>
+                                {/* Doublons pour boucle infinie */}
                                 <div className={styles.slide}>
                                     <img
                                         className={styles.imgSlide}
@@ -417,7 +436,8 @@ export default function Home({ data }) {
                             </div>
                             <p className={styles.finPromess}>
                                 Tous nos accompagnements peuvent également se
-                                décliner en français sur demande.
+                                décliner en français et français langue
+                                étrangère (FLE) sur demande.
                             </p>
                         </div>
                     </div>

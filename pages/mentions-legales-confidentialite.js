@@ -4,14 +4,12 @@ import styles from "../styles/LegalNotice.module.css";
 import Link from "next/link";
 
 export async function getStaticProps() {
-    // Fetch data from external API
-    const res = await fetch(
-        `https://back-hnb-80318acc2db1.herokuapp.com/MentionsLegales`
-    );
-    const data = await res.json();
+    const { default: dbConnect } = await import("../lib/dbConnect");
+    const { default: Description } = await import("../lib/models/Description");
+    await dbConnect();
+    const data = await Description.findOne({ page: "Mentions legales" }).lean();
 
-    // Pass data to the page via props
-    return { props: { data } };
+    return { props: { data: JSON.parse(JSON.stringify(data)) } };
 }
 
 export default function LegalNotice({ data }) {

@@ -10,14 +10,14 @@ import Point from "../images/Point.png";
 import Parcours from "../images/parcours-indiv.png";
 
 export async function getStaticProps() {
-    // Fetch data from external API
-    const res = await fetch(
-        `https://back-hnb-80318acc2db1.herokuapp.com/Individuel`
-    );
-    const data = await res.json();
+    const { default: dbConnect } = await import("../lib/dbConnect");
+    const { default: Description } = await import("../lib/models/Description");
+    await dbConnect();
+    const data = await Description.findOne({
+        page: "Accompagnement individuel",
+    }).lean();
 
-    // Pass data to the page via props
-    return { props: { data } };
+    return { props: { data: JSON.parse(JSON.stringify(data)) } };
 }
 
 export default function Individual({ data }) {
@@ -235,7 +235,8 @@ export default function Individual({ data }) {
                         </div>
                         <p className={styles.finEnjeux}>
                             Tous nos accompagnements peuvent également se
-                            décliner en français sur demande.
+                            décliner en français et français langue étrangère
+                            (FLE) sur demande.
                         </p>
                     </div>
                     <div className={styles.essai}>
@@ -247,19 +248,27 @@ export default function Individual({ data }) {
                             et sans engagement
                         </p>
                         <p className={styles.essaiText}>
-                            <span className={styles.span}>Parcours adapté</span>
+                            <span className={styles.span}>
+                                Parcours sur mesure
+                            </span>
                             <br />
                             composé de plusieurs séances <br />
-                            individuelles de coaching et de quelques séances de
-                            soutien ad hoc en face à face et/ou à distance
+                            de coaching et de séances de soutien ad hoc à
+                            distance en fonction du besoin
                         </p>
                         <p className={styles.essaiText}>
                             <span className={styles.span}>
                                 Séance de synthèse personnalisée d'1h
                             </span>
                             <br />
-                            offerte en fin de parcours au delà de 9 heures de
-                            coaching
+                            offerte en fin de parcours
+                        </p>
+                        <p className={styles.essaiText}>
+                            <span className={styles.span}>
+                                Séance de suivi personnalisée d'1h
+                            </span>
+                            <br />
+                            environ 3 mois aprés la synthèse
                         </p>
 
                         <Link href="/#contact">
