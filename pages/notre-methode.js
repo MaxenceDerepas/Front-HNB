@@ -205,9 +205,8 @@ export default function OurOffers({ data }) {
                                             préparation, rester concentrée…).
                                         </p>
                                         <p>
-                                            ​ Chaque séance d’1h30 (en
-                                            présentiel ou à distance) se déroule
-                                            en 4 temps :
+                                            ​ Chaque séance d’1h se déroule en 4
+                                            temps :
                                         </p>
 
                                         <ul className={styles.ul}>

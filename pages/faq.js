@@ -132,6 +132,48 @@ export default function Faq({ data }) {
                         prêts à démarrer !
                     </p>
                     <h2 className={styles.title}>
+                        Quels sont les délais pour démarrer une formation ?
+                    </h2>
+                    <ul className={styles.list}>
+                        <li>
+                            <strong>Prise de contact :</strong> Après votre
+                            premier message, nous vous répondons généralement
+                            sous <strong>2 jours ouvrés</strong>.
+                        </li>
+                        <li>
+                            <strong>
+                                Préqualification &amp; séance d'essai :
+                            </strong>{" "}
+                            Un entretien de préqualification et une séance
+                            d'essai sont organisés dans un délai d'environ{" "}
+                            <strong>15 jours</strong>, selon les disponibilités
+                            communes de l'apprenant et de la formatrice.
+                        </li>
+                        <li>
+                            <strong>Proposition commerciale :</strong> À
+                            l'issue de la séance d'essai, vous recevez une
+                            proposition personnalisée.
+                        </li>
+                        <li>
+                            <strong>Démarrage :</strong> Dès la signature de
+                            la proposition, nous sommes prêts à démarrer, sous
+                            réserve des délais légaux suivants :
+                            <ul
+                                className={styles.list}
+                                style={{ listStyleType: "circle" }}
+                            >
+                                <li>
+                                    <strong>14 jours</strong> de délai de
+                                    rétractation pour les particuliers
+                                </li>
+                                <li>
+                                    Respect des délais de traitement propres à
+                                    la <strong>mobilisation du CPF</strong>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2 className={styles.title}>
                         Faut-il un niveau minimum en anglais ?
                     </h2>
                     <p className={styles.text}>
@@ -282,6 +324,43 @@ export default function Faq({ data }) {
                         fil de séances de nous assurer que le coaching vous fait
                         progresser avec les moyens les plus adaptés !
                     </p>
+
+                    <h2 className={styles.title}>
+                        Comment sera évaluée ma progression ?
+                    </h2>
+                    <p className={styles.text}>
+                        Chaque parcours de coaching donne lieu à une séance de
+                        synthèse qui permet d'évaluer l'évolution de votre
+                        niveau d'aisance en anglais professionnel. Cette
+                        évaluation porte sur deux axes :
+                    </p>
+                    <ul className={styles.list}>
+                        <li>
+                            <strong>Votre aisance à l'oral</strong>, mesurée
+                            sur une échelle allant de{" "}
+                            <em>
+                                « Je peux répondre aux sollicitations dans un
+                                milieu professionnel : définir mon poste,
+                                décrire une expérience professionnelle, les
+                                résultats factuels d'un projet… »
+                            </em>{" "}
+                            à{" "}
+                            <em>
+                                « Je suis aussi efficace en anglais qu'en
+                                français. Mon aisance en anglais me donne un
+                                avantage compétitif dans mon évolution de
+                                carrière. »
+                            </em>{" "}
+                            Cette évaluation est mise en regard de celle
+                            réalisée lors de votre séance d'essai, afin de
+                            mesurer concrètement votre progression.
+                        </li>
+                        <li>
+                            <strong>La maîtrise des outils de communication</strong>{" "}
+                            travaillés tout au long du parcours et partagés
+                            par votre coach au fil des séances.
+                        </li>
+                    </ul>
 
                     <h2 className={styles.title}>
                         Comment sont créés les contenus ?
