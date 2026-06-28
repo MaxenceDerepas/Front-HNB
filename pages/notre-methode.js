@@ -85,9 +85,9 @@ export default function OurOffers({ data }) {
                                     Nos outils ont été spécialement élaborés
                                     pour maîtriser les bonnes pratiques et la
                                     bonne posture dans des situations
-                                    professionnelles concrètes (présenter en
-                                    public, animer une réunion, gérer une
-                                    situation délicate, vendre...).
+                                    professionnelles concrètes. Vous retrouverez
+                                    également tout ces outils sur Hello Brian,
+                                    notre appli mobile.
                                 </p>
                             </div>
                             <div className={styles.columnImage2}></div>
@@ -229,6 +229,12 @@ export default function OurOffers({ data }) {
                                                 objectif
                                             </li>
                                         </ul>
+                                        <p style={{ lineHeight: "17px", marginTop: "15px" }}>
+                                            Entre les séances, Chloé peut continuer
+                                            de s'entraîner et retrouver tous les
+                                            outils et les conseils d'experts sur son
+                                            application Hello Brian.
+                                        </p>
                                     </div>
                                     <div className={styles.detail}>
                                         <h3 className={styles.h3Yellow}>

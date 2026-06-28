@@ -150,13 +150,13 @@ export default function Faq({ data }) {
                             communes de l'apprenant et de la formatrice.
                         </li>
                         <li>
-                            <strong>Proposition commerciale :</strong> À
-                            l'issue de la séance d'essai, vous recevez une
-                            proposition personnalisée.
+                            <strong>Proposition commerciale :</strong> À l'issue
+                            de la séance d'essai, vous recevez une proposition
+                            personnalisée.
                         </li>
                         <li>
-                            <strong>Démarrage :</strong> Dès la signature de
-                            la proposition, nous sommes prêts à démarrer, sous
+                            <strong>Démarrage :</strong> Dès la signature de la
+                            proposition, nous sommes prêts à démarrer, sous
                             réserve des délais légaux suivants :
                             <ul
                                 className={styles.list}
@@ -336,8 +336,8 @@ export default function Faq({ data }) {
                     </p>
                     <ul className={styles.list}>
                         <li>
-                            <strong>Votre aisance à l'oral</strong>, mesurée
-                            sur une échelle allant de{" "}
+                            <strong>Votre aisance à l'oral</strong>, mesurée sur
+                            une échelle allant de{" "}
                             <em>
                                 « Je peux répondre aux sollicitations dans un
                                 milieu professionnel : définir mon poste,
@@ -356,9 +356,11 @@ export default function Faq({ data }) {
                             mesurer concrètement votre progression.
                         </li>
                         <li>
-                            <strong>La maîtrise des outils de communication</strong>{" "}
-                            travaillés tout au long du parcours et partagés
-                            par votre coach au fil des séances.
+                            <strong>
+                                La maîtrise des outils de communication
+                            </strong>{" "}
+                            travaillés tout au long du parcours et partagés par
+                            votre coach au fil des séances.
                         </li>
                     </ul>
 
@@ -416,10 +418,9 @@ export default function Faq({ data }) {
                     </h2>
                     <p className={styles.text}>
                         Une session de coaching d’1h à distance + préparation et
-                        suivi coûte en général 250 €HT. Le tarif peut
-                        varier en fonction du public (Entreprises ou
-                        Particuliers), de la durée, des modalités et du nombre
-                        de séances.
+                        suivi coûte en général 250 €HT. Le tarif peut varier en
+                        fonction du public (Entreprises ou Particuliers), de la
+                        durée, des modalités et du nombre de séances.
                         <br />A l’issue de la séance d’essai, votre coach vous
                         communique une proposition tarifaire associée au
                         parcours d’accompagnement proposé.
@@ -439,6 +440,32 @@ export default function Faq({ data }) {
                         contactez-nous pour en savoir davantage.
                     </p>
                     <h2 className={styles.title}>
+                        Comment continuer à progresser entre les séances et
+                        après la fin du parcours ?
+                    </h2>
+                    <p className={styles.text}>
+                        Les séances de coaching sont des temps forts de prise
+                        de recul et d'apprentissage, mais c'est la pratique
+                        régulière qui permet de transformer durablement ses
+                        habitudes de communication.
+                    </p>
+                    <p className={styles.text}>
+                        C'est pourquoi nous avons développé Hello Brian, notre
+                        application de coaching digital. Elle vous permet de
+                        vous entraîner entre les séances grâce à des exercices
+                        ciblés, des mises en situation professionnelles et des
+                        retours personnalisés. Vous pouvez ainsi ancrer les
+                        compétences travaillées avec votre coach et progresser
+                        à votre rythme.
+                    </p>
+                    <p className={styles.text}>
+                        À l'issue du parcours, Hello Brian reste également un
+                        excellent moyen d'entretenir vos acquis, de préparer
+                        des situations importantes (présentation, entretien,
+                        réunion sensible, prise de parole, etc.) et de
+                        continuer à développer vos compétences dans la durée.
+                    </p>
+                    <h2 className={styles.title}>
                         En quoi consistent les expériences collectives ?
                     </h2>
                     <p className={styles.text}>
@@ -456,8 +483,41 @@ export default function Faq({ data }) {
                         Une session peut se faire seule ou s’intégrer dans un
                         temps d’équipe plus large.
                     </p>
+                    <hr style={{ border: "none", borderTop: "1px solid rgba(255,255,255,0.3)", margin: "30px 0" }} />
+
+                    <p className={styles.text}>
+                        Séance d'essai gratuite
+                        <br />
+                        et sans engagement
+                    </p>
+
+                    <p className={styles.text}>
+                        Parcours sur mesure
+                        <br />
+                        composé de plusieurs séances
+                        <br />
+                        de coaching et de séances de soutien ad hoc à distance
+                        en fonction du besoin
+                    </p>
+
+                    <p className={styles.text} style={{ color: "#e74c3c", fontWeight: "bold" }}>
+                        Abonnement à notre application Hello Brian
+                    </p>
+
+                    <p className={styles.text}>
+                        Séance de synthèse personnalisée d'1h
+                        <br />
+                        offerte en fin de parcours
+                    </p>
+
+                    <p className={styles.text}>
+                        Séance de suivi personnalisée d'1h
+                        <br />
+                        environ 3 mois après la synthèse
+                    </p>
+
                     <p className={styles.textMin}>
-                        Dernière mise à jour : avril 2026
+                        Dernière mise à jour : juin 2026
                     </p>
                 </div>
             </section>

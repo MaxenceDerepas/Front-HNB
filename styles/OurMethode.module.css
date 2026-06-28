@@ -70,6 +70,7 @@
     background-image: url("../images/outils-pratique.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center 35%;
     height: 100%;
     width: 224px;
     margin-left: 10px;

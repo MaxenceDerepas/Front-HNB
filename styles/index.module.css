@@ -42,8 +42,8 @@
 }
 .sliderTrack {
     display: flex;
-    width: calc(254px * 17);
-    animation: scroll 46s infinite linear;
+    width: calc(254px * 18);
+    animation: scroll 50s infinite linear;
     justify-content: space-between;
 }
 .slide {
@@ -69,7 +69,7 @@
     }
 
     100% {
-        transform: translateX(-3192px);
+        transform: translateX(-3444px);
     }
 }
 
@@ -88,6 +88,50 @@
     line-height: 30px;
     margin-bottom: 50px;
     font-family: "Tw Cen MT";
+}
+.title .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.brian {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 15px;
+    max-width: 450px;
+}
+.brianAvatar {
+    flex-shrink: 0;
+}
+.brianText {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+.brianP {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 22px;
+    font-family: "Avenir Light", sans-serif;
+    color: #fff;
+    margin: 0;
+}
+.brianLink {
+    color: #d4a843;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.brianStores {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.storeBadge {
+    height: 38px;
+    width: auto;
 }
 .h2 {
     font-family: "luloCleanOne";
@@ -366,6 +410,18 @@
         justify-content: center;
         width: 100vw;
         box-sizing: border-box;
+    }
+    .title .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .brian {
+        flex-direction: column;
+        margin-top: 15px;
+        text-align: center;
+    }
+    .brianText {
+        align-items: center;
     }
     .padding {
         width: 100%;

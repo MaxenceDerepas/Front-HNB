@@ -15,6 +15,7 @@ import SocialLinkedin from "../images/linkedinSocial.webp";
 import SocialInsta from "../images/instaSocial.webp";
 import Qualiopi from "../images/Qualiopi.png";
 import LogoFinal from "../images/LOGO-FINAL.png";
+import BrianWave from "../images/brian_wave.png";
 
 export async function getStaticProps() {
     const { default: dbConnect } = await import("../lib/dbConnect");
@@ -134,6 +135,56 @@ export default function Home({ data }) {
                             <br />
                             Libérez votre potentiel
                         </h1>
+                        <div className={styles.brian}>
+                            <div className={styles.brianAvatar}>
+                                <Image
+                                    src={BrianWave}
+                                    width={80}
+                                    height={95}
+                                    objectFit={"contain"}
+                                    alt="Brian, coach virtuel Heart n Brain"
+                                    title="Brian, coach virtuel"
+                                />
+                            </div>
+                            <div className={styles.brianText}>
+                                <p className={styles.brianP}>
+                                    Et faites la connaissance de{" "}
+                                    <a
+                                        href="https://www.hellobrian.fr/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className={styles.brianLink}
+                                    >
+                                        Brian
+                                    </a>
+                                    , votre coach virtuel sur application mobile
+                                </p>
+                                <div className={styles.brianStores}>
+                                    <a
+                                        href="https://apps.apple.com/fr/app/hello-brian/id6758668314"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img
+                                            src="/boutonAppStore.svg"
+                                            alt="Télécharger sur l'App Store"
+                                            className={styles.storeBadge}
+                                        />
+                                    </a>
+                                    <a
+                                        href="https://play.google.com/store/apps/details?id=app.hellobrian"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img
+                                            src="/boutonGooglePlay.png"
+                                            alt="Disponible sur Google Play"
+                                            className={styles.storeBadge}
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -242,10 +293,25 @@ export default function Home({ data }) {
                                 <div className={styles.slide}>
                                     <img
                                         className={styles.imgSlide}
-                                        style={{ height: "40px", width: "auto" }}
+                                        style={{
+                                            height: "40px",
+                                            width: "auto",
+                                        }}
                                         src="/sonepar-logo-blanc.png"
                                         alt="logo Sonepar"
                                         title="logo Sonepar"
+                                    />
+                                </div>
+                                <div className={styles.slide}>
+                                    <img
+                                        className={styles.imgSlide}
+                                        style={{
+                                            height: "40px",
+                                            width: "auto",
+                                        }}
+                                        src="/WTTJ.png"
+                                        alt="logo Welcome to the Jungle"
+                                        title="logo Welcome to the Jungle"
                                     />
                                 </div>
                                 {/* Doublons pour boucle infinie */}

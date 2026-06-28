@@ -196,7 +196,27 @@ export default function TermOfSales({ data }) {
                     simple demande. ​
                 </p>
                 <h3 className={styles.h3}>
-                    7. MODALITÉS SPÉCIFIQUES DES FORMATIONS COLLECTIVES
+                    7. ACCÈS À L’APPLICATION HELLO BRIAN
+                </h3>
+                <p className={styles.p}>
+                    Dans le cadre des sessions de coaching commandées auprès
+                    de Heart n Brain, le Client bénéficiera d’un accès à
+                    l’Application Hello Brian dédiée à l’apprentissage de
+                    l’anglais en ligne, développée et éditée par la société
+                    HnB Digital. L’accès à l’Application sera effectif à
+                    compter de l’email d’activation qui lui sera adressé par
+                    Heart n Brain, et ce pour la durée définie dans le devis.
+                    Une fois l’email d’activation reçu, le Client devra
+                    télécharger l’Application via les boutiques d’applications
+                    App Store ou Google Play et accepter les Conditions
+                    Générales d’Utilisation de l’Application. A l’expiration
+                    de la durée spécifiée dans le devis, le Client devra
+                    souscrire un abonnement par ses propres soins s’il
+                    souhaite continuer à bénéficier de l’accès à
+                    l’Application.
+                </p>
+                <h3 className={styles.h3}>
+                    8. MODALITÉS SPÉCIFIQUES DES FORMATIONS COLLECTIVES
                 </h3>
                 <p className={styles.p}>
                     Il appartient au Client de s’assurer de l’adéquation de son
@@ -206,10 +226,10 @@ export default function TermOfSales({ data }) {
                     et un nombre maximum de Clients participant à la formation
                     pourront être stipulés au devis. À ce titre, La Société se
                     réserve le droit d’annuler la formation dans les conditions
-                    de l’article 9.
+                    de l’article 10.
                 </p>
                 <h3 className={styles.h3}>
-                    8. CONDITIONS FINANCIÈRES ET DE RÈGLEMENT
+                    9. CONDITIONS FINANCIÈRES ET DE RÈGLEMENT
                 </h3>
                 <p className={styles.p}>
                     Le prix des prestations est indiqué au devis signé par le
@@ -242,7 +262,7 @@ export default function TermOfSales({ data }) {
                     organisme collecteur.
                 </p>
                 <h3 className={styles.h3}>
-                    9. CONDITIONS D’ANNULATION OU DE REPORT PAR LA SOCIÉTÉ
+                    10. CONDITIONS D’ANNULATION OU DE REPORT PAR LA SOCIÉTÉ
                 </h3>
                 <p className={styles.p}>
                     La Société se réserve le droit d’annuler ou de reporter une
@@ -261,7 +281,7 @@ export default function TermOfSales({ data }) {
                     aurait déjà été effectuée) et sans indemnité quelconque.
                 </p>
                 <h3 className={styles.h3}>
-                    10. CONDITIONS D’ANNULATION OU DE REPORT PAR LE CLIENT
+                    11. CONDITIONS D’ANNULATION OU DE REPORT PAR LE CLIENT
                 </h3>
                 <p className={styles.p}>
                     Toute prestation commencée est due dans sa totalité, sauf
@@ -279,7 +299,7 @@ export default function TermOfSales({ data }) {
                     Tout retard de plus de 15 minutes à une séance est considéré
                     comme une absence.
                 </p>
-                <h3 className={styles.h3}>11. PROPRIÉTÉ INTELLECTUELLE</h3>
+                <h3 className={styles.h3}>12. PROPRIÉTÉ INTELLECTUELLE</h3>
                 <p className={styles.p}>
                     Heart n Brain est seule propriétaire de l’ensemble des
                     contenus et des supports pédagogiques utilisés pour assurer
@@ -296,7 +316,7 @@ export default function TermOfSales({ data }) {
                     l’action et à l’externe, pour toute organisation ou
                     individu.
                 </p>
-                <h3 className={styles.h3}>12. CONFIDENTIALITÉ</h3>
+                <h3 className={styles.h3}>13. CONFIDENTIALITÉ</h3>
                 <p className={styles.p}>
                     Le Client et la Société s’engagent à garder confidentielles
                     les informations ainsi que toute documentation concernant
@@ -313,7 +333,7 @@ export default function TermOfSales({ data }) {
                     les informations transmises par le Client, y compris les
                     informations concernant le Client.
                 </p>
-                <h3 className={styles.h3}>13. DONNÉES PERSONNELLES</h3>
+                <h3 className={styles.h3}>14. DONNÉES PERSONNELLES</h3>
                 <p className={styles.p}>
                     Dans le cadre de toute commande, certaines données
                     personnelles relatives au Client, nécessaires au traitement
@@ -339,7 +359,7 @@ export default function TermOfSales({ data }) {
                     .
                 </p>
                 <h3 className={styles.h3}>
-                    14. DROIT APPLICABLE – ATTRIBUTION DE COMPÉTENCE
+                    15. DROIT APPLICABLE – ATTRIBUTION DE COMPÉTENCE
                 </h3>
                 <p className={styles.p}>
                     Les droits et relations entre la Société et le Client sont
@@ -555,7 +575,27 @@ export default function TermOfSales({ data }) {
                     simple demande.
                 </p>
                 <h3 className={styles.h3}>
-                    7. MODALITÉS SPÉCIFIQUES DES FORMATIONS COLLECTIVES
+                    7. ACCÈS À L’APPLICATION HELLO BRIAN
+                </h3>
+                <p className={styles.p}>
+                    Dans le cadre des sessions de coaching commandées auprès
+                    de Heart n Brain, le Client bénéficiera d’un accès à
+                    l’Application Hello Brian dédiée à l’apprentissage de
+                    l’anglais en ligne, développée et éditée par la société
+                    HnB Digital. L’accès à l’Application sera effectif à
+                    compter de l’email d’activation qui lui sera adressé par
+                    Heart n Brain, et ce pour la durée définie dans le devis.
+                    Une fois l’email d’activation reçu, le Client devra
+                    télécharger l’Application via les boutiques d’applications
+                    App Store ou Google Play et accepter les Conditions
+                    Générales d’Utilisation de l’Application. A l’expiration
+                    de la durée spécifiée dans le devis, le Client devra
+                    souscrire un abonnement par ses propres soins s’il
+                    souhaite continuer à bénéficier de l’accès à
+                    l’Application.
+                </p>
+                <h3 className={styles.h3}>
+                    8. MODALITÉS SPÉCIFIQUES DES FORMATIONS COLLECTIVES
                 </h3>
                 <p className={styles.p}>
                     Il appartient au Client de s’assurer de l’adéquation des
@@ -578,7 +618,7 @@ export default function TermOfSales({ data }) {
                     programme de formation accepté par le Client dans le devis.
                 </p>
                 <h3 className={styles.h3}>
-                    8. CONDITIONS FINANCIÈRES ET DE RÈGLEMENT
+                    9. CONDITIONS FINANCIÈRES ET DE RÈGLEMENT
                 </h3>
                 <p className={styles.p}>
                     Le prix des prestations est indiqué au devis signé par le
@@ -615,7 +655,7 @@ export default function TermOfSales({ data }) {
                     organisme collecteur.
                 </p>
                 <h3 className={styles.h3}>
-                    9. CONDITIONS D’ANNULATION OU DE REPORT PAR LA SOCIÉTÉ
+                    10. CONDITIONS D’ANNULATION OU DE REPORT PAR LA SOCIÉTÉ
                 </h3>
                 <p className={styles.p}>
                     La Société se réserve le droit d’annuler ou de reporter une
@@ -635,7 +675,7 @@ export default function TermOfSales({ data }) {
                     aurait déjà été effectuée) et sans indemnité quelconque.
                 </p>
                 <h3 className={styles.h3}>
-                    10. CONDITIONS D’ANNULATION OU DE REPORT PAR LE CLIENT
+                    11. CONDITIONS D’ANNULATION OU DE REPORT PAR LE CLIENT
                 </h3>
                 <p className={styles.p}>
                     Toute prestation commencée est due dans sa totalité, sauf
@@ -658,7 +698,7 @@ export default function TermOfSales({ data }) {
                     avant le démarrage de la formation : les frais d’annulation
                     sont égaux à 100 % du prix H.T. de la formation.
                 </p>
-                <h3 className={styles.h3}>11. PROPRIÉTÉ INTELLECTUELLE</h3>
+                <h3 className={styles.h3}>12. PROPRIÉTÉ INTELLECTUELLE</h3>
                 <p className={styles.p}>
                     Heart n Brain est seule propriétaire de l’ensemble des
                     contenus et des supports pédagogiques utilisés pour assurer
@@ -675,7 +715,7 @@ export default function TermOfSales({ data }) {
                     toute personne non concernée par l’action et à l’externe,
                     pour toute organisation ou individu.
                 </p>
-                <h3 className={styles.h3}>12. CONFIDENTIALITÉ</h3>
+                <h3 className={styles.h3}>13. CONFIDENTIALITÉ</h3>
                 <p className={styles.p}>
                     Le Client et la Société s’engagent à garder confidentielles
                     les informations ainsi que toute documentation concernant
@@ -699,7 +739,7 @@ export default function TermOfSales({ data }) {
                     les informations transmises par le Client, y compris les
                     informations concernant les Stagiaires.
                 </p>
-                <h3 className={styles.h3}>13. DONNÉES PERSONNELLES</h3>
+                <h3 className={styles.h3}>14. DONNÉES PERSONNELLES</h3>
                 <p className={styles.p}>
                     Dans le cadre de toute commande, certaines données
                     personnelles relatives aux employés du Client ou aux
@@ -726,7 +766,7 @@ export default function TermOfSales({ data }) {
                     .
                 </p>
                 <h3 className={styles.h3}>
-                    14. DROIT APPLICABLE – ATTRIBUTION DE COMPÉTENCE
+                    15. DROIT APPLICABLE – ATTRIBUTION DE COMPÉTENCE
                 </h3>
                 <p className={styles.p}>
                     Les droits et relations entre la Société et le Client sont
