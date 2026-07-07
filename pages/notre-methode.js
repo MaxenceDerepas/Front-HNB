@@ -86,7 +86,7 @@ export default function OurOffers({ data }) {
                                     pour maîtriser les bonnes pratiques et la
                                     bonne posture dans des situations
                                     professionnelles concrètes. Vous retrouverez
-                                    également tout ces outils sur Hello Brian,
+                                    également tout nos outils sur <a href="https://www.hellobrian.fr/" target="_blank" rel="noopener noreferrer" style={{ color: "#3078be", textDecoration: "underline" }}>Hello Brian</a>,
                                     notre appli mobile.
                                 </p>
                             </div>
@@ -229,11 +229,17 @@ export default function OurOffers({ data }) {
                                                 objectif
                                             </li>
                                         </ul>
-                                        <p style={{ lineHeight: "17px", marginTop: "15px" }}>
-                                            Entre les séances, Chloé peut continuer
-                                            de s'entraîner et retrouver tous les
-                                            outils et les conseils d'experts sur son
-                                            application Hello Brian.
+                                        <p
+                                            style={{
+                                                lineHeight: "17px",
+                                                marginTop: "15px",
+                                            }}
+                                        >
+                                            Entre les séances, Chloé peut
+                                            continuer de s'entraîner et
+                                            retrouver tous les outils et les
+                                            conseils d'experts sur son
+                                            application <a href="https://www.hellobrian.fr/" target="_blank" rel="noopener noreferrer" style={{ color: "#3078be", textDecoration: "underline" }}>Hello Brian</a>.
                                         </p>
                                     </div>
                                     <div className={styles.detail}>

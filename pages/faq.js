@@ -444,26 +444,43 @@ export default function Faq({ data }) {
                         après la fin du parcours ?
                     </h2>
                     <p className={styles.text}>
-                        Les séances de coaching sont des temps forts de prise
-                        de recul et d'apprentissage, mais c'est la pratique
+                        Les séances de coaching sont des temps forts de prise de
+                        recul et d'apprentissage, mais c'est la pratique
                         régulière qui permet de transformer durablement ses
                         habitudes de communication.
                     </p>
                     <p className={styles.text}>
-                        C'est pourquoi nous avons développé Hello Brian, notre
-                        application de coaching digital. Elle vous permet de
-                        vous entraîner entre les séances grâce à des exercices
-                        ciblés, des mises en situation professionnelles et des
-                        retours personnalisés. Vous pouvez ainsi ancrer les
-                        compétences travaillées avec votre coach et progresser
-                        à votre rythme.
+                        C'est pourquoi nous avons développé{" "}
+                        <a
+                            href="https://www.hellobrian.fr/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.a}
+                        >
+                            Hello Brian
+                        </a>
+                        , notre application de coaching digital. Elle vous
+                        permet de vous entraîner entre les séances grâce à des
+                        exercices ciblés, des mises en situation
+                        professionnelles et des retours personnalisés. Vous
+                        pouvez ainsi ancrer les compétences travaillées avec
+                        votre coach et progresser à votre rythme.
                     </p>
                     <p className={styles.text}>
-                        À l'issue du parcours, Hello Brian reste également un
-                        excellent moyen d'entretenir vos acquis, de préparer
-                        des situations importantes (présentation, entretien,
-                        réunion sensible, prise de parole, etc.) et de
-                        continuer à développer vos compétences dans la durée.
+                        À l'issue du parcours,{" "}
+                        <a
+                            href="https://www.hellobrian.fr/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.a}
+                        >
+                            Hello Brian
+                        </a>{" "}
+                        reste également un excellent moyen d'entretenir vos
+                        acquis, de préparer des situations importantes
+                        (présentation, entretien, réunion sensible, prise de
+                        parole, etc.) et de continuer à développer vos
+                        compétences dans la durée.
                     </p>
                     <h2 className={styles.title}>
                         En quoi consistent les expériences collectives ?
@@ -483,41 +500,8 @@ export default function Faq({ data }) {
                         Une session peut se faire seule ou s’intégrer dans un
                         temps d’équipe plus large.
                     </p>
-                    <hr style={{ border: "none", borderTop: "1px solid rgba(255,255,255,0.3)", margin: "30px 0" }} />
-
-                    <p className={styles.text}>
-                        Séance d'essai gratuite
-                        <br />
-                        et sans engagement
-                    </p>
-
-                    <p className={styles.text}>
-                        Parcours sur mesure
-                        <br />
-                        composé de plusieurs séances
-                        <br />
-                        de coaching et de séances de soutien ad hoc à distance
-                        en fonction du besoin
-                    </p>
-
-                    <p className={styles.text} style={{ color: "#e74c3c", fontWeight: "bold" }}>
-                        Abonnement à notre application Hello Brian
-                    </p>
-
-                    <p className={styles.text}>
-                        Séance de synthèse personnalisée d'1h
-                        <br />
-                        offerte en fin de parcours
-                    </p>
-
-                    <p className={styles.text}>
-                        Séance de suivi personnalisée d'1h
-                        <br />
-                        environ 3 mois après la synthèse
-                    </p>
-
                     <p className={styles.textMin}>
-                        Dernière mise à jour : juin 2026
+                        Dernière mise à jour : juillet 2026
                     </p>
                 </div>
             </section>

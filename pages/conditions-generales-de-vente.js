@@ -201,7 +201,7 @@ export default function TermOfSales({ data }) {
                 <p className={styles.p}>
                     Dans le cadre des sessions de coaching commandées auprès
                     de Heart n Brain, le Client bénéficiera d’un accès à
-                    l’Application Hello Brian dédiée à l’apprentissage de
+                    l’Application <a href="https://www.hellobrian.fr/" target="_blank" rel="noopener noreferrer" className={styles.a}>Hello Brian</a> dédiée à l’apprentissage de
                     l’anglais en ligne, développée et éditée par la société
                     HnB Digital. L’accès à l’Application sera effectif à
                     compter de l’email d’activation qui lui sera adressé par
@@ -580,7 +580,7 @@ export default function TermOfSales({ data }) {
                 <p className={styles.p}>
                     Dans le cadre des sessions de coaching commandées auprès
                     de Heart n Brain, le Client bénéficiera d’un accès à
-                    l’Application Hello Brian dédiée à l’apprentissage de
+                    l’Application <a href="https://www.hellobrian.fr/" target="_blank" rel="noopener noreferrer" className={styles.a}>Hello Brian</a> dédiée à l’apprentissage de
                     l’anglais en ligne, développée et éditée par la société
                     HnB Digital. L’accès à l’Application sera effectif à
                     compter de l’email d’activation qui lui sera adressé par
