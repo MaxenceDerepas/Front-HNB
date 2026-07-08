@@ -239,6 +239,7 @@ export default function Individual({ data }) {
                             (FLE) sur demande.
                         </p>
                     </div>
+                    <div className={styles.essaiWrapper}>
                     <div className={styles.essai}>
                         <p className={styles.essaiText}>
                             <span className={styles.span}>
@@ -253,8 +254,9 @@ export default function Individual({ data }) {
                             </span>
                             <br />
                             composé de plusieurs séances <br />
-                            de coaching et de séances de soutien ad hoc à
-                            distance en fonction du besoin
+                            de coaching et de séances de soutien
+                            <br />
+                            ad hoc à distance en fonction du besoin
                         </p>
                         <p className={styles.essaiText}>
                             <span className={styles.span}>
@@ -270,43 +272,16 @@ export default function Individual({ data }) {
                             <br />
                             environ 3 mois après la synthèse
                         </p>
+                        <p className={styles.essaiText}>
+                            <a href="https://www.hellobrian.fr/" target="_blank" rel="noopener noreferrer" className={styles.span}>
+                                Abonnement à notre application Hello Brian
+                            </a>
+                        </p>
 
                         <Link href="/#contact">
                             <a className={styles.a}>Contactez-nous</a>
                         </Link>
                     </div>
-
-                    <div style={{ backgroundColor: "rgba(0, 0, 0, 0.85)", padding: "20px 21px", marginTop: "30px" }}>
-                        <p style={{ color: "#fefdfd", fontWeight: "lighter", fontSize: "15px", lineHeight: "17px", marginBottom: "20px" }}>
-                            Séance d'essai gratuite
-                            <br />
-                            et sans engagement
-                        </p>
-
-                        <p style={{ color: "#fefdfd", fontWeight: "lighter", fontSize: "15px", lineHeight: "17px", marginBottom: "20px" }}>
-                            Parcours sur mesure
-                            <br />
-                            composé de plusieurs séances
-                            <br />
-                            de coaching et de séances de soutien ad hoc à distance
-                            en fonction du besoin
-                        </p>
-
-                        <p style={{ color: "#e74c3c", fontWeight: "bold", fontSize: "15px", lineHeight: "17px", marginBottom: "20px" }}>
-                            Abonnement à notre application <a href="https://www.hellobrian.fr/" target="_blank" rel="noopener noreferrer" style={{ color: "#e74c3c" }}>Hello Brian</a>
-                        </p>
-
-                        <p style={{ color: "#fefdfd", fontWeight: "lighter", fontSize: "15px", lineHeight: "17px", marginBottom: "20px" }}>
-                            Séance de synthèse personnalisée d'1h
-                            <br />
-                            offerte en fin de parcours
-                        </p>
-
-                        <p style={{ color: "#fefdfd", fontWeight: "lighter", fontSize: "15px", lineHeight: "17px", marginBottom: "0" }}>
-                            Séance de suivi personnalisée d'1h
-                            <br />
-                            environ 3 mois après la synthèse
-                        </p>
                     </div>
 
                 </div>
